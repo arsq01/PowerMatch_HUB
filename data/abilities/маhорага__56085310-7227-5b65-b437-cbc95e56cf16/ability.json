@@ -1,0 +1,34 @@
+{
+  "id": "56085310-7227-5b65-b437-cbc95e56cf16",
+  "name": "Маhорага",
+  "description": "Сильнейший шикигами Десяти Теней. Адаптируется к любой технике после первого попадания.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "summon",
+      "aspectValues": {
+        "summonedType": "шикигами",
+        "count": 1,
+        "durationMinutes": 30
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "dur",
+        "bonus": 60,
+        "durationType": "temporary"
+      }
+    },
+    {
+      "tagId": "cooldown",
+      "aspectValues": {
+        "turns": 30,
+        "description": "требует ритуала полного раскрытия"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

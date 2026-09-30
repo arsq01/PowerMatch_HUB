@@ -1,0 +1,23 @@
+{
+  "id": "48376b00-4ab7-5890-a74e-2514783cc69f",
+  "name": "Универсал",
+  "weights": {
+    "str": 1.0,
+    "spd": 1.0,
+    "acc": 1.0,
+    "stam": 1.0,
+    "dur": 1.0,
+    "ctrl": 1.0,
+    "ment": 1.0,
+    "sens": 1.0,
+    "heal": 1.0,
+    "supp": 1.0,
+    "intel": 1.0,
+    "util": 1.0,
+    "range": 1.0,
+    "aoe": 1.0
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}

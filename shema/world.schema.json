@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/world.schema.json",
+  "title": "World",
+  "type": "object",
+  "required": ["id", "name", "physicality"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "creators": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "physicality": {
+      "type": "string",
+      "enum": ["physical", "spiritual", "energy", "conceptual", "hybrid"]
+    },
+    "powerSource":     { "type": ["string", "null"] },
+    "powerScaleMax":   { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+    "rules": {
+      "type": "object",
+      "properties": {
+        "canBeAffectedBy": { "type": "array", "items": { "type": "string" } },
+        "immuneTo":        { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "compatible": { "type": "string",
+                          "enum": ["same", "compatible", "requires_hax",
+                                   "incompatible"] },
+          "note": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}

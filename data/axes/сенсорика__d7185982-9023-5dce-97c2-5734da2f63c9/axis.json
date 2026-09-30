@@ -1,0 +1,8 @@
+{
+  "id": "sens",
+  "name": "Сенсорика",
+  "order": 8,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Обнаружение, радар, восприятие"
+}

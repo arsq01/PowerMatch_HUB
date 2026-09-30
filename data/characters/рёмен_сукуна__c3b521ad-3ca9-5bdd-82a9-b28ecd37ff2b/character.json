@@ -1,0 +1,118 @@
+{
+  "id": "c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b",
+  "name": "Рёмен Сукуна",
+  "y": 0.7,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "sukuna",
+  "variant": "Heian Era",
+  "tags": [
+    "cursed_spirit",
+    "king_of_curses"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 50,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "spd": {
+      "a": 70,
+      "aMin": 60,
+      "aMax": 80,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "acc": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "stam": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "dur": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "ctrl": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "ment": {
+      "a": 60,
+      "aMin": 40,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "sens": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "heal": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "util": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "range": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "aoe": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 90,
+      "bMin": 10
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

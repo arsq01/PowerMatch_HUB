@@ -1,0 +1,38 @@
+{
+  "id": "jujutsu_kaisen",
+  "name": "Jujutsu Kaisen",
+  "creators": [
+    "Gege Akutami"
+  ],
+  "physicality": "hybrid",
+  "powerSource": "cursed_energy",
+  "powerScaleMax": 85,
+  "rules": {
+    "canBeAffectedBy": [
+      "physical",
+      "cursed_energy",
+      "spiritual"
+    ],
+    "immuneTo": [
+      "pure_physical_by_nonsorcerer"
+    ]
+  },
+  "compatibility": {
+    "jujutsu_kaisen": {
+      "compatible": "same",
+      "note": "Тот же мир"
+    },
+    "naruto": {
+      "compatible": "compatible",
+      "note": "Оба используют энергию; маги видят духов"
+    },
+    "bleach": {
+      "compatible": "requires_hax",
+      "note": "Требуется способность видеть духов"
+    },
+    "onepiece": {
+      "compatible": "requires_hax",
+      "note": "Проклятые духи невидимы для обычных"
+    }
+  }
+}

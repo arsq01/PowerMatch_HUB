@@ -1,0 +1,119 @@
+{
+  "id": "392e3160-f7f4-5cd2-bca3-06098f54fb3a",
+  "name": "Сатору Годжо",
+  "y": 0.9,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "gojo",
+  "variant": "Awakened",
+  "tags": [
+    "jujutsu_high",
+    "special_grade",
+    "gojo_clan"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 45,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "spd": {
+      "a": 75,
+      "aMin": 65,
+      "aMax": 85,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "acc": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "stam": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "dur": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "ctrl": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "ment": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "sens": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "heal": {
+      "a": 70,
+      "aMin": 50,
+      "aMax": 90,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "supp": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "intel": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "util": {
+      "a": 85,
+      "aMin": 75,
+      "aMax": 95,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 85,
+      "aMin": 75,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "aoe": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 88,
+      "bMin": 12
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

@@ -1,0 +1,50 @@
+{
+  "version": "0.1.0",
+  "type": "roles",
+  "generatedAt": "2026-09-30T13:55:25.045737+00:00",
+  "count": 6,
+  "items": [
+    {
+      "folder": "боец__93899761-e882-5f35-a807-898be6c617d4",
+      "id": "93899761-e882-5f35-a807-898be6c617d4",
+      "name": "Боец",
+      "path": "data/roles/боец__93899761-e882-5f35-a807-898be6c617d4/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "контролёр__9f9d8060-f70f-54d2-8654-186868d5f055",
+      "id": "9f9d8060-f70f-54d2-8654-186868d5f055",
+      "name": "Контролёр",
+      "path": "data/roles/контролёр__9f9d8060-f70f-54d2-8654-186868d5f055/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "координатор__ecfb0765-f7ce-50d2-8946-b111b35c9239",
+      "id": "ecfb0765-f7ce-50d2-8946-b111b35c9239",
+      "name": "Координатор",
+      "path": "data/roles/координатор__ecfb0765-f7ce-50d2-8946-b111b35c9239/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "медик__8684ef96-9228-540e-b055-bd807ad8749d",
+      "id": "8684ef96-9228-540e-b055-bd807ad8749d",
+      "name": "Медик",
+      "path": "data/roles/медик__8684ef96-9228-540e-b055-bd807ad8749d/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "разведчик__feb59eb1-17d7-502f-a5ed-cb8b015fca37",
+      "id": "feb59eb1-17d7-502f-a5ed-cb8b015fca37",
+      "name": "Разведчик",
+      "path": "data/roles/разведчик__feb59eb1-17d7-502f-a5ed-cb8b015fca37/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "универсал__48376b00-4ab7-5890-a74e-2514783cc69f",
+      "id": "48376b00-4ab7-5890-a74e-2514783cc69f",
+      "name": "Универсал",
+      "path": "data/roles/универсал__48376b00-4ab7-5890-a74e-2514783cc69f/role.json",
+      "iconPath": null
+    }
+  ]
+}

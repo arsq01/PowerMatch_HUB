@@ -1,0 +1,620 @@
+{
+  "version": "0.1.0",
+  "type": "abilities",
+  "generatedAt": "2026-09-30T13:55:25.042070+00:00",
+  "count": 20,
+  "items": [
+    {
+      "folder": "безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
+      "id": "45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
+      "name": "Безграничность",
+      "path": "data/abilities/безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "dur",
+            "bonus": 50,
+            "durationType": "toggle"
+          }
+        },
+        {
+          "tagId": "utility",
+          "aspectValues": {
+            "effectKind": "teleport",
+            "note": "Управляет бесконечностью пространства"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "буги_вуги__boogie_woogie___d0db5b57-f8b0-5fde-9eda-5dfead73de67",
+      "id": "d0db5b57-f8b0-5fde-9eda-5dfead73de67",
+      "name": "Буги-Вуги (Boogie Woogie)",
+      "path": "data/abilities/буги_вуги__boogie_woogie___d0db5b57-f8b0-5fde-9eda-5dfead73de67/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "utility",
+          "aspectValues": {
+            "effectKind": "teleport",
+            "note": "хлопок в ладоши меняет местами любые две цели"
+          }
+        },
+        {
+          "tagId": "cooldown",
+          "aspectValues": {
+            "turns": 1,
+            "description": "ограничена хлопком"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "десять_теней__7be6879a-a053-5285-acb9-780dafa25d06",
+      "id": "7be6879a-a053-5285-acb9-780dafa25d06",
+      "name": "Десять Теней",
+      "path": "data/abilities/десять_теней__7be6879a-a053-5285-acb9-780dafa25d06/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "summon",
+          "aspectValues": {
+            "summonedType": "шикигами",
+            "count": 10,
+            "durationMinutes": 60
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "растёт с числом призванных",
+            "percentOfPool": 30
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "домен__бесконечная_пустота__12674c85-56fd-57a5-a1f7-ca2b58a811de",
+      "id": "12674c85-56fd-57a5-a1f7-ca2b58a811de",
+      "name": "Домен: Бесконечная Пустота",
+      "path": "data/abilities/домен__бесконечная_пустота__12674c85-56fd-57a5-a1f7-ca2b58a811de/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "stun",
+            "targets": 100,
+            "durationSeconds": 9999
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 500,
+            "shape": "circle"
+          }
+        },
+        {
+          "tagId": "cooldown",
+          "aspectValues": {
+            "turns": 1,
+            "description": "Один раз в день, большая цена"
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "домен_джого__coffin_of_the_iron_mountain___101eada2-1903-5c55-ab78-d3c1ed3ac218",
+      "id": "101eada2-1903-5c55-ab78-d3c1ed3ac218",
+      "name": "Домен Джого (Coffin of the Iron Mountain)",
+      "path": "data/abilities/домен_джого__coffin_of_the_iron_mountain___101eada2-1903-5c55-ab78-d3c1ed3ac218/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 85,
+            "damageType": "energy",
+            "ignoresDefense": true,
+            "isDot": true
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 100,
+            "shape": "circle"
+          }
+        },
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "bind",
+            "targets": 5,
+            "durationSeconds": 60
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "домен_хакари__idle_death_gamble___0d1232a9-58a3-5a13-b1e1-0852185b3f5f",
+      "id": "0d1232a9-58a3-5a13-b1e1-0852185b3f5f",
+      "name": "Домен Хакари (Idle Death Gamble)",
+      "path": "data/abilities/домен_хакари__idle_death_gamble___0d1232a9-58a3-5a13-b1e1-0852185b3f5f/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "stam",
+            "bonus": 50,
+            "durationType": "temporary"
+          }
+        },
+        {
+          "tagId": "heal",
+          "aspectValues": {
+            "amount": 90,
+            "targets": "self",
+            "curesStatuses": true
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 200,
+            "shape": "circle"
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "домен_хана__0e2ae69b-e897-58a1-9485-11afe927c027",
+      "id": "0e2ae69b-e897-58a1-9485-11afe927c027",
+      "name": "Домен Хана",
+      "path": "data/abilities/домен_хана__0e2ae69b-e897-58a1-9485-11afe927c027/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "heal",
+          "aspectValues": {
+            "amount": 80,
+            "targets": "self",
+            "curesStatuses": true
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 100,
+            "shape": "circle"
+          }
+        },
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "bind",
+            "targets": 3,
+            "durationSeconds": 45
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "идле_трансфигурэйшн__63898891-22a8-5ffb-946c-fa11852c3112",
+      "id": "63898891-22a8-5ffb-946c-fa11852c3112",
+      "name": "Идле Трансфигурэйшн",
+      "path": "data/abilities/идле_трансфигурэйшн__63898891-22a8-5ffb-946c-fa11852c3112/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 80,
+            "damageType": "conceptual",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "heal",
+          "aspectValues": {
+            "amount": 90,
+            "targets": "self",
+            "curesStatuses": true
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 5
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "красный__reversal_red___9437be43-895b-51ed-9d49-33259141ee5c",
+      "id": "9437be43-895b-51ed-9d49-33259141ee5c",
+      "name": "Красный (Reversal Red)",
+      "path": "data/abilities/красный__reversal_red___9437be43-895b-51ed-9d49-33259141ee5c/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 80,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 100,
+            "projectileSpeed": 90
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 50,
+            "shape": "circle"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "маhорага__56085310-7227-5b65-b437-cbc95e56cf16",
+      "id": "56085310-7227-5b65-b437-cbc95e56cf16",
+      "name": "Маhорага",
+      "path": "data/abilities/маhорага__56085310-7227-5b65-b437-cbc95e56cf16/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "summon",
+          "aspectValues": {
+            "summonedType": "шикигами",
+            "count": 1,
+            "durationMinutes": 30
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "dur",
+            "bonus": 60,
+            "durationType": "temporary"
+          }
+        },
+        {
+          "tagId": "cooldown",
+          "aspectValues": {
+            "turns": 30,
+            "description": "требует ритуала полного раскрытия"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "манипуляция_кровью__6216e1dd-2ed6-5cd3-94ee-318616fed02f",
+      "id": "6216e1dd-2ed6-5cd3-94ee-318616fed02f",
+      "name": "Манипуляция кровью",
+      "path": "data/abilities/манипуляция_кровью__6216e1dd-2ed6-5cd3-94ee-318616fed02f/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 65,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 50,
+            "projectileSpeed": 60
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 20,
+            "shape": "circle"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "проклятая_речь__0a02e810-ba61-5952-ab9f-6940bd93c054",
+      "id": "0a02e810-ba61-5952-ab9f-6940bd93c054",
+      "name": "Проклятая речь",
+      "path": "data/abilities/проклятая_речь__0a02e810-ba61-5952-ab9f-6940bd93c054/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "mind_control",
+            "targets": 3,
+            "durationSeconds": 30
+          }
+        },
+        {
+          "tagId": "debuff",
+          "aspectValues": {
+            "target": "group",
+            "debuffedAxis": "spd",
+            "penalty": 30,
+            "durationType": "temporary"
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "сильно нагружает горло",
+            "percentOfPool": 20
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "пропорция_7_3__9f12c772-7c15-52ff-bcdd-4532ab12c086",
+      "id": "9f12c772-7c15-52ff-bcdd-4532ab12c086",
+      "name": "Пропорция 7:3",
+      "path": "data/abilities/пропорция_7_3__9f12c772-7c15-52ff-bcdd-4532ab12c086/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 75,
+            "damageType": "physical",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 2
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "средний расход",
+            "percentOfPool": 20
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "пустой_фиолетовый__hollow_purple___47b46827-37b0-5b4a-9089-c373b26da136",
+      "id": "47b46827-37b0-5b4a-9089-c373b26da136",
+      "name": "Пустой Фиолетовый (Hollow Purple)",
+      "path": "data/abilities/пустой_фиолетовый__hollow_purple___47b46827-37b0-5b4a-9089-c373b26da136/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 95,
+            "damageType": "conceptual",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 500,
+            "projectileSpeed": 95
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 200,
+            "shape": "line"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7",
+      "id": "b57a2303-db3e-5cba-8a4e-acdda9a509c7",
+      "name": "Рассечение (Dismantle)",
+      "path": "data/abilities/рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 80,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 100,
+            "projectileSpeed": 85
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "расщепление__cleave___cc8cf9ce-08a6-5a0b-81e2-cdfd486df475",
+      "id": "cc8cf9ce-08a6-5a0b-81e2-cdfd486df475",
+      "name": "Расщепление (Cleave)",
+      "path": "data/abilities/расщепление__cleave___cc8cf9ce-08a6-5a0b-81e2-cdfd486df475/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 85,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 5
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "резонанс__40d27a67-6bb5-5e2b-8a6b-b922e73831e6",
+      "id": "40d27a67-6bb5-5e2b-8a6b-b922e73831e6",
+      "name": "Резонанс",
+      "path": "data/abilities/резонанс__40d27a67-6bb5-5e2b-8a6b-b922e73831e6/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 60,
+            "damageType": "spiritual",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 10000,
+            "projectileSpeed": 40
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "требует часть тела цели",
+            "percentOfPool": 15
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "рика__ba3156c1-27b0-5450-8685-8e3decc16055",
+      "id": "ba3156c1-27b0-5450-8685-8e3decc16055",
+      "name": "Рика",
+      "path": "data/abilities/рика__ba3156c1-27b0-5450-8685-8e3decc16055/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "summon",
+          "aspectValues": {
+            "summonedType": "проклятый дух",
+            "count": 1,
+            "durationMinutes": 999
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "str",
+            "bonus": 40,
+            "durationType": "toggle"
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "heal",
+            "bonus": 30,
+            "durationType": "toggle"
+          }
+        }
+      ],
+      "type": "special"
+    },
+    {
+      "folder": "снайпер_техника__d0fbac55-6834-54fe-882d-2d25bef08083",
+      "id": "d0fbac55-6834-54fe-882d-2d25bef08083",
+      "name": "Снайпер-техника",
+      "path": "data/abilities/снайпер_техника__d0fbac55-6834-54fe-882d-2d25bef08083/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 70,
+            "damageType": "energy",
+            "ignoresDefense": false
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 5000,
+            "projectileSpeed": 85
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "оплачивается за использование",
+            "percentOfPool": 15
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461",
+      "id": "67846755-ebe5-542b-94d2-bb62794da461",
+      "name": "Шесть Глаз",
+      "path": "data/abilities/шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "sens",
+            "bonus": 40,
+            "durationType": "passive"
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "acc",
+            "bonus": 30,
+            "durationType": "passive"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    }
+  ]
+}

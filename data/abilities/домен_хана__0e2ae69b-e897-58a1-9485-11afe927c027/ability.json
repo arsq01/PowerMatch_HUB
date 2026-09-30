@@ -1,0 +1,33 @@
+{
+  "id": "0e2ae69b-e897-58a1-9485-11afe927c027",
+  "name": "Домен Хана",
+  "description": "Домен Хана. Заполняет пространство цветущим лесом, постоянно восстанавливающим его владельца.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "heal",
+      "aspectValues": {
+        "amount": 80,
+        "targets": "self",
+        "curesStatuses": true
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 100,
+        "shape": "circle"
+      }
+    },
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "bind",
+        "targets": 3,
+        "durationSeconds": 45
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

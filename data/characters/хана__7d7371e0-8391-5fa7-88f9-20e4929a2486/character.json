@@ -1,0 +1,119 @@
+{
+  "id": "7d7371e0-8391-5fa7-88f9-20e4929a2486",
+  "name": "Хана",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "hanami",
+  "variant": "Shibuya",
+  "tags": [
+    "cursed_spirit",
+    "special_grade",
+    "disaster"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "intel": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "util": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "aoe": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

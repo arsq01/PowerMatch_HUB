@@ -1,0 +1,311 @@
+{
+  "version": "0.1.0",
+  "type": "characters",
+  "generatedAt": "2026-09-30T13:55:25.037771+00:00",
+  "count": 20,
+  "items": [
+    {
+      "folder": "аой_тодо__de72fb30-0c72-5616-bf75-204a137856c5",
+      "id": "de72fb30-0c72-5616-bf75-204a137856c5",
+      "name": "Аой Тодо",
+      "path": "data/characters/аой_тодо__de72fb30-0c72-5616-bf75-204a137856c5/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "todo",
+      "variant": "Kyoto",
+      "tags": [
+        "jujutsu_high",
+        "grade_1"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "дагон__2b6a0212-5a42-5fd9-ad87-23f920577082",
+      "id": "2b6a0212-5a42-5fd9-ad87-23f920577082",
+      "name": "Дагон",
+      "path": "data/characters/дагон__2b6a0212-5a42-5fd9-ad87-23f920577082/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "dagon",
+      "variant": "Shibuya",
+      "tags": [
+        "cursed_spirit",
+        "special_grade",
+        "disaster"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "джого__3893ffbb-d8bd-5a5f-ad19-c301de71f4e9",
+      "id": "3893ffbb-d8bd-5a5f-ad19-c301de71f4e9",
+      "name": "Джого",
+      "path": "data/characters/джого__3893ffbb-d8bd-5a5f-ad19-c301de71f4e9/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "jogo",
+      "variant": "Shibuya",
+      "tags": [
+        "cursed_spirit",
+        "special_grade",
+        "disaster"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "кенто_нанами__af8588c5-f179-5592-831f-f8f825ed7711",
+      "id": "af8588c5-f179-5592-831f-f8f825ed7711",
+      "name": "Кенто Нанами",
+      "path": "data/characters/кенто_нанами__af8588c5-f179-5592-831f-f8f825ed7711/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "nanami",
+      "variant": "Grade 1",
+      "tags": [
+        "jujutsu_high",
+        "grade_1"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "маки_зенин__08bb6720-38e6-5f9b-9ef5-a6208ad6eae2",
+      "id": "08bb6720-38e6-5f9b-9ef5-a6208ad6eae2",
+      "name": "Маки Зенин",
+      "path": "data/characters/маки_зенин__08bb6720-38e6-5f9b-9ef5-a6208ad6eae2/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "zenin",
+      "variant": "Awakened",
+      "tags": [
+        "jujutsu_high",
+        "zenin"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "махито__943b7f18-edad-5761-b166-a4a3b61e3d5d",
+      "id": "943b7f18-edad-5761-b166-a4a3b61e3d5d",
+      "name": "Махито",
+      "path": "data/characters/махито__943b7f18-edad-5761-b166-a4a3b61e3d5d/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "mahito",
+      "variant": "Full Power",
+      "tags": [
+        "cursed_spirit",
+        "special_grade"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "мегуми_фушигуро__4a54f222-d37f-5f38-80d7-2b50dd236bf7",
+      "id": "4a54f222-d37f-5f38-80d7-2b50dd236bf7",
+      "name": "Мегуми Фушигуро",
+      "path": "data/characters/мегуми_фушигуро__4a54f222-d37f-5f38-80d7-2b50dd236bf7/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "fushiguro",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "zenin"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "момо_нишимия__a0269bdb-a7fd-590b-940b-bb7ae2afb380",
+      "id": "a0269bdb-a7fd-590b-940b-bb7ae2afb380",
+      "name": "Момо Нишимия",
+      "path": "data/characters/момо_нишимия__a0269bdb-a7fd-590b-940b-bb7ae2afb380/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "nishimiya",
+      "variant": "Kyoto",
+      "tags": [
+        "jujutsu_high"
+      ],
+      "y": 0.4
+    },
+    {
+      "folder": "мэй_мэй__64fe3891-8766-5ced-a8e1-fe5afa82f57a",
+      "id": "64fe3891-8766-5ced-a8e1-fe5afa82f57a",
+      "name": "Мэй Мэй",
+      "path": "data/characters/мэй_мэй__64fe3891-8766-5ced-a8e1-fe5afa82f57a/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "mei_mei",
+      "variant": "Grade 1",
+      "tags": [
+        "jujutsu_high",
+        "grade_1",
+        "mercenary"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "нобара_кугисаки__334994f8-bbcd-5c5a-a788-f4c02664b7f1",
+      "id": "334994f8-bbcd-5c5a-a788-f4c02664b7f1",
+      "name": "Нобара Кугисаки",
+      "path": "data/characters/нобара_кугисаки__334994f8-bbcd-5c5a-a788-f4c02664b7f1/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "kugisaki",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "панда__ff0ebf32-7089-506b-a3b2-69d7ee81df41",
+      "id": "ff0ebf32-7089-506b-a3b2-69d7ee81df41",
+      "name": "Панда",
+      "path": "data/characters/панда__ff0ebf32-7089-506b-a3b2-69d7ee81df41/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "panda",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "cursed_corpse"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "рёмен_сукуна__c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b",
+      "id": "c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b",
+      "name": "Рёмен Сукуна",
+      "path": "data/characters/рёмен_сукуна__c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "sukuna",
+      "variant": "Heian Era",
+      "tags": [
+        "cursed_spirit",
+        "king_of_curses"
+      ],
+      "y": 0.7
+    },
+    {
+      "folder": "сатору_годжо__392e3160-f7f4-5cd2-bca3-06098f54fb3a",
+      "id": "392e3160-f7f4-5cd2-bca3-06098f54fb3a",
+      "name": "Сатору Годжо",
+      "path": "data/characters/сатору_годжо__392e3160-f7f4-5cd2-bca3-06098f54fb3a/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "gojo",
+      "variant": "Awakened",
+      "tags": [
+        "jujutsu_high",
+        "special_grade",
+        "gojo_clan"
+      ],
+      "y": 0.9
+    },
+    {
+      "folder": "сугуру_гето__89dac23e-ef2c-5591-b254-2ceb09ab4458",
+      "id": "89dac23e-ef2c-5591-b254-2ceb09ab4458",
+      "name": "Сугуру Гето",
+      "path": "data/characters/сугуру_гето__89dac23e-ef2c-5591-b254-2ceb09ab4458/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "geto",
+      "variant": "Curse User",
+      "tags": [
+        "curse_user",
+        "special_grade"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "тоге_инумаки__21e2801a-6cc7-5832-b8c8-7c2b43209c4c",
+      "id": "21e2801a-6cc7-5832-b8c8-7c2b43209c4c",
+      "name": "Тоге Инумаки",
+      "path": "data/characters/тоге_инумаки__21e2801a-6cc7-5832-b8c8-7c2b43209c4c/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "inumaki",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "inumaki_clan"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "хакари_кинджи__0432563a-05c6-5ad7-9c85-85d0604dab4b",
+      "id": "0432563a-05c6-5ad7-9c85-85d0604dab4b",
+      "name": "Хакари Кинджи",
+      "path": "data/characters/хакари_кинджи__0432563a-05c6-5ad7-9c85-85d0604dab4b/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "hakari",
+      "variant": "Jackpot",
+      "tags": [
+        "jujutsu_high",
+        "suspended"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "хана__7d7371e0-8391-5fa7-88f9-20e4929a2486",
+      "id": "7d7371e0-8391-5fa7-88f9-20e4929a2486",
+      "name": "Хана",
+      "path": "data/characters/хана__7d7371e0-8391-5fa7-88f9-20e4929a2486/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "hanami",
+      "variant": "Shibuya",
+      "tags": [
+        "cursed_spirit",
+        "special_grade",
+        "disaster"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "чосо__a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7",
+      "id": "a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7",
+      "name": "Чосо",
+      "path": "data/characters/чосо__a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "kamo",
+      "variant": "Death Painting",
+      "tags": [
+        "cursed_womb",
+        "death_painting"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "юдзи_итадори__beb3757f-7455-5590-86bf-9907f69496e7",
+      "id": "beb3757f-7455-5590-86bf-9907f69496e7",
+      "name": "Юдзи Итадори",
+      "path": "data/characters/юдзи_итадори__beb3757f-7455-5590-86bf-9907f69496e7/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "itadori",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "vessel"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "юта_оккоцу__a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6",
+      "id": "a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6",
+      "name": "Юта Оккоцу",
+      "path": "data/characters/юта_оккоцу__a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "okkotsu",
+      "variant": "Special Grade",
+      "tags": [
+        "jujutsu_high",
+        "special_grade"
+      ],
+      "y": 0.7
+    }
+  ]
+}

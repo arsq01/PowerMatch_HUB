@@ -1,0 +1,16 @@
+{
+  "version": "0.1.0",
+  "type": "worlds",
+  "generatedAt": "2026-09-30T13:55:25.048962+00:00",
+  "count": 1,
+  "items": [
+    {
+      "folder": "jujutsu_kaisen__81f9d495-c3da-58b0-befa-45610c7e3bb2",
+      "id": "jujutsu_kaisen",
+      "name": "Jujutsu Kaisen",
+      "path": "data/worlds/jujutsu_kaisen__81f9d495-c3da-58b0-befa-45610c7e3bb2/world.json",
+      "iconPath": null,
+      "physicality": "hybrid"
+    }
+  ]
+}

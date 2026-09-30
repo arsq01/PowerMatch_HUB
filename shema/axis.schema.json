@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/axis.schema.json",
+  "title": "Axis",
+  "type": "object",
+  "required": ["id", "name", "order"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "order":   { "type": "integer", "minimum": 0 },
+    "enabled": { "type": "boolean" },
+    "isCustom": { "type": "boolean" },
+    "description": { "type": ["string", "null"] },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] }
+  },
+  "additionalProperties": true
+}

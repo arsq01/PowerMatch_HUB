@@ -1,0 +1,8 @@
+{
+  "id": "str",
+  "name": "Сила",
+  "order": 1,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Физический урон, пробитие"
+}

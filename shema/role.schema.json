@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/role.schema.json",
+  "title": "Role",
+  "type": "object",
+  "required": ["id", "name", "weights"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "enabled": { "type": "boolean" },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] },
+    "weights": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0 }
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,118 @@
+{
+  "id": "943b7f18-edad-5761-b166-a4a3b61e3d5d",
+  "name": "Махито",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "mahito",
+  "variant": "Full Power",
+  "tags": [
+    "cursed_spirit",
+    "special_grade"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 60,
+      "aMin": 50,
+      "aMax": 70,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "acc": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "stam": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "dur": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "ctrl": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ment": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "sens": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "heal": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "supp": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "intel": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "util": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "aoe": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

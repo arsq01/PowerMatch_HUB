@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/character.schema.json",
+  "title": "Character",
+  "type": "object",
+  "required": ["id", "name", "y", "axes", "createdAt", "updatedAt"],
+  "properties": {
+    "id":     { "type": "string", "minLength": 1 },
+    "name":   { "type": "string", "minLength": 1 },
+    "iconPath":   { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "lore":        { "type": ["string", "null"] },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "y": { "type": "number", "minimum": 0, "maximum": 1 },
+
+    "worldId":  { "type": "string" },
+    "familyId": { "type": "string" },
+    "variant":  { "type": ["string", "null"] },
+    "abilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "axes": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "https://powermatch/axis_value.schema.json"
+      }
+    },
+
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}

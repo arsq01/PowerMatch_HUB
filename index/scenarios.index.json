@@ -1,0 +1,43 @@
+{
+  "version": "0.1.0",
+  "type": "scenarios",
+  "generatedAt": "2026-09-30T13:55:25.047234+00:00",
+  "count": 5,
+  "items": [
+    {
+      "folder": "война__0d92effb-fb98-5aa2-a962-f6c60f818a81",
+      "id": "0d92effb-fb98-5aa2-a962-f6c60f818a81",
+      "name": "Война",
+      "path": "data/scenarios/война__0d92effb-fb98-5aa2-a962-f6c60f818a81/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "дуэль__2a582280-0d54-5350-aa49-91a32b3a986f",
+      "id": "2a582280-0d54-5350-aa49-91a32b3a986f",
+      "name": "Дуэль",
+      "path": "data/scenarios/дуэль__2a582280-0d54-5350-aa49-91a32b3a986f/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "осада__d5b6920e-9cf0-5165-bb91-ef37b64c3c5a",
+      "id": "d5b6920e-9cf0-5165-bb91-ef37b64c3c5a",
+      "name": "Осада",
+      "path": "data/scenarios/осада__d5b6920e-9cf0-5165-bb91-ef37b64c3c5a/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "открытый_бой__9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6",
+      "id": "9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6",
+      "name": "Открытый бой",
+      "path": "data/scenarios/открытый_бой__9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "разведка__e34c83a3-c42d-528d-a9dd-8b0beced0286",
+      "id": "e34c83a3-c42d-528d-a9dd-8b0beced0286",
+      "name": "Разведка",
+      "path": "data/scenarios/разведка__e34c83a3-c42d-528d-a9dd-8b0beced0286/scenario.json",
+      "iconPath": null
+    }
+  ]
+}

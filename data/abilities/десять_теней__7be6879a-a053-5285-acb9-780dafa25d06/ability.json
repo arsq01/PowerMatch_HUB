@@ -1,0 +1,25 @@
+{
+  "id": "7be6879a-a053-5285-acb9-780dafa25d06",
+  "name": "Десять Теней",
+  "description": "Врождённая техника клана Зенин. Призыв теневых шикигами через руки.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "summon",
+      "aspectValues": {
+        "summonedType": "шикигами",
+        "count": 10,
+        "durationMinutes": 60
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "растёт с числом призванных",
+        "percentOfPool": 30
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

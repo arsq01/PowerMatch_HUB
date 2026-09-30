@@ -1,0 +1,118 @@
+{
+  "id": "4a54f222-d37f-5f38-80d7-2b50dd236bf7",
+  "name": "Мегуми Фушигуро",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "fushiguro",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high",
+    "zenin"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 40,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "spd": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "stam": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "dur": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "heal": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "supp": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "intel": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "util": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "aoe": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

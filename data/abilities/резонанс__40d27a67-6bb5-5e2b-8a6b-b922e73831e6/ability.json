@@ -1,0 +1,32 @@
+{
+  "id": "40d27a67-6bb5-5e2b-8a6b-b922e73831e6",
+  "name": "Резонанс",
+  "description": "Техника Нобары. Через куклу вуду наносит урон, связанный с частью тела цели.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 60,
+        "damageType": "spiritual",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 10000,
+        "projectileSpeed": 40
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "требует часть тела цели",
+        "percentOfPool": 15
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

@@ -1,0 +1,34 @@
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-09-30T13:55:25.033600+00:00",
+  "indices": {
+    "characters": {
+      "path": "index/characters.index.json",
+      "count": 20
+    },
+    "abilities": {
+      "path": "index/abilities.index.json",
+      "count": 20
+    },
+    "roles": {
+      "path": "index/roles.index.json",
+      "count": 6
+    },
+    "scenarios": {
+      "path": "index/scenarios.index.json",
+      "count": 5
+    },
+    "tags": {
+      "path": "index/tags.index.json",
+      "count": 0
+    },
+    "worlds": {
+      "path": "index/worlds.index.json",
+      "count": 1
+    },
+    "axes": {
+      "path": "index/axes.index.json",
+      "count": 14
+    }
+  }
+}

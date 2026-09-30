@@ -1,0 +1,32 @@
+{
+  "id": "d0fbac55-6834-54fe-882d-2d25bef08083",
+  "name": "Снайпер-техника",
+  "description": "Техника Мэй Мэй. Выстрел на огромные расстояния с максимальной точностью.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 70,
+        "damageType": "energy",
+        "ignoresDefense": false
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 5000,
+        "projectileSpeed": 85
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "оплачивается за использование",
+        "percentOfPool": 15
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

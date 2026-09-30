@@ -1,0 +1,8 @@
+{
+  "id": "util",
+  "name": "Полезные",
+  "order": 12,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Прочие способности"
+}

@@ -1,0 +1,119 @@
+{
+  "id": "2b6a0212-5a42-5fd9-ad87-23f920577082",
+  "name": "Дагон",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "dagon",
+  "variant": "Shibuya",
+  "tags": [
+    "cursed_spirit",
+    "special_grade",
+    "disaster"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "spd": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "ment": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "util": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

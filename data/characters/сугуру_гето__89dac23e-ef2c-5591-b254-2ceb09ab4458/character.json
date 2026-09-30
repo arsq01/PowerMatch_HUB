@@ -1,0 +1,118 @@
+{
+  "id": "89dac23e-ef2c-5591-b254-2ceb09ab4458",
+  "name": "Сугуру Гето",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "geto",
+  "variant": "Curse User",
+  "tags": [
+    "curse_user",
+    "special_grade"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 40,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "spd": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "stam": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ctrl": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "ment": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "sens": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "heal": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "supp": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "intel": {
+      "a": 85,
+      "aMin": 75,
+      "aMax": 95,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "util": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

@@ -1,0 +1,8 @@
+{
+  "id": "intel",
+  "name": "Интеллект",
+  "order": 11,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Планирование, тактика, адаптация"
+}

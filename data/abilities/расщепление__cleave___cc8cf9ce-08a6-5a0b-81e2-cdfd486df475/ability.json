@@ -1,0 +1,24 @@
+{
+  "id": "cc8cf9ce-08a6-5a0b-81e2-cdfd486df475",
+  "name": "Расщепление (Cleave)",
+  "description": "Техника Сукуны. Разрезает цель в зависимости от её прочности и проклятой энергии.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 85,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 5
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

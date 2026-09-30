@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/scenario.schema.json",
+  "title": "Scenario",
+  "type": "object",
+  "required": ["id", "name", "decaySide1", "decaySide2"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "enabled": { "type": "boolean" },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] },
+    "decaySide1": {
+      "type": "array",
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "decaySide2": {
+      "type": "array",
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    }
+  },
+  "additionalProperties": true
+}

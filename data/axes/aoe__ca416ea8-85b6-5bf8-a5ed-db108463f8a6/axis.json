@@ -1,0 +1,8 @@
+{
+  "id": "aoe",
+  "name": "AoE",
+  "order": 14,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Площадь поражения"
+}

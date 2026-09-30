@@ -1,0 +1,118 @@
+{
+  "id": "a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7",
+  "name": "Чосо",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "kamo",
+  "variant": "Death Painting",
+  "tags": [
+    "cursed_womb",
+    "death_painting"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "acc": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "stam": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "dur": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "range": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

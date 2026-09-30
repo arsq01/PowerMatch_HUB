@@ -1,0 +1,26 @@
+{
+  "id": "45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
+  "name": "Безграничность",
+  "description": "Пространственный барьер между пользователем и целью. Ничто не может коснуться его, если он того не хочет.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "dur",
+        "bonus": 50,
+        "durationType": "toggle"
+      }
+    },
+    {
+      "tagId": "utility",
+      "aspectValues": {
+        "effectKind": "teleport",
+        "note": "Управляет бесконечностью пространства"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

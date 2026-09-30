@@ -1,0 +1,8 @@
+{
+  "id": "stam",
+  "name": "Выносливость",
+  "order": 4,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Длительность боя"
+}

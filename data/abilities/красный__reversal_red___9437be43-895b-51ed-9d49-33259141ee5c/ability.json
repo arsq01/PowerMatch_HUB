@@ -1,0 +1,32 @@
+{
+  "id": "9437be43-895b-51ed-9d49-33259141ee5c",
+  "name": "Красный (Reversal Red)",
+  "description": "Обратная техника. Отталкивающая сила, усиленная инверсией проклятой энергии.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 80,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 100,
+        "projectileSpeed": 90
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 50,
+        "shape": "circle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

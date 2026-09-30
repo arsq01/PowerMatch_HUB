@@ -1,0 +1,23 @@
+{
+  "id": "93899761-e882-5f35-a807-898be6c617d4",
+  "name": "Боец",
+  "weights": {
+    "str": 2.0,
+    "spd": 1.5,
+    "acc": 1.2,
+    "stam": 1.0,
+    "dur": 1.8,
+    "ctrl": 0.8,
+    "ment": 1.0,
+    "sens": 1.0,
+    "heal": 0.3,
+    "supp": 0.1,
+    "intel": 1.0,
+    "util": 1.0,
+    "range": 1.5,
+    "aoe": 1.5
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}

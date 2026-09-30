@@ -1,0 +1,23 @@
+{
+  "id": "feb59eb1-17d7-502f-a5ed-cb8b015fca37",
+  "name": "Разведчик",
+  "weights": {
+    "str": 0.0,
+    "spd": 2.0,
+    "acc": 2.0,
+    "stam": 1.0,
+    "dur": 0.6,
+    "ctrl": 1.0,
+    "ment": 1.0,
+    "sens": 2.5,
+    "heal": 0.0,
+    "supp": 0.0,
+    "intel": 1.2,
+    "util": 1.0,
+    "range": 1.5,
+    "aoe": 1.0
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}

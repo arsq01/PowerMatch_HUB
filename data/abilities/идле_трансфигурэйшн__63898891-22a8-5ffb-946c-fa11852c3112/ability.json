@@ -1,0 +1,32 @@
+{
+  "id": "63898891-22a8-5ffb-946c-fa11852c3112",
+  "name": "Идле Трансфигурэйшн",
+  "description": "Техника Махито. Изменяет форму души любого существа.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 80,
+        "damageType": "conceptual",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "heal",
+      "aspectValues": {
+        "amount": 90,
+        "targets": "self",
+        "curesStatuses": true
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 5
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "8684ef96-9228-540e-b055-bd807ad8749d",
+  "name": "Медик",
+  "weights": {
+    "str": 0.2,
+    "spd": 2.0,
+    "acc": 0.2,
+    "stam": 1.5,
+    "dur": 1.0,
+    "ctrl": 0.5,
+    "ment": 0.5,
+    "sens": 1.0,
+    "heal": 2.5,
+    "supp": 2.5,
+    "intel": 0.3,
+    "util": 1.0,
+    "range": 0.0,
+    "aoe": 0.5
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}

@@ -1,0 +1,28 @@
+{
+  "id": "67846755-ebe5-542b-94d2-bb62794da461",
+  "name": "Шесть Глаз",
+  "description": "Врождённая техника клана Годжо. Позволяет воспринимать проклятую энергию в идеальной точности.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "sens",
+        "bonus": 40,
+        "durationType": "passive"
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "acc",
+        "bonus": 30,
+        "durationType": "passive"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

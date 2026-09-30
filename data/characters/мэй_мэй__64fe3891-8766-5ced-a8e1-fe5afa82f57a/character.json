@@ -1,0 +1,119 @@
+{
+  "id": "64fe3891-8766-5ced-a8e1-fe5afa82f57a",
+  "name": "Мэй Мэй",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "mei_mei",
+  "variant": "Grade 1",
+  "tags": [
+    "jujutsu_high",
+    "grade_1",
+    "mercenary"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 20,
+      "aMin": 12,
+      "aMax": 28,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "spd": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "acc": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "stam": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "dur": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ctrl": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 62,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "util": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "range": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "aoe": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 80,
+      "bMin": 20
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

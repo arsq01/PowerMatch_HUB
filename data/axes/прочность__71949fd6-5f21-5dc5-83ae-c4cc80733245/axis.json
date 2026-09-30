@@ -1,0 +1,8 @@
+{
+  "id": "dur",
+  "name": "Прочность",
+  "order": 5,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Сопротивление урону"
+}

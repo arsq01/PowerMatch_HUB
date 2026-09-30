@@ -1,0 +1,32 @@
+{
+  "id": "6216e1dd-2ed6-5cd3-94ee-318616fed02f",
+  "name": "Манипуляция кровью",
+  "description": "Техника Чосо. Управляет собственной кровью как оружием и снарядом.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 65,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 50,
+        "projectileSpeed": 60
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 20,
+        "shape": "circle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

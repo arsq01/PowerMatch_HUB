@@ -1,0 +1,117 @@
+{
+  "id": "334994f8-bbcd-5c5a-a788-f4c02664b7f1",
+  "name": "Нобара Кугисаки",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "kugisaki",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "stam": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "dur": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ment": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "sens": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "heal": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "range": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 75,
+      "bMin": 25
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

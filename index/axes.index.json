@@ -1,0 +1,120 @@
+{
+  "version": "0.1.0",
+  "type": "axes",
+  "generatedAt": "2026-09-30T13:55:25.051276+00:00",
+  "count": 14,
+  "items": [
+    {
+      "folder": "aoe__ca416ea8-85b6-5bf8-a5ed-db108463f8a6",
+      "id": "aoe",
+      "name": "AoE",
+      "path": "data/axes/aoe__ca416ea8-85b6-5bf8-a5ed-db108463f8a6/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "выносливость__61b2318d-eb43-577a-93d9-151b79ed0fe0",
+      "id": "stam",
+      "name": "Выносливость",
+      "path": "data/axes/выносливость__61b2318d-eb43-577a-93d9-151b79ed0fe0/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "дальность__25cd7a70-6048-5450-ae11-4539a6ec2e40",
+      "id": "range",
+      "name": "Дальность",
+      "path": "data/axes/дальность__25cd7a70-6048-5450-ae11-4539a6ec2e40/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "интеллект__20829542-7baf-5912-896d-cc462a2da02f",
+      "id": "intel",
+      "name": "Интеллект",
+      "path": "data/axes/интеллект__20829542-7baf-5912-896d-cc462a2da02f/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "контроль__f8296286-f112-5a7b-b21b-5c8cfb6302eb",
+      "id": "ctrl",
+      "name": "Контроль",
+      "path": "data/axes/контроль__f8296286-f112-5a7b-b21b-5c8cfb6302eb/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "лечение__ad47e6f7-76e1-5e3f-9f7c-95304b6d2385",
+      "id": "heal",
+      "name": "Лечение",
+      "path": "data/axes/лечение__ad47e6f7-76e1-5e3f-9f7c-95304b6d2385/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "ментальное__f1e1d201-3cef-53b5-b8de-eb5b91460c7e",
+      "id": "ment",
+      "name": "Ментальное",
+      "path": "data/axes/ментальное__f1e1d201-3cef-53b5-b8de-eb5b91460c7e/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "поддержка__d8f11133-954a-5de9-bad6-012c9bec1b10",
+      "id": "supp",
+      "name": "Поддержка",
+      "path": "data/axes/поддержка__d8f11133-954a-5de9-bad6-012c9bec1b10/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "полезные__8b08fdab-fd56-5a43-80da-a0c6d2f79294",
+      "id": "util",
+      "name": "Полезные",
+      "path": "data/axes/полезные__8b08fdab-fd56-5a43-80da-a0c6d2f79294/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "прочность__71949fd6-5f21-5dc5-83ae-c4cc80733245",
+      "id": "dur",
+      "name": "Прочность",
+      "path": "data/axes/прочность__71949fd6-5f21-5dc5-83ae-c4cc80733245/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "сенсорика__d7185982-9023-5dce-97c2-5734da2f63c9",
+      "id": "sens",
+      "name": "Сенсорика",
+      "path": "data/axes/сенсорика__d7185982-9023-5dce-97c2-5734da2f63c9/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "сила__339a28fe-8f6d-517a-8d94-4efee82f40db",
+      "id": "str",
+      "name": "Сила",
+      "path": "data/axes/сила__339a28fe-8f6d-517a-8d94-4efee82f40db/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "скорость__d01d4780-20e7-5aa2-8caf-e4869b210b5f",
+      "id": "spd",
+      "name": "Скорость",
+      "path": "data/axes/скорость__d01d4780-20e7-5aa2-8caf-e4869b210b5f/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "точность__156d70c1-2549-59bd-ba82-d1a1b2a36a82",
+      "id": "acc",
+      "name": "Точность",
+      "path": "data/axes/точность__156d70c1-2549-59bd-ba82-d1a1b2a36a82/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    }
+  ]
+}

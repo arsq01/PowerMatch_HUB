@@ -1,0 +1,8 @@
+{
+  "id": "ctrl",
+  "name": "Контроль",
+  "order": 6,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Барьеры, зоны, доминирование"
+}

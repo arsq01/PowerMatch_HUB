@@ -1,0 +1,24 @@
+{
+  "id": "d0db5b57-f8b0-5fde-9eda-5dfead73de67",
+  "name": "Буги-Вуги (Boogie Woogie)",
+  "description": "Техника Тодо. Мгновенный обмен позициями двух объектов с проклятой энергией.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "utility",
+      "aspectValues": {
+        "effectKind": "teleport",
+        "note": "хлопок в ладоши меняет местами любые две цели"
+      }
+    },
+    {
+      "tagId": "cooldown",
+      "aspectValues": {
+        "turns": 1,
+        "description": "ограничена хлопком"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

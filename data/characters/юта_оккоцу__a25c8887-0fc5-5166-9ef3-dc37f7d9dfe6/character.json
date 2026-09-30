@@ -1,0 +1,118 @@
+{
+  "id": "a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6",
+  "name": "Юта Оккоцу",
+  "y": 0.7,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "okkotsu",
+  "variant": "Special Grade",
+  "tags": [
+    "jujutsu_high",
+    "special_grade"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 60,
+      "aMin": 50,
+      "aMax": 70,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "stam": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "dur": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ment": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "sens": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "heal": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "supp": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "intel": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "util": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

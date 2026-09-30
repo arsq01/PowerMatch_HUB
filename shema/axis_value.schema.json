@@ -1,0 +1,16 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/axis_value.schema.json",
+  "title": "AxisValue",
+  "description": "Значения одной оси для персонажа",
+  "type": "object",
+  "required": ["a", "aMin", "aMax", "bMax", "bMin"],
+  "properties": {
+    "a":    { "type": "number", "minimum": 0, "maximum": 100 },
+    "aMin": { "type": "number", "minimum": 0, "maximum": 100 },
+    "aMax": { "type": "number", "minimum": 0, "maximum": 100 },
+    "bMax": { "type": "number", "minimum": 0, "maximum": 100 },
+    "bMin": { "type": "number", "minimum": 0, "maximum": 100 }
+  },
+  "additionalProperties": false
+}

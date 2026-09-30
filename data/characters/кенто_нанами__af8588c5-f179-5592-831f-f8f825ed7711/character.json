@@ -1,0 +1,118 @@
+{
+  "id": "af8588c5-f179-5592-831f-f8f825ed7711",
+  "name": "Кенто Нанами",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "nanami",
+  "variant": "Grade 1",
+  "tags": [
+    "jujutsu_high",
+    "grade_1"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "dur": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ment": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "range": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

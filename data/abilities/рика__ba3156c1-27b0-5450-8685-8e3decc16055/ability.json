@@ -1,0 +1,36 @@
+{
+  "id": "ba3156c1-27b0-5450-8685-8e3decc16055",
+  "name": "Рика",
+  "description": "Особый проклятый дух Юты. Меняет форму и силу по желанию хозяина.",
+  "type": "special",
+  "tags": [
+    {
+      "tagId": "summon",
+      "aspectValues": {
+        "summonedType": "проклятый дух",
+        "count": 1,
+        "durationMinutes": 999
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "str",
+        "bonus": 40,
+        "durationType": "toggle"
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "heal",
+        "bonus": 30,
+        "durationType": "toggle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

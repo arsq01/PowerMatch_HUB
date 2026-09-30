@@ -1,0 +1,8 @@
+{
+  "id": "spd",
+  "name": "Скорость",
+  "order": 2,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Реакция, передвижение, атака"
+}

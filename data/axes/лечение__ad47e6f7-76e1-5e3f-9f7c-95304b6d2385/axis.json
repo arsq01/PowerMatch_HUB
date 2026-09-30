@@ -1,0 +1,8 @@
+{
+  "id": "heal",
+  "name": "Лечение",
+  "order": 9,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Восстановление себя и союзников"
+}

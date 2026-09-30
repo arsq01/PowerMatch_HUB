@@ -1,0 +1,23 @@
+{
+  "id": "ecfb0765-f7ce-50d2-8946-b111b35c9239",
+  "name": "Координатор",
+  "weights": {
+    "str": 0.2,
+    "spd": 1.0,
+    "acc": 0.2,
+    "stam": 0.5,
+    "dur": 0.2,
+    "ctrl": 0.8,
+    "ment": 1.5,
+    "sens": 1.5,
+    "heal": 0.2,
+    "supp": 2.5,
+    "intel": 4.0,
+    "util": 1.0,
+    "range": 2.0,
+    "aoe": 1.5
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}

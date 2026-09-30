@@ -1,0 +1,31 @@
+{
+  "id": "9f12c772-7c15-52ff-bcdd-4532ab12c086",
+  "name": "Пропорция 7:3",
+  "description": "Техника Нанами. Слабые точки противника делятся по пропорции 7:3, попадание в них критично.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 75,
+        "damageType": "physical",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 2
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "средний расход",
+        "percentOfPool": 20
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

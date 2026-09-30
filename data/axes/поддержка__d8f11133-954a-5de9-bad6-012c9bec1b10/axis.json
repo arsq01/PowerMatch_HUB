@@ -1,0 +1,8 @@
+{
+  "id": "supp",
+  "name": "Поддержка",
+  "order": 10,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Баффы, командная синергия"
+}

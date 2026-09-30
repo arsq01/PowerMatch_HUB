@@ -1,0 +1,32 @@
+{
+  "id": "12674c85-56fd-57a5-a1f7-ca2b58a811de",
+  "name": "Домен: Бесконечная Пустота",
+  "description": "Домен Годжо. Заставляет цель воспринимать бесконечный поток информации — паралич на всю жизнь.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "stun",
+        "targets": 100,
+        "durationSeconds": 9999
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 500,
+        "shape": "circle"
+      }
+    },
+    {
+      "tagId": "cooldown",
+      "aspectValues": {
+        "turns": 1,
+        "description": "Один раз в день, большая цена"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

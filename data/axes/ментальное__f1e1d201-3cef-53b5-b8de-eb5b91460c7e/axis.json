@@ -1,0 +1,8 @@
+{
+  "id": "ment",
+  "name": "Ментальное",
+  "order": 7,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Телепатия, внушение, иллюзии"
+}

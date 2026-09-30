@@ -1,0 +1,23 @@
+{
+  "id": "9f9d8060-f70f-54d2-8654-186868d5f055",
+  "name": "Контролёр",
+  "weights": {
+    "str": 0.3,
+    "spd": 1.2,
+    "acc": 0.8,
+    "stam": 0.8,
+    "dur": 0.3,
+    "ctrl": 2.5,
+    "ment": 1.8,
+    "sens": 1.0,
+    "heal": 0.3,
+    "supp": 0.1,
+    "intel": 1.5,
+    "util": 1.0,
+    "range": 1.2,
+    "aoe": 1.2
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}

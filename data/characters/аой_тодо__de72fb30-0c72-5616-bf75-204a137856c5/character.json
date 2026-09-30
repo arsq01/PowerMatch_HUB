@@ -1,0 +1,118 @@
+{
+  "id": "de72fb30-0c72-5616-bf75-204a137856c5",
+  "name": "Аой Тодо",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "todo",
+  "variant": "Kyoto",
+  "tags": [
+    "jujutsu_high",
+    "grade_1"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "dur": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ctrl": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "heal": {
+      "a": 20,
+      "aMin": 10,
+      "aMax": 30,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "intel": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "range": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "aoe": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

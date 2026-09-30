@@ -1,0 +1,8 @@
+{
+  "id": "acc",
+  "name": "Точность",
+  "order": 3,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Попадание по цели"
+}

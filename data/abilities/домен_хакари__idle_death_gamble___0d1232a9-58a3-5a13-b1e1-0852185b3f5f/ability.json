@@ -1,0 +1,34 @@
+{
+  "id": "0d1232a9-58a3-5a13-b1e1-0852185b3f5f",
+  "name": "Домен Хакари (Idle Death Gamble)",
+  "description": "Домен Хакари. Даёт бесконечную проклятую энергию на время действия при выпадении джекпота.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "stam",
+        "bonus": 50,
+        "durationType": "temporary"
+      }
+    },
+    {
+      "tagId": "heal",
+      "aspectValues": {
+        "amount": 90,
+        "targets": "self",
+        "curesStatuses": true
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 200,
+        "shape": "circle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

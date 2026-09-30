@@ -1,0 +1,32 @@
+{
+  "id": "47b46827-37b0-5b4a-9089-c373b26da136",
+  "name": "Пустой Фиолетовый (Hollow Purple)",
+  "description": "Совмещение Синего и Красного. Аннигилирует всё на пути.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 95,
+        "damageType": "conceptual",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 500,
+        "projectileSpeed": 95
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 200,
+        "shape": "line"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

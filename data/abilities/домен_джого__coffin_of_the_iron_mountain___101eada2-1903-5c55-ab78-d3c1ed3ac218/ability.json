@@ -1,0 +1,34 @@
+{
+  "id": "101eada2-1903-5c55-ab78-d3c1ed3ac218",
+  "name": "Домен Джого (Coffin of the Iron Mountain)",
+  "description": "Домен Джого. Заполняет пространство лавой и вулканическим пеплом.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 85,
+        "damageType": "energy",
+        "ignoresDefense": true,
+        "isDot": true
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 100,
+        "shape": "circle"
+      }
+    },
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "bind",
+        "targets": 5,
+        "durationSeconds": 60
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

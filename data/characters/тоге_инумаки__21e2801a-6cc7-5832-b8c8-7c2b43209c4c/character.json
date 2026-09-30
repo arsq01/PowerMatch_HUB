@@ -1,0 +1,118 @@
+{
+  "id": "21e2801a-6cc7-5832-b8c8-7c2b43209c4c",
+  "name": "Тоге Инумаки",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "inumaki",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high",
+    "inumaki_clan"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 18,
+      "aMin": 10,
+      "aMax": 25,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "spd": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "dur": {
+      "a": 20,
+      "aMin": 12,
+      "aMax": 28,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "ctrl": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "sens": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "heal": {
+      "a": 15,
+      "aMin": 8,
+      "aMax": 22,
+      "bMax": 55,
+      "bMin": 28
+    },
+    "supp": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "intel": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "util": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 78,
+      "bMin": 22
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}

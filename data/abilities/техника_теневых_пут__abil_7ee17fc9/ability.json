@@ -1,0 +1,23 @@
+{
+  "id": "abil_7ee17fc9",
+  "name": "Техника теневых пут",
+  "description": "Опутывает врага и контролирует его движения",
+  "tags": [
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 10
+      }
+    },
+    {
+      "tagId": "custom_b88bd9f6",
+      "aspectValues": {}
+    },
+    {
+      "tagId": "custom_5fd6e4a4",
+      "aspectValues": {}
+    }
+  ],
+  "createdAt": "2026-10-01T19:10:47.784878",
+  "updatedAt": "2026-10-01T19:14:08.080510"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "abil_a2495cab",
+  "name": "Техника тенивого клонирования",
+  "tags": [
+    {
+      "tagId": "ninjutsu",
+      "aspectValues": {
+        "difficulty": "B",
+        "hasForm": false,
+        "hasElement": false
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "Делит чакру владельца между клонами"
+      }
+    }
+  ],
+  "createdAt": "2026-10-01T12:32:25.505016",
+  "updatedAt": "2026-10-01T12:33:25.097998"
+}

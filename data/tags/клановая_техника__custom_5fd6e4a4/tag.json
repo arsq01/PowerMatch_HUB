@@ -1,0 +1,11 @@
+{
+  "id": "custom_5fd6e4a4",
+  "name": "Клановая техника",
+  "description": "Техника которой владеет определенный клан",
+  "tags": [
+    "naruto",
+    "jutsu"
+  ],
+  "aspects": {},
+  "isBuiltin": false
+}

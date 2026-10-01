@@ -1,0 +1,25 @@
+{
+  "id": "abil_1ef42e3b",
+  "name": "Техника переноса разума",
+  "description": "Позволяет пользователю завладеть телом жертвы",
+  "tags": [
+    {
+      "tagId": "ninjutsu",
+      "aspectValues": {
+        "difficulty": "B",
+        "hasForm": false,
+        "hasElement": false
+      }
+    },
+    {
+      "tagId": "custom_b88bd9f6",
+      "aspectValues": {}
+    },
+    {
+      "tagId": "custom_5fd6e4a4",
+      "aspectValues": {}
+    }
+  ],
+  "createdAt": "2026-10-01T19:11:53.035387",
+  "updatedAt": "2026-10-01T19:14:18.272711"
+}

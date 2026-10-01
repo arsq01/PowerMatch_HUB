@@ -1,0 +1,16 @@
+{
+  "id": "abil_e921450f",
+  "name": "Техника подмены",
+  "tags": [
+    {
+      "tagId": "ninjutsu",
+      "aspectValues": {
+        "difficulty": "D",
+        "hasForm": false,
+        "hasElement": false
+      }
+    }
+  ],
+  "createdAt": "2026-10-01T12:31:03.792225",
+  "updatedAt": "2026-10-01T12:31:29.323786"
+}

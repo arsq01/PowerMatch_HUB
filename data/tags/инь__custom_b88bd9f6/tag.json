@@ -1,0 +1,11 @@
+{
+  "id": "custom_b88bd9f6",
+  "name": "Инь",
+  "description": "Тип чакры в наруто",
+  "tags": [
+    "naruto",
+    "chakra"
+  ],
+  "aspects": {},
+  "isBuiltin": false
+}

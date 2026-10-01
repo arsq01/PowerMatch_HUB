@@ -1,6 +1,6 @@
 {
-  "version": "0.1.0",
-  "generatedAt": "2026-09-30T13:55:25.033600+00:00",
+  "version": "0.0.0",
+  "generatedAt": "2026-10-01T12:41:18.535293+00:00",
   "indices": {
     "characters": {
       "path": "index/characters.index.json",
@@ -8,7 +8,7 @@
     },
     "abilities": {
       "path": "index/abilities.index.json",
-      "count": 20
+      "count": 21
     },
     "roles": {
       "path": "index/roles.index.json",

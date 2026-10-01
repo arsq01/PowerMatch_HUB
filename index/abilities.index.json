@@ -1,8 +1,8 @@
 {
-  "version": "0.1.0",
+  "version": "0.0.0",
   "type": "abilities",
-  "generatedAt": "2026-09-30T13:55:25.042070+00:00",
-  "count": 20,
+  "generatedAt": "2026-10-01T12:41:18.545615+00:00",
+  "count": 21,
   "items": [
     {
       "folder": "безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
@@ -438,6 +438,38 @@
         }
       ],
       "type": "innate_technique"
+    },
+    {
+      "folder": "расенган__abil_cf96c646",
+      "id": "abil_cf96c646",
+      "name": "Расенган",
+      "path": "data/abilities/расенган__abil_cf96c646/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 4,
+            "damageType": "physical",
+            "ignoresDefense": false,
+            "isDot": false
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 1.0
+          }
+        },
+        {
+          "tagId": "ninjutsu",
+          "aspectValues": {
+            "difficulty": "A",
+            "hasForm": true,
+            "hasElement": false
+          }
+        }
+      ]
     },
     {
       "folder": "рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7",

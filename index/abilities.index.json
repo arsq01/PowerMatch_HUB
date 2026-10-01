@@ -1,8 +1,8 @@
 {
   "version": "0.0.0",
   "type": "abilities",
-  "generatedAt": "2026-10-01T12:42:33.827737+00:00",
-  "count": 23,
+  "generatedAt": "2026-10-01T16:14:45.785856+00:00",
+  "count": 25,
   "items": [
     {
       "folder": "безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
@@ -621,6 +621,31 @@
       "type": "innate_technique"
     },
     {
+      "folder": "техника_переноса_разума__abil_1ef42e3b",
+      "id": "abil_1ef42e3b",
+      "name": "Техника переноса разума",
+      "path": "data/abilities/техника_переноса_разума__abil_1ef42e3b/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "ninjutsu",
+          "aspectValues": {
+            "difficulty": "B",
+            "hasForm": false,
+            "hasElement": false
+          }
+        },
+        {
+          "tagId": "custom_b88bd9f6",
+          "aspectValues": {}
+        },
+        {
+          "tagId": "custom_5fd6e4a4",
+          "aspectValues": {}
+        }
+      ]
+    },
+    {
       "folder": "техника_подмены__abil_e921450f",
       "id": "abil_e921450f",
       "name": "Техника подмены",
@@ -634,6 +659,29 @@
             "hasForm": false,
             "hasElement": false
           }
+        }
+      ]
+    },
+    {
+      "folder": "техника_теневых_пут__abil_7ee17fc9",
+      "id": "abil_7ee17fc9",
+      "name": "Техника теневых пут",
+      "path": "data/abilities/техника_теневых_пут__abil_7ee17fc9/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 10
+          }
+        },
+        {
+          "tagId": "custom_b88bd9f6",
+          "aspectValues": {}
+        },
+        {
+          "tagId": "custom_5fd6e4a4",
+          "aspectValues": {}
         }
       ]
     },

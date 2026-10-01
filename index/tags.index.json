@@ -1,7 +1,22 @@
 {
   "version": "0.0.0",
   "type": "tags",
-  "generatedAt": "2026-10-01T12:42:33.829963+00:00",
-  "count": 0,
-  "items": []
+  "generatedAt": "2026-10-01T16:14:45.788433+00:00",
+  "count": 2,
+  "items": [
+    {
+      "folder": "инь__custom_b88bd9f6",
+      "id": "custom_b88bd9f6",
+      "name": "Инь",
+      "path": "data/tags/инь__custom_b88bd9f6/tag.json",
+      "iconPath": null
+    },
+    {
+      "folder": "клановая_техника__custom_5fd6e4a4",
+      "id": "custom_5fd6e4a4",
+      "name": "Клановая техника",
+      "path": "data/tags/клановая_техника__custom_5fd6e4a4/tag.json",
+      "iconPath": null
+    }
+  ]
 }

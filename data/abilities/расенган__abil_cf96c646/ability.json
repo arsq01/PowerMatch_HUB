@@ -1,0 +1,32 @@
+{
+  "id": "abil_cf96c646",
+  "name": "Расенган",
+  "description": "крутящийся шар чакры",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 4,
+        "damageType": "physical",
+        "ignoresDefense": false,
+        "isDot": false
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 1.0
+      }
+    },
+    {
+      "tagId": "ninjutsu",
+      "aspectValues": {
+        "difficulty": "A",
+        "hasForm": true,
+        "hasElement": false
+      }
+    }
+  ],
+  "createdAt": "2026-10-01T11:15:36.519008",
+  "updatedAt": "2026-10-01T11:16:45.837916"
+}

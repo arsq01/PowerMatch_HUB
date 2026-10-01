@@ -1,8 +1,8 @@
 {
   "version": "0.0.0",
   "type": "abilities",
-  "generatedAt": "2026-10-01T12:42:06.924708+00:00",
-  "count": 22,
+  "generatedAt": "2026-10-01T12:42:33.827737+00:00",
+  "count": 23,
   "items": [
     {
       "folder": "безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
@@ -633,6 +633,29 @@
             "difficulty": "D",
             "hasForm": false,
             "hasElement": false
+          }
+        }
+      ]
+    },
+    {
+      "folder": "техника_тенивого_клонирования__abil_a2495cab",
+      "id": "abil_a2495cab",
+      "name": "Техника тенивого клонирования",
+      "path": "data/abilities/техника_тенивого_клонирования__abil_a2495cab/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "ninjutsu",
+          "aspectValues": {
+            "difficulty": "B",
+            "hasForm": false,
+            "hasElement": false
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "Делит чакру владельца между клонами"
           }
         }
       ]

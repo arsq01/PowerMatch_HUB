@@ -1,8 +1,8 @@
 {
   "version": "0.0.0",
   "type": "abilities",
-  "generatedAt": "2026-10-01T12:41:18.545615+00:00",
-  "count": 21,
+  "generatedAt": "2026-10-01T12:42:06.924708+00:00",
+  "count": 22,
   "items": [
     {
       "folder": "безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
@@ -619,6 +619,23 @@
         }
       ],
       "type": "innate_technique"
+    },
+    {
+      "folder": "техника_подмены__abil_e921450f",
+      "id": "abil_e921450f",
+      "name": "Техника подмены",
+      "path": "data/abilities/техника_подмены__abil_e921450f/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "ninjutsu",
+          "aspectValues": {
+            "difficulty": "D",
+            "hasForm": false,
+            "hasElement": false
+          }
+        }
+      ]
     },
     {
       "folder": "шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461",

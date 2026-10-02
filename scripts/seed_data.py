@@ -547,21 +547,47 @@ ROLES = [
 
 
 SCENARIOS = [
-    {"name": "Открытый бой",
-     "decaySide1": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1],
-     "decaySide2": [1.0, 0.85, 0.7, 0.55, 0.4, 0.3, 0.2, 0.15, 0.1, 0.05]},
-    {"name": "Разведка",
-     "decaySide1": [1.0, 0.6, 0.4, 0.25, 0.15, 0.1, 0.05, 0.0, 0.0, 0.0],
-     "decaySide2": [1.0, 0.6, 0.4, 0.25, 0.15, 0.1, 0.05, 0.0, 0.0, 0.0]},
-    {"name": "Осада",
-     "decaySide1": [1.0, 0.95, 0.9, 0.85, 0.8, 0.75, 0.7, 0.65, 0.6, 0.55],
-     "decaySide2": [1.0, 0.95, 0.9, 0.85, 0.8, 0.75, 0.7, 0.65, 0.6, 0.55]},
-    {"name": "Дуэль",
-     "decaySide1": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
-     "decaySide2": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]},
-    {"name": "Война",
-     "decaySide1": [1.0, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3],
-     "decaySide2": [1.0, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3]},
+    {
+        "name": "Дуэль",
+        "decayCurve": 0.4,
+        "axisWeights": None,
+    },
+    {
+        "name": "Разведка",
+        "decayCurve": 0.4,
+        "axisWeights": {
+            "str": 0.4, "spd": 1.4, "acc": 0.3, "stam": 1.4, "dur": 0.1,
+            "ctrl": 1.6, "ment": 1.7, "sens": 2.0, "heal": 0.2, "supp": 0.4,
+            "intel": 1.6, "range": 1.6, "aoe": 0.4,
+        },
+    },
+    {
+        "name": "Открытый бой",
+        "decayCurve": 0.4,
+        "axisWeights": {
+            "spd": 2.0, "aoe": 2.0, "acc": 1.5, "stam": 1.3, "dur": 1.5,
+            "ment": 0.6, "sens": 0.5, "heal": 0.5, "intel": 0.5, "range": 2.0,
+        },
+    },
+    {
+        "name": "Осада",
+        "decayCurve": 0.4,
+        "axisWeights": {
+            "stam": 2.0, "ctrl": 2.0, "supp": 2.0, "heal": 2.0,
+            "str": 0.7, "spd": 0.7, "acc": 0.1, "dur": 2.0,
+            "sens": 0.2, "intel": 1.5, "range": 0.4, "aoe": 0.4,
+        },
+    },
+    {
+        "name": "Война",
+        "decayCurve": 0.4,
+        "axisWeights": {
+            "ctrl": 2.0, "ment": 2.0, "sens": 2.0,
+            "str": 0.4, "spd": 1.4, "acc": 0.4, "stam": 1.2,
+            "heal": 1.3, "supp": 1.2, "intel": 1.5,
+            "range": 0.6, "aoe": 0.6, "dur": 0.6,
+        },
+    },
 ]
 
 
@@ -984,13 +1010,16 @@ def build_role(data: dict) -> dict:
 
 
 def build_scenario(data: dict) -> dict:
-    return {
+    out = {
         "id": make_uuid("scenarios", data["name"]),
         "name": data["name"],
-        "decaySide1": data["decaySide1"],
-        "decaySide2": data["decaySide2"],
+        "decayCurve": data.get("decayCurve", 0.4),
         "enabled": True,
     }
+    weights = data.get("axisWeights")
+    if weights:
+        out["axisWeights"] = weights
+    return out
 
 
 def build_axis(data: dict) -> dict:

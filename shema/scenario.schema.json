@@ -3,21 +3,41 @@
   "$id": "https://powermatch/scenario.schema.json",
   "title": "Scenario",
   "type": "object",
-  "required": ["id", "name", "decaySide1", "decaySide2"],
+  "required": ["id", "name"],
   "properties": {
     "id":   { "type": "string", "minLength": 1 },
     "name": { "type": "string", "minLength": 1 },
-    "enabled": { "type": "boolean" },
-    "bgColor":   { "type": ["integer", "null"] },
-    "textColor": { "type": ["integer", "null"] },
+
+    "decayCurve": {
+      "type": "number",
+      "minimum": 0,
+      "description": "k в формуле decay(x) = 1 / (1 + k*(x-1))."
+    },
+
+    "axisWeights": {
+      "type": "object",
+      "description": "Важность осей (0-5). Отсутствующий ключ = 1.0.",
+      "additionalProperties": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 5
+      }
+    },
+
     "decaySide1": {
       "type": "array",
+      "description": "Legacy. Таблица decay по позициям. Игнорируется приложением.",
       "items": { "type": "number", "minimum": 0, "maximum": 1 }
     },
     "decaySide2": {
       "type": "array",
+      "description": "Legacy. Таблица decay по позициям. Игнорируется приложением.",
       "items": { "type": "number", "minimum": 0, "maximum": 1 }
-    }
+    },
+
+    "enabled":   { "type": "boolean" },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] }
   },
   "additionalProperties": true
 }

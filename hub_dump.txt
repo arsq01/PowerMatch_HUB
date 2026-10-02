@@ -1,0 +1,7182 @@
+# HUB DUMP
+# Root: D:\Senis\PowerMatch\powermatch_hub
+# Date: 2026-10-02 18:32:39
+# Files: 93
+
+# ---- TABLE OF CONTENTS ----
+#   .github/workflows/update-index.yml
+#   .github/workflows/validate.yml
+#   .gitignore
+#   collect-hub.ps1
+#   data/abilities/безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e/ability.json
+#   data/abilities/буги_вуги__boogie_woogie___d0db5b57-f8b0-5fde-9eda-5dfead73de67/ability.json
+#   data/abilities/десять_теней__7be6879a-a053-5285-acb9-780dafa25d06/ability.json
+#   data/abilities/домен__бесконечная_пустота__12674c85-56fd-57a5-a1f7-ca2b58a811de/ability.json
+#   data/abilities/домен_джого__coffin_of_the_iron_mountain___101eada2-1903-5c55-ab78-d3c1ed3ac218/ability.json
+#   data/abilities/домен_хакари__idle_death_gamble___0d1232a9-58a3-5a13-b1e1-0852185b3f5f/ability.json
+#   data/abilities/домен_хана__0e2ae69b-e897-58a1-9485-11afe927c027/ability.json
+#   data/abilities/идле_трансфигурэйшн__63898891-22a8-5ffb-946c-fa11852c3112/ability.json
+#   data/abilities/красный__reversal_red___9437be43-895b-51ed-9d49-33259141ee5c/ability.json
+#   data/abilities/маhорага__56085310-7227-5b65-b437-cbc95e56cf16/ability.json
+#   data/abilities/манипуляция_кровью__6216e1dd-2ed6-5cd3-94ee-318616fed02f/ability.json
+#   data/abilities/проклятая_речь__0a02e810-ba61-5952-ab9f-6940bd93c054/ability.json
+#   data/abilities/пропорция_7_3__9f12c772-7c15-52ff-bcdd-4532ab12c086/ability.json
+#   data/abilities/пустой_фиолетовый__hollow_purple___47b46827-37b0-5b4a-9089-c373b26da136/ability.json
+#   data/abilities/рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7/ability.json
+#   data/abilities/расщепление__cleave___cc8cf9ce-08a6-5a0b-81e2-cdfd486df475/ability.json
+#   data/abilities/резонанс__40d27a67-6bb5-5e2b-8a6b-b922e73831e6/ability.json
+#   data/abilities/рика__ba3156c1-27b0-5450-8685-8e3decc16055/ability.json
+#   data/abilities/снайпер_техника__d0fbac55-6834-54fe-882d-2d25bef08083/ability.json
+#   data/abilities/шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461/ability.json
+#   data/axes/aoe__ca416ea8-85b6-5bf8-a5ed-db108463f8a6/axis.json
+#   data/axes/выносливость__61b2318d-eb43-577a-93d9-151b79ed0fe0/axis.json
+#   data/axes/дальность__25cd7a70-6048-5450-ae11-4539a6ec2e40/axis.json
+#   data/axes/интеллект__20829542-7baf-5912-896d-cc462a2da02f/axis.json
+#   data/axes/контроль__f8296286-f112-5a7b-b21b-5c8cfb6302eb/axis.json
+#   data/axes/лечение__ad47e6f7-76e1-5e3f-9f7c-95304b6d2385/axis.json
+#   data/axes/ментальное__f1e1d201-3cef-53b5-b8de-eb5b91460c7e/axis.json
+#   data/axes/поддержка__d8f11133-954a-5de9-bad6-012c9bec1b10/axis.json
+#   data/axes/полезные__8b08fdab-fd56-5a43-80da-a0c6d2f79294/axis.json
+#   data/axes/прочность__71949fd6-5f21-5dc5-83ae-c4cc80733245/axis.json
+#   data/axes/сенсорика__d7185982-9023-5dce-97c2-5734da2f63c9/axis.json
+#   data/axes/сила__339a28fe-8f6d-517a-8d94-4efee82f40db/axis.json
+#   data/axes/скорость__d01d4780-20e7-5aa2-8caf-e4869b210b5f/axis.json
+#   data/axes/точность__156d70c1-2549-59bd-ba82-d1a1b2a36a82/axis.json
+#   data/characters/аой_тодо__de72fb30-0c72-5616-bf75-204a137856c5/character.json
+#   data/characters/дагон__2b6a0212-5a42-5fd9-ad87-23f920577082/character.json
+#   data/characters/джого__3893ffbb-d8bd-5a5f-ad19-c301de71f4e9/character.json
+#   data/characters/кенто_нанами__af8588c5-f179-5592-831f-f8f825ed7711/character.json
+#   data/characters/маки_зенин__08bb6720-38e6-5f9b-9ef5-a6208ad6eae2/character.json
+#   data/characters/махито__943b7f18-edad-5761-b166-a4a3b61e3d5d/character.json
+#   data/characters/мегуми_фушигуро__4a54f222-d37f-5f38-80d7-2b50dd236bf7/character.json
+#   data/characters/момо_нишимия__a0269bdb-a7fd-590b-940b-bb7ae2afb380/character.json
+#   data/characters/мэй_мэй__64fe3891-8766-5ced-a8e1-fe5afa82f57a/character.json
+#   data/characters/нобара_кугисаки__334994f8-bbcd-5c5a-a788-f4c02664b7f1/character.json
+#   data/characters/панда__ff0ebf32-7089-506b-a3b2-69d7ee81df41/character.json
+#   data/characters/рёмен_сукуна__c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b/character.json
+#   data/characters/сатору_годжо__392e3160-f7f4-5cd2-bca3-06098f54fb3a/character.json
+#   data/characters/сугуру_гето__89dac23e-ef2c-5591-b254-2ceb09ab4458/character.json
+#   data/characters/тоге_инумаки__21e2801a-6cc7-5832-b8c8-7c2b43209c4c/character.json
+#   data/characters/хакари_кинджи__0432563a-05c6-5ad7-9c85-85d0604dab4b/character.json
+#   data/characters/хана__7d7371e0-8391-5fa7-88f9-20e4929a2486/character.json
+#   data/characters/чосо__a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7/character.json
+#   data/characters/юдзи_итадори__beb3757f-7455-5590-86bf-9907f69496e7/character.json
+#   data/characters/юта_оккоцу__a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6/character.json
+#   data/roles/боец__93899761-e882-5f35-a807-898be6c617d4/role.json
+#   data/roles/контролёр__9f9d8060-f70f-54d2-8654-186868d5f055/role.json
+#   data/roles/координатор__ecfb0765-f7ce-50d2-8946-b111b35c9239/role.json
+#   data/roles/медик__8684ef96-9228-540e-b055-bd807ad8749d/role.json
+#   data/roles/разведчик__feb59eb1-17d7-502f-a5ed-cb8b015fca37/role.json
+#   data/roles/универсал__48376b00-4ab7-5890-a74e-2514783cc69f/role.json
+#   data/scenarios/война__0d92effb-fb98-5aa2-a962-f6c60f818a81/scenario.json
+#   data/scenarios/дуэль__2a582280-0d54-5350-aa49-91a32b3a986f/scenario.json
+#   data/scenarios/осада__d5b6920e-9cf0-5165-bb91-ef37b64c3c5a/scenario.json
+#   data/scenarios/открытый_бой__9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6/scenario.json
+#   data/scenarios/разведка__e34c83a3-c42d-528d-a9dd-8b0beced0286/scenario.json
+#   data/worlds/jujutsu_kaisen__81f9d495-c3da-58b0-befa-45610c7e3bb2/world.json
+#   index/abilities.index.json
+#   index/axes.index.json
+#   index/characters.index.json
+#   index/manifest.json
+#   index/roles.index.json
+#   index/scenarios.index.json
+#   index/tags.index.json
+#   index/worlds.index.json
+#   README.md
+#   scripts/build_index.py
+#   scripts/migrate.py
+#   scripts/requirements.txt
+#   scripts/seed_data.py
+#   scripts/validate.py
+#   shema/ability.schema.json
+#   shema/axis.schema.json
+#   shema/axis_value.schema.json
+#   shema/character.schema.json
+#   shema/role.schema.json
+#   shema/scenario.schema.json
+#   shema/tag.schema.json
+#   shema/world.schema.json
+#   tree-hub.ps1
+
+// ============ FILE: .github/workflows/update-index.yml ============
+name: Update Index
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'scripts/build_index.py'
+      - 'VERSION'
+  workflow_dispatch:  # можно запустить вручную
+
+permissions:
+  contents: write
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Build index
+        run: python scripts/build_index.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index/
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore(index): auto-update [skip ci]"
+            git push
+          fi
+
+// ============ FILE: .github/workflows/validate.yml ============
+
+
+// ============ FILE: .gitignore ============
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+// ============ FILE: collect-hub.ps1 ============
+<#
+.SYNOPSIS
+    Collect interesting HUB files into one dump.
+
+.PARAMETER Root
+    Repo root. Default: current directory.
+
+.PARAMETER Output
+    Output file name. Default: hub_dump.txt.
+
+.PARAMETER MaxFileSizeKB
+    Max size per file in KB. Bigger files are truncated.
+#>
+
+param(
+    [string]$Root = ".",
+    [string]$Output = "hub_dump.txt",
+    [int]$MaxFileSizeKB = 200
+)
+
+$ErrorActionPreference = "Stop"
+
+$ExcludeDirs = @(
+    '.git', '__pycache__', '.venv', 'venv', 'env',
+    'node_modules', 'build', 'dist', '.pytest_cache',
+    '.mypy_cache', '.idea', '.vscode', '.vs', 'bin', 'obj',
+    'htmlcov', '.tox', '.eggs', 'site-packages'
+)
+
+$ExcludeExt = @(
+    '.png', '.jpg', '.jpeg', '.gif', '.webp', '.ico', '.bmp',
+    '.zip', '.tar', '.gz', '.7z', '.rar',
+    '.exe', '.dll', '.so', '.dylib', '.pyc', '.pyo', '.pyd',
+    '.woff', '.woff2', '.ttf', '.otf', '.eot',
+    '.mp3', '.mp4', '.wav', '.mov', '.avi'
+)
+
+$IncludeExt = @(
+    '.py', '.yml', '.yaml', '.json', '.md', '.txt',
+    '.toml', '.cfg', '.ini', '.sh', '.ps1', '.bat',
+    '.sql', '.html', '.js'
+)
+
+$IncludeNames = @(
+    'README', 'LICENSE', 'Makefile', 'Dockerfile',
+    '.gitignore', '.gitattributes', '.editorconfig',
+    'Procfile'
+)
+
+function Test-ShouldInclude {
+    param([System.IO.FileInfo]$File)
+
+    $ext = $File.Extension.ToLowerInvariant()
+    if ($ExcludeExt -contains $ext) { return $false }
+    if ($IncludeExt -contains $ext) { return $true }
+
+    $nameNoExt = [System.IO.Path]::GetFileNameWithoutExtension($File.Name)
+    if ($IncludeNames -contains $nameNoExt) { return $true }
+    if ($IncludeNames -contains $File.Name) { return $true }
+
+    return $false
+}
+
+function Test-ShouldSkipDir {
+    param([string]$Name)
+    return $ExcludeDirs -contains $Name
+}
+
+$rootItem = Get-Item -LiteralPath $Root
+$rootFull = $rootItem.FullName
+
+Write-Host "Scanning: $rootFull" -ForegroundColor Cyan
+
+$files = @()
+$stack = New-Object System.Collections.Stack
+$stack.Push($rootFull)
+
+while ($stack.Count -gt 0) {
+    $dir = $stack.Pop()
+
+    $subdirs = Get-ChildItem -LiteralPath $dir -Directory -ErrorAction SilentlyContinue
+    foreach ($sd in $subdirs) {
+        if (Test-ShouldSkipDir -Name $sd.Name) { continue }
+        $stack.Push($sd.FullName)
+    }
+
+    $fs = Get-ChildItem -LiteralPath $dir -File -ErrorAction SilentlyContinue
+    foreach ($f in $fs) {
+        if (Test-ShouldInclude -File $f) {
+            $files += $f
+        }
+    }
+}
+
+Write-Host "Files found: $($files.Count)" -ForegroundColor Cyan
+
+$files = $files | Sort-Object { $_.FullName }
+
+$sb = New-Object System.Text.StringBuilder
+
+[void]$sb.AppendLine("# HUB DUMP")
+[void]$sb.AppendLine("# Root: $rootFull")
+[void]$sb.AppendLine("# Date: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
+[void]$sb.AppendLine("# Files: $($files.Count)")
+[void]$sb.AppendLine()
+
+[void]$sb.AppendLine("# ---- TABLE OF CONTENTS ----")
+foreach ($f in $files) {
+    $rel = $f.FullName.Substring($rootFull.Length).TrimStart('\', '/').Replace('\', '/')
+    [void]$sb.AppendLine("#   $rel")
+}
+[void]$sb.AppendLine()
+
+foreach ($f in $files) {
+    $rel = $f.FullName.Substring($rootFull.Length).TrimStart('\', '/').Replace('\', '/')
+    $sizeKb = [Math]::Round($f.Length / 1KB, 1)
+
+    [void]$sb.AppendLine("// ============ FILE: $rel ============")
+
+    if ($f.Length -gt ($MaxFileSizeKB * 1024)) {
+        $bytes = [System.IO.File]::ReadAllBytes($f.FullName)
+        $take = $MaxFileSizeKB * 1024
+        $slice = $bytes[0..($take - 1)]
+        $text = [System.Text.Encoding]::UTF8.GetString($slice)
+        [void]$sb.AppendLine($text)
+        [void]$sb.AppendLine()
+        [void]$sb.AppendLine("// ... (truncated, full size: $sizeKb KB)")
+    } else {
+        try {
+            $text = [System.IO.File]::ReadAllText($f.FullName, [System.Text.Encoding]::UTF8)
+        } catch {
+            try {
+                $text = [System.IO.File]::ReadAllText($f.FullName, [System.Text.Encoding]::GetEncoding('windows-1251'))
+            } catch {
+                $text = "<failed to read file>"
+            }
+        }
+        [void]$sb.AppendLine($text)
+    }
+
+    [void]$sb.AppendLine()
+}
+
+$outPath = Join-Path $rootFull $Output
+[System.IO.File]::WriteAllText($outPath, $sb.ToString(), [System.Text.UTF8Encoding]::new($false))
+
+Write-Host "Done: $outPath" -ForegroundColor Green
+Write-Host "Size: $([Math]::Round((Get-Item $outPath).Length / 1KB, 1)) KB" -ForegroundColor Green
+
+// ============ FILE: data/abilities/безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e/ability.json ============
+{
+  "id": "45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
+  "name": "Безграничность",
+  "description": "Пространственный барьер между пользователем и целью. Ничто не может коснуться его, если он того не хочет.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "dur",
+        "bonus": 50,
+        "durationType": "toggle"
+      }
+    },
+    {
+      "tagId": "utility",
+      "aspectValues": {
+        "effectKind": "teleport",
+        "note": "Управляет бесконечностью пространства"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/буги_вуги__boogie_woogie___d0db5b57-f8b0-5fde-9eda-5dfead73de67/ability.json ============
+{
+  "id": "d0db5b57-f8b0-5fde-9eda-5dfead73de67",
+  "name": "Буги-Вуги (Boogie Woogie)",
+  "description": "Техника Тодо. Мгновенный обмен позициями двух объектов с проклятой энергией.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "utility",
+      "aspectValues": {
+        "effectKind": "teleport",
+        "note": "хлопок в ладоши меняет местами любые две цели"
+      }
+    },
+    {
+      "tagId": "cooldown",
+      "aspectValues": {
+        "turns": 1,
+        "description": "ограничена хлопком"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/десять_теней__7be6879a-a053-5285-acb9-780dafa25d06/ability.json ============
+{
+  "id": "7be6879a-a053-5285-acb9-780dafa25d06",
+  "name": "Десять Теней",
+  "description": "Врождённая техника клана Зенин. Призыв теневых шикигами через руки.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "summon",
+      "aspectValues": {
+        "summonedType": "шикигами",
+        "count": 10,
+        "durationMinutes": 60
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "растёт с числом призванных",
+        "percentOfPool": 30
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/домен__бесконечная_пустота__12674c85-56fd-57a5-a1f7-ca2b58a811de/ability.json ============
+{
+  "id": "12674c85-56fd-57a5-a1f7-ca2b58a811de",
+  "name": "Домен: Бесконечная Пустота",
+  "description": "Домен Годжо. Заставляет цель воспринимать бесконечный поток информации — паралич на всю жизнь.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "stun",
+        "targets": 100,
+        "durationSeconds": 9999
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 500,
+        "shape": "circle"
+      }
+    },
+    {
+      "tagId": "cooldown",
+      "aspectValues": {
+        "turns": 1,
+        "description": "Один раз в день, большая цена"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/домен_джого__coffin_of_the_iron_mountain___101eada2-1903-5c55-ab78-d3c1ed3ac218/ability.json ============
+{
+  "id": "101eada2-1903-5c55-ab78-d3c1ed3ac218",
+  "name": "Домен Джого (Coffin of the Iron Mountain)",
+  "description": "Домен Джого. Заполняет пространство лавой и вулканическим пеплом.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 85,
+        "damageType": "energy",
+        "ignoresDefense": true,
+        "isDot": true
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 100,
+        "shape": "circle"
+      }
+    },
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "bind",
+        "targets": 5,
+        "durationSeconds": 60
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/домен_хакари__idle_death_gamble___0d1232a9-58a3-5a13-b1e1-0852185b3f5f/ability.json ============
+{
+  "id": "0d1232a9-58a3-5a13-b1e1-0852185b3f5f",
+  "name": "Домен Хакари (Idle Death Gamble)",
+  "description": "Домен Хакари. Даёт бесконечную проклятую энергию на время действия при выпадении джекпота.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "stam",
+        "bonus": 50,
+        "durationType": "temporary"
+      }
+    },
+    {
+      "tagId": "heal",
+      "aspectValues": {
+        "amount": 90,
+        "targets": "self",
+        "curesStatuses": true
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 200,
+        "shape": "circle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/домен_хана__0e2ae69b-e897-58a1-9485-11afe927c027/ability.json ============
+{
+  "id": "0e2ae69b-e897-58a1-9485-11afe927c027",
+  "name": "Домен Хана",
+  "description": "Домен Хана. Заполняет пространство цветущим лесом, постоянно восстанавливающим его владельца.",
+  "type": "domain_expansion",
+  "tags": [
+    {
+      "tagId": "heal",
+      "aspectValues": {
+        "amount": 80,
+        "targets": "self",
+        "curesStatuses": true
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 100,
+        "shape": "circle"
+      }
+    },
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "bind",
+        "targets": 3,
+        "durationSeconds": 45
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/идле_трансфигурэйшн__63898891-22a8-5ffb-946c-fa11852c3112/ability.json ============
+{
+  "id": "63898891-22a8-5ffb-946c-fa11852c3112",
+  "name": "Идле Трансфигурэйшн",
+  "description": "Техника Махито. Изменяет форму души любого существа.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 80,
+        "damageType": "conceptual",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "heal",
+      "aspectValues": {
+        "amount": 90,
+        "targets": "self",
+        "curesStatuses": true
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 5
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/красный__reversal_red___9437be43-895b-51ed-9d49-33259141ee5c/ability.json ============
+{
+  "id": "9437be43-895b-51ed-9d49-33259141ee5c",
+  "name": "Красный (Reversal Red)",
+  "description": "Обратная техника. Отталкивающая сила, усиленная инверсией проклятой энергии.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 80,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 100,
+        "projectileSpeed": 90
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 50,
+        "shape": "circle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/маhорага__56085310-7227-5b65-b437-cbc95e56cf16/ability.json ============
+{
+  "id": "56085310-7227-5b65-b437-cbc95e56cf16",
+  "name": "Маhорага",
+  "description": "Сильнейший шикигами Десяти Теней. Адаптируется к любой технике после первого попадания.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "summon",
+      "aspectValues": {
+        "summonedType": "шикигами",
+        "count": 1,
+        "durationMinutes": 30
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "dur",
+        "bonus": 60,
+        "durationType": "temporary"
+      }
+    },
+    {
+      "tagId": "cooldown",
+      "aspectValues": {
+        "turns": 30,
+        "description": "требует ритуала полного раскрытия"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/манипуляция_кровью__6216e1dd-2ed6-5cd3-94ee-318616fed02f/ability.json ============
+{
+  "id": "6216e1dd-2ed6-5cd3-94ee-318616fed02f",
+  "name": "Манипуляция кровью",
+  "description": "Техника Чосо. Управляет собственной кровью как оружием и снарядом.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 65,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 50,
+        "projectileSpeed": 60
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 20,
+        "shape": "circle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/проклятая_речь__0a02e810-ba61-5952-ab9f-6940bd93c054/ability.json ============
+{
+  "id": "0a02e810-ba61-5952-ab9f-6940bd93c054",
+  "name": "Проклятая речь",
+  "description": "Техника клана Инумаки. Слова становятся приказами, которые нельзя ослушаться.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "control",
+      "aspectValues": {
+        "controlType": "mind_control",
+        "targets": 3,
+        "durationSeconds": 30
+      }
+    },
+    {
+      "tagId": "debuff",
+      "aspectValues": {
+        "target": "group",
+        "debuffedAxis": "spd",
+        "penalty": 30,
+        "durationType": "temporary"
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "сильно нагружает горло",
+        "percentOfPool": 20
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/пропорция_7_3__9f12c772-7c15-52ff-bcdd-4532ab12c086/ability.json ============
+{
+  "id": "9f12c772-7c15-52ff-bcdd-4532ab12c086",
+  "name": "Пропорция 7:3",
+  "description": "Техника Нанами. Слабые точки противника делятся по пропорции 7:3, попадание в них критично.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 75,
+        "damageType": "physical",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 2
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "средний расход",
+        "percentOfPool": 20
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/пустой_фиолетовый__hollow_purple___47b46827-37b0-5b4a-9089-c373b26da136/ability.json ============
+{
+  "id": "47b46827-37b0-5b4a-9089-c373b26da136",
+  "name": "Пустой Фиолетовый (Hollow Purple)",
+  "description": "Совмещение Синего и Красного. Аннигилирует всё на пути.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 95,
+        "damageType": "conceptual",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 500,
+        "projectileSpeed": 95
+      }
+    },
+    {
+      "tagId": "aoe",
+      "aspectValues": {
+        "radiusMeters": 200,
+        "shape": "line"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7/ability.json ============
+{
+  "id": "b57a2303-db3e-5cba-8a4e-acdda9a509c7",
+  "name": "Рассечение (Dismantle)",
+  "description": "Метательные разрезы Сукуны. Поражают на расстоянии.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 80,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 100,
+        "projectileSpeed": 85
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/расщепление__cleave___cc8cf9ce-08a6-5a0b-81e2-cdfd486df475/ability.json ============
+{
+  "id": "cc8cf9ce-08a6-5a0b-81e2-cdfd486df475",
+  "name": "Расщепление (Cleave)",
+  "description": "Техника Сукуны. Разрезает цель в зависимости от её прочности и проклятой энергии.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 85,
+        "damageType": "energy",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "melee",
+      "aspectValues": {
+        "reachMeters": 5
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/резонанс__40d27a67-6bb5-5e2b-8a6b-b922e73831e6/ability.json ============
+{
+  "id": "40d27a67-6bb5-5e2b-8a6b-b922e73831e6",
+  "name": "Резонанс",
+  "description": "Техника Нобары. Через куклу вуду наносит урон, связанный с частью тела цели.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 60,
+        "damageType": "spiritual",
+        "ignoresDefense": true
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 10000,
+        "projectileSpeed": 40
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "требует часть тела цели",
+        "percentOfPool": 15
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/рика__ba3156c1-27b0-5450-8685-8e3decc16055/ability.json ============
+{
+  "id": "ba3156c1-27b0-5450-8685-8e3decc16055",
+  "name": "Рика",
+  "description": "Особый проклятый дух Юты. Меняет форму и силу по желанию хозяина.",
+  "type": "special",
+  "tags": [
+    {
+      "tagId": "summon",
+      "aspectValues": {
+        "summonedType": "проклятый дух",
+        "count": 1,
+        "durationMinutes": 999
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "str",
+        "bonus": 40,
+        "durationType": "toggle"
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "heal",
+        "bonus": 30,
+        "durationType": "toggle"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/снайпер_техника__d0fbac55-6834-54fe-882d-2d25bef08083/ability.json ============
+{
+  "id": "d0fbac55-6834-54fe-882d-2d25bef08083",
+  "name": "Снайпер-техника",
+  "description": "Техника Мэй Мэй. Выстрел на огромные расстояния с максимальной точностью.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "damage",
+      "aspectValues": {
+        "power": 70,
+        "damageType": "energy",
+        "ignoresDefense": false
+      }
+    },
+    {
+      "tagId": "ranged",
+      "aspectValues": {
+        "meters": 5000,
+        "projectileSpeed": 85
+      }
+    },
+    {
+      "tagId": "chakra_cost",
+      "aspectValues": {
+        "description": "оплачивается за использование",
+        "percentOfPool": 15
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/abilities/шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461/ability.json ============
+{
+  "id": "67846755-ebe5-542b-94d2-bb62794da461",
+  "name": "Шесть Глаз",
+  "description": "Врождённая техника клана Годжо. Позволяет воспринимать проклятую энергию в идеальной точности.",
+  "type": "innate_technique",
+  "tags": [
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "sens",
+        "bonus": 40,
+        "durationType": "passive"
+      }
+    },
+    {
+      "tagId": "buff",
+      "aspectValues": {
+        "target": "self",
+        "buffedAxis": "acc",
+        "bonus": 30,
+        "durationType": "passive"
+      }
+    }
+  ],
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/axes/aoe__ca416ea8-85b6-5bf8-a5ed-db108463f8a6/axis.json ============
+{
+  "id": "aoe",
+  "name": "AoE",
+  "order": 14,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Площадь поражения"
+}
+
+// ============ FILE: data/axes/выносливость__61b2318d-eb43-577a-93d9-151b79ed0fe0/axis.json ============
+{
+  "id": "stam",
+  "name": "Выносливость",
+  "order": 4,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Длительность боя"
+}
+
+// ============ FILE: data/axes/дальность__25cd7a70-6048-5450-ae11-4539a6ec2e40/axis.json ============
+{
+  "id": "range",
+  "name": "Дальность",
+  "order": 13,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Дистанция атаки"
+}
+
+// ============ FILE: data/axes/интеллект__20829542-7baf-5912-896d-cc462a2da02f/axis.json ============
+{
+  "id": "intel",
+  "name": "Интеллект",
+  "order": 11,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Планирование, тактика, адаптация"
+}
+
+// ============ FILE: data/axes/контроль__f8296286-f112-5a7b-b21b-5c8cfb6302eb/axis.json ============
+{
+  "id": "ctrl",
+  "name": "Контроль",
+  "order": 6,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Барьеры, зоны, доминирование"
+}
+
+// ============ FILE: data/axes/лечение__ad47e6f7-76e1-5e3f-9f7c-95304b6d2385/axis.json ============
+{
+  "id": "heal",
+  "name": "Лечение",
+  "order": 9,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Восстановление себя и союзников"
+}
+
+// ============ FILE: data/axes/ментальное__f1e1d201-3cef-53b5-b8de-eb5b91460c7e/axis.json ============
+{
+  "id": "ment",
+  "name": "Ментальное",
+  "order": 7,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Телепатия, внушение, иллюзии"
+}
+
+// ============ FILE: data/axes/поддержка__d8f11133-954a-5de9-bad6-012c9bec1b10/axis.json ============
+{
+  "id": "supp",
+  "name": "Поддержка",
+  "order": 10,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Баффы, командная синергия"
+}
+
+// ============ FILE: data/axes/полезные__8b08fdab-fd56-5a43-80da-a0c6d2f79294/axis.json ============
+{
+  "id": "util",
+  "name": "Полезные",
+  "order": 12,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Прочие способности"
+}
+
+// ============ FILE: data/axes/прочность__71949fd6-5f21-5dc5-83ae-c4cc80733245/axis.json ============
+{
+  "id": "dur",
+  "name": "Прочность",
+  "order": 5,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Сопротивление урону"
+}
+
+// ============ FILE: data/axes/сенсорика__d7185982-9023-5dce-97c2-5734da2f63c9/axis.json ============
+{
+  "id": "sens",
+  "name": "Сенсорика",
+  "order": 8,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Обнаружение, радар, восприятие"
+}
+
+// ============ FILE: data/axes/сила__339a28fe-8f6d-517a-8d94-4efee82f40db/axis.json ============
+{
+  "id": "str",
+  "name": "Сила",
+  "order": 1,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Физический урон, пробитие"
+}
+
+// ============ FILE: data/axes/скорость__d01d4780-20e7-5aa2-8caf-e4869b210b5f/axis.json ============
+{
+  "id": "spd",
+  "name": "Скорость",
+  "order": 2,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Реакция, передвижение, атака"
+}
+
+// ============ FILE: data/axes/точность__156d70c1-2549-59bd-ba82-d1a1b2a36a82/axis.json ============
+{
+  "id": "acc",
+  "name": "Точность",
+  "order": 3,
+  "enabled": true,
+  "isCustom": false,
+  "description": "Попадание по цели"
+}
+
+// ============ FILE: data/characters/аой_тодо__de72fb30-0c72-5616-bf75-204a137856c5/character.json ============
+{
+  "id": "de72fb30-0c72-5616-bf75-204a137856c5",
+  "name": "Аой Тодо",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "todo",
+  "variant": "Kyoto",
+  "tags": [
+    "jujutsu_high",
+    "grade_1"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "dur": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ctrl": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "heal": {
+      "a": 20,
+      "aMin": 10,
+      "aMax": 30,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "intel": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "range": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "aoe": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/дагон__2b6a0212-5a42-5fd9-ad87-23f920577082/character.json ============
+{
+  "id": "2b6a0212-5a42-5fd9-ad87-23f920577082",
+  "name": "Дагон",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "dagon",
+  "variant": "Shibuya",
+  "tags": [
+    "cursed_spirit",
+    "special_grade",
+    "disaster"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "spd": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "ment": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "util": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/джого__3893ffbb-d8bd-5a5f-ad19-c301de71f4e9/character.json ============
+{
+  "id": "3893ffbb-d8bd-5a5f-ad19-c301de71f4e9",
+  "name": "Джого",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "jogo",
+  "variant": "Shibuya",
+  "tags": [
+    "cursed_spirit",
+    "special_grade",
+    "disaster"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "util": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/кенто_нанами__af8588c5-f179-5592-831f-f8f825ed7711/character.json ============
+{
+  "id": "af8588c5-f179-5592-831f-f8f825ed7711",
+  "name": "Кенто Нанами",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "nanami",
+  "variant": "Grade 1",
+  "tags": [
+    "jujutsu_high",
+    "grade_1"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "dur": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ment": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "range": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/маки_зенин__08bb6720-38e6-5f9b-9ef5-a6208ad6eae2/character.json ============
+{
+  "id": "08bb6720-38e6-5f9b-9ef5-a6208ad6eae2",
+  "name": "Маки Зенин",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "zenin",
+  "variant": "Awakened",
+  "tags": [
+    "jujutsu_high",
+    "zenin"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "dur": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ctrl": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "ment": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 20,
+      "aMin": 10,
+      "aMax": 30,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "intel": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "util": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "range": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "aoe": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/махито__943b7f18-edad-5761-b166-a4a3b61e3d5d/character.json ============
+{
+  "id": "943b7f18-edad-5761-b166-a4a3b61e3d5d",
+  "name": "Махито",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "mahito",
+  "variant": "Full Power",
+  "tags": [
+    "cursed_spirit",
+    "special_grade"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 60,
+      "aMin": 50,
+      "aMax": 70,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "acc": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "stam": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "dur": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "ctrl": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ment": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "sens": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "heal": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "supp": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "intel": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "util": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "aoe": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/мегуми_фушигуро__4a54f222-d37f-5f38-80d7-2b50dd236bf7/character.json ============
+{
+  "id": "4a54f222-d37f-5f38-80d7-2b50dd236bf7",
+  "name": "Мегуми Фушигуро",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "fushiguro",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high",
+    "zenin"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 40,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "spd": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "stam": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "dur": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "heal": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "supp": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "intel": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "util": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "aoe": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/момо_нишимия__a0269bdb-a7fd-590b-940b-bb7ae2afb380/character.json ============
+{
+  "id": "a0269bdb-a7fd-590b-940b-bb7ae2afb380",
+  "name": "Момо Нишимия",
+  "y": 0.4,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "nishimiya",
+  "variant": "Kyoto",
+  "tags": [
+    "jujutsu_high"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 15,
+      "aMin": 8,
+      "aMax": 22,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "spd": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "acc": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "stam": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "dur": {
+      "a": 18,
+      "aMin": 10,
+      "aMax": 25,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "ctrl": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "ment": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "heal": {
+      "a": 20,
+      "aMin": 10,
+      "aMax": 30,
+      "bMax": 58,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "util": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "range": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "aoe": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/мэй_мэй__64fe3891-8766-5ced-a8e1-fe5afa82f57a/character.json ============
+{
+  "id": "64fe3891-8766-5ced-a8e1-fe5afa82f57a",
+  "name": "Мэй Мэй",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "mei_mei",
+  "variant": "Grade 1",
+  "tags": [
+    "jujutsu_high",
+    "grade_1",
+    "mercenary"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 20,
+      "aMin": 12,
+      "aMax": 28,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "spd": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "acc": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "stam": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "dur": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ctrl": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 62,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "util": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "range": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "aoe": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 80,
+      "bMin": 20
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/нобара_кугисаки__334994f8-bbcd-5c5a-a788-f4c02664b7f1/character.json ============
+{
+  "id": "334994f8-bbcd-5c5a-a788-f4c02664b7f1",
+  "name": "Нобара Кугисаки",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "kugisaki",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "stam": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "dur": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ment": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "sens": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "heal": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "range": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 75,
+      "bMin": 25
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/панда__ff0ebf32-7089-506b-a3b2-69d7ee81df41/character.json ============
+{
+  "id": "ff0ebf32-7089-506b-a3b2-69d7ee81df41",
+  "name": "Панда",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "panda",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high",
+    "cursed_corpse"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "spd": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "acc": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "stam": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "dur": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "ment": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "heal": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "util": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "range": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "aoe": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/рёмен_сукуна__c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b/character.json ============
+{
+  "id": "c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b",
+  "name": "Рёмен Сукуна",
+  "y": 0.7,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "sukuna",
+  "variant": "Heian Era",
+  "tags": [
+    "cursed_spirit",
+    "king_of_curses"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 50,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "spd": {
+      "a": 70,
+      "aMin": 60,
+      "aMax": 80,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "acc": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "stam": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "dur": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "ctrl": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "ment": {
+      "a": 60,
+      "aMin": 40,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "sens": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "heal": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "intel": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "util": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "range": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "aoe": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 90,
+      "bMin": 10
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/сатору_годжо__392e3160-f7f4-5cd2-bca3-06098f54fb3a/character.json ============
+{
+  "id": "392e3160-f7f4-5cd2-bca3-06098f54fb3a",
+  "name": "Сатору Годжо",
+  "y": 0.9,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "gojo",
+  "variant": "Awakened",
+  "tags": [
+    "jujutsu_high",
+    "special_grade",
+    "gojo_clan"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 45,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "spd": {
+      "a": 75,
+      "aMin": 65,
+      "aMax": 85,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "acc": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "stam": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "dur": {
+      "a": 90,
+      "aMin": 80,
+      "aMax": 100,
+      "bMax": 95,
+      "bMin": 5
+    },
+    "ctrl": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "ment": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "sens": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "heal": {
+      "a": 70,
+      "aMin": 50,
+      "aMax": 90,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "supp": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "intel": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "util": {
+      "a": 85,
+      "aMin": 75,
+      "aMax": 95,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 85,
+      "aMin": 75,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "aoe": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 88,
+      "bMin": 12
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/сугуру_гето__89dac23e-ef2c-5591-b254-2ceb09ab4458/character.json ============
+{
+  "id": "89dac23e-ef2c-5591-b254-2ceb09ab4458",
+  "name": "Сугуру Гето",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "geto",
+  "variant": "Curse User",
+  "tags": [
+    "curse_user",
+    "special_grade"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 40,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "spd": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 55,
+      "aMin": 45,
+      "aMax": 65,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "stam": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "ctrl": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "ment": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "sens": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "heal": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "supp": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "intel": {
+      "a": 85,
+      "aMin": 75,
+      "aMax": 95,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "util": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/тоге_инумаки__21e2801a-6cc7-5832-b8c8-7c2b43209c4c/character.json ============
+{
+  "id": "21e2801a-6cc7-5832-b8c8-7c2b43209c4c",
+  "name": "Тоге Инумаки",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "inumaki",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high",
+    "inumaki_clan"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 18,
+      "aMin": 10,
+      "aMax": 25,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "spd": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "dur": {
+      "a": 20,
+      "aMin": 12,
+      "aMax": 28,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "ctrl": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "sens": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "heal": {
+      "a": 15,
+      "aMin": 8,
+      "aMax": 22,
+      "bMax": 55,
+      "bMin": 28
+    },
+    "supp": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "intel": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "util": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 78,
+      "bMin": 22
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/хакари_кинджи__0432563a-05c6-5ad7-9c85-85d0604dab4b/character.json ============
+{
+  "id": "0432563a-05c6-5ad7-9c85-85d0604dab4b",
+  "name": "Хакари Кинджи",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "hakari",
+  "variant": "Jackpot",
+  "tags": [
+    "jujutsu_high",
+    "suspended"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "spd": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "dur": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ctrl": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "supp": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "intel": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "util": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "aoe": {
+      "a": 50,
+      "aMin": 35,
+      "aMax": 65,
+      "bMax": 75,
+      "bMin": 25
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/хана__7d7371e0-8391-5fa7-88f9-20e4929a2486/character.json ============
+{
+  "id": "7d7371e0-8391-5fa7-88f9-20e4929a2486",
+  "name": "Хана",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "hanami",
+  "variant": "Shibuya",
+  "tags": [
+    "cursed_spirit",
+    "special_grade",
+    "disaster"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "stam": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 45,
+      "aMin": 30,
+      "aMax": 60,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "heal": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "supp": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "intel": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 68,
+      "bMin": 32
+    },
+    "util": {
+      "a": 75,
+      "aMin": 60,
+      "aMax": 90,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "range": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "aoe": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/чосо__a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7/character.json ============
+{
+  "id": "a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7",
+  "name": "Чосо",
+  "y": 0.5,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "kamo",
+  "variant": "Death Painting",
+  "tags": [
+    "cursed_womb",
+    "death_painting"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "acc": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 72,
+      "bMin": 28
+    },
+    "stam": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "dur": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 75,
+      "bMin": 25
+    },
+    "ctrl": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "ment": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "util": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "range": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "aoe": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 78,
+      "bMin": 22
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/юдзи_итадори__beb3757f-7455-5590-86bf-9907f69496e7/character.json ============
+{
+  "id": "beb3757f-7455-5590-86bf-9907f69496e7",
+  "name": "Юдзи Итадори",
+  "y": 0.6,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "itadori",
+  "variant": "Shibuya",
+  "tags": [
+    "jujutsu_high",
+    "vessel"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 50,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "spd": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 40,
+      "aMin": 30,
+      "aMax": 50,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "stam": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 88,
+      "bMin": 12
+    },
+    "dur": {
+      "a": 45,
+      "aMin": 35,
+      "aMax": 55,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 25,
+      "aMin": 15,
+      "aMax": 35,
+      "bMax": 60,
+      "bMin": 30
+    },
+    "ment": {
+      "a": 30,
+      "aMin": 20,
+      "aMax": 40,
+      "bMax": 65,
+      "bMin": 33
+    },
+    "sens": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 45,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "heal": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "supp": {
+      "a": 35,
+      "aMin": 20,
+      "aMax": 50,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "intel": {
+      "a": 40,
+      "aMin": 25,
+      "aMax": 55,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "util": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "range": {
+      "a": 25,
+      "aMin": 18,
+      "aMax": 35,
+      "bMax": 70,
+      "bMin": 30
+    },
+    "aoe": {
+      "a": 35,
+      "aMin": 25,
+      "aMax": 50,
+      "bMax": 75,
+      "bMin": 25
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/characters/юта_оккоцу__a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6/character.json ============
+{
+  "id": "a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6",
+  "name": "Юта Оккоцу",
+  "y": 0.7,
+  "worldId": "jujutsu_kaisen",
+  "familyId": "okkotsu",
+  "variant": "Special Grade",
+  "tags": [
+    "jujutsu_high",
+    "special_grade"
+  ],
+  "abilities": [],
+  "description": null,
+  "lore": null,
+  "iconPath": null,
+  "axes": {
+    "str": {
+      "a": 28,
+      "aMin": 18,
+      "aMax": 38,
+      "bMax": 78,
+      "bMin": 22
+    },
+    "spd": {
+      "a": 60,
+      "aMin": 50,
+      "aMax": 70,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "acc": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "stam": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "dur": {
+      "a": 50,
+      "aMin": 40,
+      "aMax": 60,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ctrl": {
+      "a": 65,
+      "aMin": 50,
+      "aMax": 80,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "ment": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "sens": {
+      "a": 55,
+      "aMin": 40,
+      "aMax": 70,
+      "bMax": 80,
+      "bMin": 20
+    },
+    "heal": {
+      "a": 80,
+      "aMin": 65,
+      "aMax": 95,
+      "bMax": 90,
+      "bMin": 10
+    },
+    "supp": {
+      "a": 60,
+      "aMin": 45,
+      "aMax": 75,
+      "bMax": 82,
+      "bMin": 18
+    },
+    "intel": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "util": {
+      "a": 85,
+      "aMin": 70,
+      "aMax": 100,
+      "bMax": 92,
+      "bMin": 8
+    },
+    "range": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    },
+    "aoe": {
+      "a": 70,
+      "aMin": 55,
+      "aMax": 85,
+      "bMax": 85,
+      "bMin": 15
+    }
+  },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+
+// ============ FILE: data/roles/боец__93899761-e882-5f35-a807-898be6c617d4/role.json ============
+{
+  "id": "93899761-e882-5f35-a807-898be6c617d4",
+  "name": "Боец",
+  "weights": {
+    "str": 2.0,
+    "spd": 1.5,
+    "acc": 1.2,
+    "stam": 1.0,
+    "dur": 1.8,
+    "ctrl": 0.8,
+    "ment": 1.0,
+    "sens": 1.0,
+    "heal": 0.3,
+    "supp": 0.1,
+    "intel": 1.0,
+    "util": 1.0,
+    "range": 1.5,
+    "aoe": 1.5
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}
+
+// ============ FILE: data/roles/контролёр__9f9d8060-f70f-54d2-8654-186868d5f055/role.json ============
+{
+  "id": "9f9d8060-f70f-54d2-8654-186868d5f055",
+  "name": "Контролёр",
+  "weights": {
+    "str": 0.3,
+    "spd": 1.2,
+    "acc": 0.8,
+    "stam": 0.8,
+    "dur": 0.3,
+    "ctrl": 2.5,
+    "ment": 1.8,
+    "sens": 1.0,
+    "heal": 0.3,
+    "supp": 0.1,
+    "intel": 1.5,
+    "util": 1.0,
+    "range": 1.2,
+    "aoe": 1.2
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}
+
+// ============ FILE: data/roles/координатор__ecfb0765-f7ce-50d2-8946-b111b35c9239/role.json ============
+{
+  "id": "ecfb0765-f7ce-50d2-8946-b111b35c9239",
+  "name": "Координатор",
+  "weights": {
+    "str": 0.2,
+    "spd": 1.0,
+    "acc": 0.2,
+    "stam": 0.5,
+    "dur": 0.2,
+    "ctrl": 0.8,
+    "ment": 1.5,
+    "sens": 1.5,
+    "heal": 0.2,
+    "supp": 2.5,
+    "intel": 4.0,
+    "util": 1.0,
+    "range": 2.0,
+    "aoe": 1.5
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}
+
+// ============ FILE: data/roles/медик__8684ef96-9228-540e-b055-bd807ad8749d/role.json ============
+{
+  "id": "8684ef96-9228-540e-b055-bd807ad8749d",
+  "name": "Медик",
+  "weights": {
+    "str": 0.2,
+    "spd": 2.0,
+    "acc": 0.2,
+    "stam": 1.5,
+    "dur": 1.0,
+    "ctrl": 0.5,
+    "ment": 0.5,
+    "sens": 1.0,
+    "heal": 2.5,
+    "supp": 2.5,
+    "intel": 0.3,
+    "util": 1.0,
+    "range": 0.0,
+    "aoe": 0.5
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}
+
+// ============ FILE: data/roles/разведчик__feb59eb1-17d7-502f-a5ed-cb8b015fca37/role.json ============
+{
+  "id": "feb59eb1-17d7-502f-a5ed-cb8b015fca37",
+  "name": "Разведчик",
+  "weights": {
+    "str": 0.0,
+    "spd": 2.0,
+    "acc": 2.0,
+    "stam": 1.0,
+    "dur": 0.6,
+    "ctrl": 1.0,
+    "ment": 1.0,
+    "sens": 2.5,
+    "heal": 0.0,
+    "supp": 0.0,
+    "intel": 1.2,
+    "util": 1.0,
+    "range": 1.5,
+    "aoe": 1.0
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}
+
+// ============ FILE: data/roles/универсал__48376b00-4ab7-5890-a74e-2514783cc69f/role.json ============
+{
+  "id": "48376b00-4ab7-5890-a74e-2514783cc69f",
+  "name": "Универсал",
+  "weights": {
+    "str": 1.0,
+    "spd": 1.0,
+    "acc": 1.0,
+    "stam": 1.0,
+    "dur": 1.0,
+    "ctrl": 1.0,
+    "ment": 1.0,
+    "sens": 1.0,
+    "heal": 1.0,
+    "supp": 1.0,
+    "intel": 1.0,
+    "util": 1.0,
+    "range": 1.0,
+    "aoe": 1.0
+  },
+  "enabled": true,
+  "bgColor": null,
+  "textColor": null
+}
+
+// ============ FILE: data/scenarios/война__0d92effb-fb98-5aa2-a962-f6c60f818a81/scenario.json ============
+{
+  "id": "0d92effb-fb98-5aa2-a962-f6c60f818a81",
+  "name": "Война",
+  "decaySide1": [
+    1.0,
+    0.95,
+    0.9,
+    0.85,
+    0.8,
+    0.7,
+    0.6,
+    0.5,
+    0.4,
+    0.3
+  ],
+  "decaySide2": [
+    1.0,
+    0.95,
+    0.9,
+    0.85,
+    0.8,
+    0.7,
+    0.6,
+    0.5,
+    0.4,
+    0.3
+  ],
+  "enabled": true
+}
+
+// ============ FILE: data/scenarios/дуэль__2a582280-0d54-5350-aa49-91a32b3a986f/scenario.json ============
+{
+  "id": "2a582280-0d54-5350-aa49-91a32b3a986f",
+  "name": "Дуэль",
+  "decaySide1": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "decaySide2": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "enabled": true
+}
+
+// ============ FILE: data/scenarios/осада__d5b6920e-9cf0-5165-bb91-ef37b64c3c5a/scenario.json ============
+{
+  "id": "d5b6920e-9cf0-5165-bb91-ef37b64c3c5a",
+  "name": "Осада",
+  "decaySide1": [
+    1.0,
+    0.95,
+    0.9,
+    0.85,
+    0.8,
+    0.75,
+    0.7,
+    0.65,
+    0.6,
+    0.55
+  ],
+  "decaySide2": [
+    1.0,
+    0.95,
+    0.9,
+    0.85,
+    0.8,
+    0.75,
+    0.7,
+    0.65,
+    0.6,
+    0.55
+  ],
+  "enabled": true
+}
+
+// ============ FILE: data/scenarios/открытый_бой__9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6/scenario.json ============
+{
+  "id": "9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6",
+  "name": "Открытый бой",
+  "decaySide1": [
+    1.0,
+    0.9,
+    0.8,
+    0.7,
+    0.6,
+    0.5,
+    0.4,
+    0.3,
+    0.2,
+    0.1
+  ],
+  "decaySide2": [
+    1.0,
+    0.85,
+    0.7,
+    0.55,
+    0.4,
+    0.3,
+    0.2,
+    0.15,
+    0.1,
+    0.05
+  ],
+  "enabled": true
+}
+
+// ============ FILE: data/scenarios/разведка__e34c83a3-c42d-528d-a9dd-8b0beced0286/scenario.json ============
+{
+  "id": "e34c83a3-c42d-528d-a9dd-8b0beced0286",
+  "name": "Разведка",
+  "decaySide1": [
+    1.0,
+    0.6,
+    0.4,
+    0.25,
+    0.15,
+    0.1,
+    0.05,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "decaySide2": [
+    1.0,
+    0.6,
+    0.4,
+    0.25,
+    0.15,
+    0.1,
+    0.05,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "enabled": true
+}
+
+// ============ FILE: data/worlds/jujutsu_kaisen__81f9d495-c3da-58b0-befa-45610c7e3bb2/world.json ============
+{
+  "id": "jujutsu_kaisen",
+  "name": "Jujutsu Kaisen",
+  "creators": [
+    "Gege Akutami"
+  ],
+  "physicality": "hybrid",
+  "powerSource": "cursed_energy",
+  "powerScaleMax": 85,
+  "rules": {
+    "canBeAffectedBy": [
+      "physical",
+      "cursed_energy",
+      "spiritual"
+    ],
+    "immuneTo": [
+      "pure_physical_by_nonsorcerer"
+    ]
+  },
+  "compatibility": {
+    "jujutsu_kaisen": {
+      "compatible": "same",
+      "note": "Тот же мир"
+    },
+    "naruto": {
+      "compatible": "compatible",
+      "note": "Оба используют энергию; маги видят духов"
+    },
+    "bleach": {
+      "compatible": "requires_hax",
+      "note": "Требуется способность видеть духов"
+    },
+    "onepiece": {
+      "compatible": "requires_hax",
+      "note": "Проклятые духи невидимы для обычных"
+    }
+  }
+}
+
+// ============ FILE: index/abilities.index.json ============
+{
+  "version": "0.1.0",
+  "type": "abilities",
+  "generatedAt": "2026-09-30T13:55:25.042070+00:00",
+  "count": 20,
+  "items": [
+    {
+      "folder": "безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
+      "id": "45efe1c8-bb3c-582b-a071-b0e8f98bae7e",
+      "name": "Безграничность",
+      "path": "data/abilities/безграничность__45efe1c8-bb3c-582b-a071-b0e8f98bae7e/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "dur",
+            "bonus": 50,
+            "durationType": "toggle"
+          }
+        },
+        {
+          "tagId": "utility",
+          "aspectValues": {
+            "effectKind": "teleport",
+            "note": "Управляет бесконечностью пространства"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "буги_вуги__boogie_woogie___d0db5b57-f8b0-5fde-9eda-5dfead73de67",
+      "id": "d0db5b57-f8b0-5fde-9eda-5dfead73de67",
+      "name": "Буги-Вуги (Boogie Woogie)",
+      "path": "data/abilities/буги_вуги__boogie_woogie___d0db5b57-f8b0-5fde-9eda-5dfead73de67/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "utility",
+          "aspectValues": {
+            "effectKind": "teleport",
+            "note": "хлопок в ладоши меняет местами любые две цели"
+          }
+        },
+        {
+          "tagId": "cooldown",
+          "aspectValues": {
+            "turns": 1,
+            "description": "ограничена хлопком"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "десять_теней__7be6879a-a053-5285-acb9-780dafa25d06",
+      "id": "7be6879a-a053-5285-acb9-780dafa25d06",
+      "name": "Десять Теней",
+      "path": "data/abilities/десять_теней__7be6879a-a053-5285-acb9-780dafa25d06/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "summon",
+          "aspectValues": {
+            "summonedType": "шикигами",
+            "count": 10,
+            "durationMinutes": 60
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "растёт с числом призванных",
+            "percentOfPool": 30
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "домен__бесконечная_пустота__12674c85-56fd-57a5-a1f7-ca2b58a811de",
+      "id": "12674c85-56fd-57a5-a1f7-ca2b58a811de",
+      "name": "Домен: Бесконечная Пустота",
+      "path": "data/abilities/домен__бесконечная_пустота__12674c85-56fd-57a5-a1f7-ca2b58a811de/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "stun",
+            "targets": 100,
+            "durationSeconds": 9999
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 500,
+            "shape": "circle"
+          }
+        },
+        {
+          "tagId": "cooldown",
+          "aspectValues": {
+            "turns": 1,
+            "description": "Один раз в день, большая цена"
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "домен_джого__coffin_of_the_iron_mountain___101eada2-1903-5c55-ab78-d3c1ed3ac218",
+      "id": "101eada2-1903-5c55-ab78-d3c1ed3ac218",
+      "name": "Домен Джого (Coffin of the Iron Mountain)",
+      "path": "data/abilities/домен_джого__coffin_of_the_iron_mountain___101eada2-1903-5c55-ab78-d3c1ed3ac218/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 85,
+            "damageType": "energy",
+            "ignoresDefense": true,
+            "isDot": true
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 100,
+            "shape": "circle"
+          }
+        },
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "bind",
+            "targets": 5,
+            "durationSeconds": 60
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "домен_хакари__idle_death_gamble___0d1232a9-58a3-5a13-b1e1-0852185b3f5f",
+      "id": "0d1232a9-58a3-5a13-b1e1-0852185b3f5f",
+      "name": "Домен Хакари (Idle Death Gamble)",
+      "path": "data/abilities/домен_хакари__idle_death_gamble___0d1232a9-58a3-5a13-b1e1-0852185b3f5f/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "stam",
+            "bonus": 50,
+            "durationType": "temporary"
+          }
+        },
+        {
+          "tagId": "heal",
+          "aspectValues": {
+            "amount": 90,
+            "targets": "self",
+            "curesStatuses": true
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 200,
+            "shape": "circle"
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "домен_хана__0e2ae69b-e897-58a1-9485-11afe927c027",
+      "id": "0e2ae69b-e897-58a1-9485-11afe927c027",
+      "name": "Домен Хана",
+      "path": "data/abilities/домен_хана__0e2ae69b-e897-58a1-9485-11afe927c027/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "heal",
+          "aspectValues": {
+            "amount": 80,
+            "targets": "self",
+            "curesStatuses": true
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 100,
+            "shape": "circle"
+          }
+        },
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "bind",
+            "targets": 3,
+            "durationSeconds": 45
+          }
+        }
+      ],
+      "type": "domain_expansion"
+    },
+    {
+      "folder": "идле_трансфигурэйшн__63898891-22a8-5ffb-946c-fa11852c3112",
+      "id": "63898891-22a8-5ffb-946c-fa11852c3112",
+      "name": "Идле Трансфигурэйшн",
+      "path": "data/abilities/идле_трансфигурэйшн__63898891-22a8-5ffb-946c-fa11852c3112/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 80,
+            "damageType": "conceptual",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "heal",
+          "aspectValues": {
+            "amount": 90,
+            "targets": "self",
+            "curesStatuses": true
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 5
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "красный__reversal_red___9437be43-895b-51ed-9d49-33259141ee5c",
+      "id": "9437be43-895b-51ed-9d49-33259141ee5c",
+      "name": "Красный (Reversal Red)",
+      "path": "data/abilities/красный__reversal_red___9437be43-895b-51ed-9d49-33259141ee5c/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 80,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 100,
+            "projectileSpeed": 90
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 50,
+            "shape": "circle"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "маhорага__56085310-7227-5b65-b437-cbc95e56cf16",
+      "id": "56085310-7227-5b65-b437-cbc95e56cf16",
+      "name": "Маhорага",
+      "path": "data/abilities/маhорага__56085310-7227-5b65-b437-cbc95e56cf16/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "summon",
+          "aspectValues": {
+            "summonedType": "шикигами",
+            "count": 1,
+            "durationMinutes": 30
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "dur",
+            "bonus": 60,
+            "durationType": "temporary"
+          }
+        },
+        {
+          "tagId": "cooldown",
+          "aspectValues": {
+            "turns": 30,
+            "description": "требует ритуала полного раскрытия"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "манипуляция_кровью__6216e1dd-2ed6-5cd3-94ee-318616fed02f",
+      "id": "6216e1dd-2ed6-5cd3-94ee-318616fed02f",
+      "name": "Манипуляция кровью",
+      "path": "data/abilities/манипуляция_кровью__6216e1dd-2ed6-5cd3-94ee-318616fed02f/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 65,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 50,
+            "projectileSpeed": 60
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 20,
+            "shape": "circle"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "проклятая_речь__0a02e810-ba61-5952-ab9f-6940bd93c054",
+      "id": "0a02e810-ba61-5952-ab9f-6940bd93c054",
+      "name": "Проклятая речь",
+      "path": "data/abilities/проклятая_речь__0a02e810-ba61-5952-ab9f-6940bd93c054/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "control",
+          "aspectValues": {
+            "controlType": "mind_control",
+            "targets": 3,
+            "durationSeconds": 30
+          }
+        },
+        {
+          "tagId": "debuff",
+          "aspectValues": {
+            "target": "group",
+            "debuffedAxis": "spd",
+            "penalty": 30,
+            "durationType": "temporary"
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "сильно нагружает горло",
+            "percentOfPool": 20
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "пропорция_7_3__9f12c772-7c15-52ff-bcdd-4532ab12c086",
+      "id": "9f12c772-7c15-52ff-bcdd-4532ab12c086",
+      "name": "Пропорция 7:3",
+      "path": "data/abilities/пропорция_7_3__9f12c772-7c15-52ff-bcdd-4532ab12c086/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 75,
+            "damageType": "physical",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 2
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "средний расход",
+            "percentOfPool": 20
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "пустой_фиолетовый__hollow_purple___47b46827-37b0-5b4a-9089-c373b26da136",
+      "id": "47b46827-37b0-5b4a-9089-c373b26da136",
+      "name": "Пустой Фиолетовый (Hollow Purple)",
+      "path": "data/abilities/пустой_фиолетовый__hollow_purple___47b46827-37b0-5b4a-9089-c373b26da136/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 95,
+            "damageType": "conceptual",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 500,
+            "projectileSpeed": 95
+          }
+        },
+        {
+          "tagId": "aoe",
+          "aspectValues": {
+            "radiusMeters": 200,
+            "shape": "line"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7",
+      "id": "b57a2303-db3e-5cba-8a4e-acdda9a509c7",
+      "name": "Рассечение (Dismantle)",
+      "path": "data/abilities/рассечение__dismantle___b57a2303-db3e-5cba-8a4e-acdda9a509c7/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 80,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 100,
+            "projectileSpeed": 85
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "расщепление__cleave___cc8cf9ce-08a6-5a0b-81e2-cdfd486df475",
+      "id": "cc8cf9ce-08a6-5a0b-81e2-cdfd486df475",
+      "name": "Расщепление (Cleave)",
+      "path": "data/abilities/расщепление__cleave___cc8cf9ce-08a6-5a0b-81e2-cdfd486df475/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 85,
+            "damageType": "energy",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "melee",
+          "aspectValues": {
+            "reachMeters": 5
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "резонанс__40d27a67-6bb5-5e2b-8a6b-b922e73831e6",
+      "id": "40d27a67-6bb5-5e2b-8a6b-b922e73831e6",
+      "name": "Резонанс",
+      "path": "data/abilities/резонанс__40d27a67-6bb5-5e2b-8a6b-b922e73831e6/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 60,
+            "damageType": "spiritual",
+            "ignoresDefense": true
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 10000,
+            "projectileSpeed": 40
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "требует часть тела цели",
+            "percentOfPool": 15
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "рика__ba3156c1-27b0-5450-8685-8e3decc16055",
+      "id": "ba3156c1-27b0-5450-8685-8e3decc16055",
+      "name": "Рика",
+      "path": "data/abilities/рика__ba3156c1-27b0-5450-8685-8e3decc16055/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "summon",
+          "aspectValues": {
+            "summonedType": "проклятый дух",
+            "count": 1,
+            "durationMinutes": 999
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "str",
+            "bonus": 40,
+            "durationType": "toggle"
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "heal",
+            "bonus": 30,
+            "durationType": "toggle"
+          }
+        }
+      ],
+      "type": "special"
+    },
+    {
+      "folder": "снайпер_техника__d0fbac55-6834-54fe-882d-2d25bef08083",
+      "id": "d0fbac55-6834-54fe-882d-2d25bef08083",
+      "name": "Снайпер-техника",
+      "path": "data/abilities/снайпер_техника__d0fbac55-6834-54fe-882d-2d25bef08083/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "damage",
+          "aspectValues": {
+            "power": 70,
+            "damageType": "energy",
+            "ignoresDefense": false
+          }
+        },
+        {
+          "tagId": "ranged",
+          "aspectValues": {
+            "meters": 5000,
+            "projectileSpeed": 85
+          }
+        },
+        {
+          "tagId": "chakra_cost",
+          "aspectValues": {
+            "description": "оплачивается за использование",
+            "percentOfPool": 15
+          }
+        }
+      ],
+      "type": "innate_technique"
+    },
+    {
+      "folder": "шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461",
+      "id": "67846755-ebe5-542b-94d2-bb62794da461",
+      "name": "Шесть Глаз",
+      "path": "data/abilities/шесть_глаз__67846755-ebe5-542b-94d2-bb62794da461/ability.json",
+      "iconPath": null,
+      "tags": [
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "sens",
+            "bonus": 40,
+            "durationType": "passive"
+          }
+        },
+        {
+          "tagId": "buff",
+          "aspectValues": {
+            "target": "self",
+            "buffedAxis": "acc",
+            "bonus": 30,
+            "durationType": "passive"
+          }
+        }
+      ],
+      "type": "innate_technique"
+    }
+  ]
+}
+
+// ============ FILE: index/axes.index.json ============
+{
+  "version": "0.1.0",
+  "type": "axes",
+  "generatedAt": "2026-09-30T13:55:25.051276+00:00",
+  "count": 14,
+  "items": [
+    {
+      "folder": "aoe__ca416ea8-85b6-5bf8-a5ed-db108463f8a6",
+      "id": "aoe",
+      "name": "AoE",
+      "path": "data/axes/aoe__ca416ea8-85b6-5bf8-a5ed-db108463f8a6/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "выносливость__61b2318d-eb43-577a-93d9-151b79ed0fe0",
+      "id": "stam",
+      "name": "Выносливость",
+      "path": "data/axes/выносливость__61b2318d-eb43-577a-93d9-151b79ed0fe0/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "дальность__25cd7a70-6048-5450-ae11-4539a6ec2e40",
+      "id": "range",
+      "name": "Дальность",
+      "path": "data/axes/дальность__25cd7a70-6048-5450-ae11-4539a6ec2e40/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "интеллект__20829542-7baf-5912-896d-cc462a2da02f",
+      "id": "intel",
+      "name": "Интеллект",
+      "path": "data/axes/интеллект__20829542-7baf-5912-896d-cc462a2da02f/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "контроль__f8296286-f112-5a7b-b21b-5c8cfb6302eb",
+      "id": "ctrl",
+      "name": "Контроль",
+      "path": "data/axes/контроль__f8296286-f112-5a7b-b21b-5c8cfb6302eb/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "лечение__ad47e6f7-76e1-5e3f-9f7c-95304b6d2385",
+      "id": "heal",
+      "name": "Лечение",
+      "path": "data/axes/лечение__ad47e6f7-76e1-5e3f-9f7c-95304b6d2385/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "ментальное__f1e1d201-3cef-53b5-b8de-eb5b91460c7e",
+      "id": "ment",
+      "name": "Ментальное",
+      "path": "data/axes/ментальное__f1e1d201-3cef-53b5-b8de-eb5b91460c7e/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "поддержка__d8f11133-954a-5de9-bad6-012c9bec1b10",
+      "id": "supp",
+      "name": "Поддержка",
+      "path": "data/axes/поддержка__d8f11133-954a-5de9-bad6-012c9bec1b10/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "полезные__8b08fdab-fd56-5a43-80da-a0c6d2f79294",
+      "id": "util",
+      "name": "Полезные",
+      "path": "data/axes/полезные__8b08fdab-fd56-5a43-80da-a0c6d2f79294/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "прочность__71949fd6-5f21-5dc5-83ae-c4cc80733245",
+      "id": "dur",
+      "name": "Прочность",
+      "path": "data/axes/прочность__71949fd6-5f21-5dc5-83ae-c4cc80733245/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "сенсорика__d7185982-9023-5dce-97c2-5734da2f63c9",
+      "id": "sens",
+      "name": "Сенсорика",
+      "path": "data/axes/сенсорика__d7185982-9023-5dce-97c2-5734da2f63c9/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "сила__339a28fe-8f6d-517a-8d94-4efee82f40db",
+      "id": "str",
+      "name": "Сила",
+      "path": "data/axes/сила__339a28fe-8f6d-517a-8d94-4efee82f40db/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "скорость__d01d4780-20e7-5aa2-8caf-e4869b210b5f",
+      "id": "spd",
+      "name": "Скорость",
+      "path": "data/axes/скорость__d01d4780-20e7-5aa2-8caf-e4869b210b5f/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    },
+    {
+      "folder": "точность__156d70c1-2549-59bd-ba82-d1a1b2a36a82",
+      "id": "acc",
+      "name": "Точность",
+      "path": "data/axes/точность__156d70c1-2549-59bd-ba82-d1a1b2a36a82/axis.json",
+      "iconPath": null,
+      "isCustom": false
+    }
+  ]
+}
+
+// ============ FILE: index/characters.index.json ============
+{
+  "version": "0.1.0",
+  "type": "characters",
+  "generatedAt": "2026-09-30T13:55:25.037771+00:00",
+  "count": 20,
+  "items": [
+    {
+      "folder": "аой_тодо__de72fb30-0c72-5616-bf75-204a137856c5",
+      "id": "de72fb30-0c72-5616-bf75-204a137856c5",
+      "name": "Аой Тодо",
+      "path": "data/characters/аой_тодо__de72fb30-0c72-5616-bf75-204a137856c5/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "todo",
+      "variant": "Kyoto",
+      "tags": [
+        "jujutsu_high",
+        "grade_1"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "дагон__2b6a0212-5a42-5fd9-ad87-23f920577082",
+      "id": "2b6a0212-5a42-5fd9-ad87-23f920577082",
+      "name": "Дагон",
+      "path": "data/characters/дагон__2b6a0212-5a42-5fd9-ad87-23f920577082/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "dagon",
+      "variant": "Shibuya",
+      "tags": [
+        "cursed_spirit",
+        "special_grade",
+        "disaster"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "джого__3893ffbb-d8bd-5a5f-ad19-c301de71f4e9",
+      "id": "3893ffbb-d8bd-5a5f-ad19-c301de71f4e9",
+      "name": "Джого",
+      "path": "data/characters/джого__3893ffbb-d8bd-5a5f-ad19-c301de71f4e9/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "jogo",
+      "variant": "Shibuya",
+      "tags": [
+        "cursed_spirit",
+        "special_grade",
+        "disaster"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "кенто_нанами__af8588c5-f179-5592-831f-f8f825ed7711",
+      "id": "af8588c5-f179-5592-831f-f8f825ed7711",
+      "name": "Кенто Нанами",
+      "path": "data/characters/кенто_нанами__af8588c5-f179-5592-831f-f8f825ed7711/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "nanami",
+      "variant": "Grade 1",
+      "tags": [
+        "jujutsu_high",
+        "grade_1"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "маки_зенин__08bb6720-38e6-5f9b-9ef5-a6208ad6eae2",
+      "id": "08bb6720-38e6-5f9b-9ef5-a6208ad6eae2",
+      "name": "Маки Зенин",
+      "path": "data/characters/маки_зенин__08bb6720-38e6-5f9b-9ef5-a6208ad6eae2/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "zenin",
+      "variant": "Awakened",
+      "tags": [
+        "jujutsu_high",
+        "zenin"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "махито__943b7f18-edad-5761-b166-a4a3b61e3d5d",
+      "id": "943b7f18-edad-5761-b166-a4a3b61e3d5d",
+      "name": "Махито",
+      "path": "data/characters/махито__943b7f18-edad-5761-b166-a4a3b61e3d5d/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "mahito",
+      "variant": "Full Power",
+      "tags": [
+        "cursed_spirit",
+        "special_grade"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "мегуми_фушигуро__4a54f222-d37f-5f38-80d7-2b50dd236bf7",
+      "id": "4a54f222-d37f-5f38-80d7-2b50dd236bf7",
+      "name": "Мегуми Фушигуро",
+      "path": "data/characters/мегуми_фушигуро__4a54f222-d37f-5f38-80d7-2b50dd236bf7/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "fushiguro",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "zenin"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "момо_нишимия__a0269bdb-a7fd-590b-940b-bb7ae2afb380",
+      "id": "a0269bdb-a7fd-590b-940b-bb7ae2afb380",
+      "name": "Момо Нишимия",
+      "path": "data/characters/момо_нишимия__a0269bdb-a7fd-590b-940b-bb7ae2afb380/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "nishimiya",
+      "variant": "Kyoto",
+      "tags": [
+        "jujutsu_high"
+      ],
+      "y": 0.4
+    },
+    {
+      "folder": "мэй_мэй__64fe3891-8766-5ced-a8e1-fe5afa82f57a",
+      "id": "64fe3891-8766-5ced-a8e1-fe5afa82f57a",
+      "name": "Мэй Мэй",
+      "path": "data/characters/мэй_мэй__64fe3891-8766-5ced-a8e1-fe5afa82f57a/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "mei_mei",
+      "variant": "Grade 1",
+      "tags": [
+        "jujutsu_high",
+        "grade_1",
+        "mercenary"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "нобара_кугисаки__334994f8-bbcd-5c5a-a788-f4c02664b7f1",
+      "id": "334994f8-bbcd-5c5a-a788-f4c02664b7f1",
+      "name": "Нобара Кугисаки",
+      "path": "data/characters/нобара_кугисаки__334994f8-bbcd-5c5a-a788-f4c02664b7f1/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "kugisaki",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "панда__ff0ebf32-7089-506b-a3b2-69d7ee81df41",
+      "id": "ff0ebf32-7089-506b-a3b2-69d7ee81df41",
+      "name": "Панда",
+      "path": "data/characters/панда__ff0ebf32-7089-506b-a3b2-69d7ee81df41/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "panda",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "cursed_corpse"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "рёмен_сукуна__c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b",
+      "id": "c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b",
+      "name": "Рёмен Сукуна",
+      "path": "data/characters/рёмен_сукуна__c3b521ad-3ca9-5bdd-82a9-b28ecd37ff2b/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "sukuna",
+      "variant": "Heian Era",
+      "tags": [
+        "cursed_spirit",
+        "king_of_curses"
+      ],
+      "y": 0.7
+    },
+    {
+      "folder": "сатору_годжо__392e3160-f7f4-5cd2-bca3-06098f54fb3a",
+      "id": "392e3160-f7f4-5cd2-bca3-06098f54fb3a",
+      "name": "Сатору Годжо",
+      "path": "data/characters/сатору_годжо__392e3160-f7f4-5cd2-bca3-06098f54fb3a/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "gojo",
+      "variant": "Awakened",
+      "tags": [
+        "jujutsu_high",
+        "special_grade",
+        "gojo_clan"
+      ],
+      "y": 0.9
+    },
+    {
+      "folder": "сугуру_гето__89dac23e-ef2c-5591-b254-2ceb09ab4458",
+      "id": "89dac23e-ef2c-5591-b254-2ceb09ab4458",
+      "name": "Сугуру Гето",
+      "path": "data/characters/сугуру_гето__89dac23e-ef2c-5591-b254-2ceb09ab4458/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "geto",
+      "variant": "Curse User",
+      "tags": [
+        "curse_user",
+        "special_grade"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "тоге_инумаки__21e2801a-6cc7-5832-b8c8-7c2b43209c4c",
+      "id": "21e2801a-6cc7-5832-b8c8-7c2b43209c4c",
+      "name": "Тоге Инумаки",
+      "path": "data/characters/тоге_инумаки__21e2801a-6cc7-5832-b8c8-7c2b43209c4c/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "inumaki",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "inumaki_clan"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "хакари_кинджи__0432563a-05c6-5ad7-9c85-85d0604dab4b",
+      "id": "0432563a-05c6-5ad7-9c85-85d0604dab4b",
+      "name": "Хакари Кинджи",
+      "path": "data/characters/хакари_кинджи__0432563a-05c6-5ad7-9c85-85d0604dab4b/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "hakari",
+      "variant": "Jackpot",
+      "tags": [
+        "jujutsu_high",
+        "suspended"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "хана__7d7371e0-8391-5fa7-88f9-20e4929a2486",
+      "id": "7d7371e0-8391-5fa7-88f9-20e4929a2486",
+      "name": "Хана",
+      "path": "data/characters/хана__7d7371e0-8391-5fa7-88f9-20e4929a2486/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "hanami",
+      "variant": "Shibuya",
+      "tags": [
+        "cursed_spirit",
+        "special_grade",
+        "disaster"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "чосо__a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7",
+      "id": "a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7",
+      "name": "Чосо",
+      "path": "data/characters/чосо__a7ffd8cd-88f5-5dde-89dd-66f79f0f52e7/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "kamo",
+      "variant": "Death Painting",
+      "tags": [
+        "cursed_womb",
+        "death_painting"
+      ],
+      "y": 0.5
+    },
+    {
+      "folder": "юдзи_итадори__beb3757f-7455-5590-86bf-9907f69496e7",
+      "id": "beb3757f-7455-5590-86bf-9907f69496e7",
+      "name": "Юдзи Итадори",
+      "path": "data/characters/юдзи_итадори__beb3757f-7455-5590-86bf-9907f69496e7/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "itadori",
+      "variant": "Shibuya",
+      "tags": [
+        "jujutsu_high",
+        "vessel"
+      ],
+      "y": 0.6
+    },
+    {
+      "folder": "юта_оккоцу__a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6",
+      "id": "a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6",
+      "name": "Юта Оккоцу",
+      "path": "data/characters/юта_оккоцу__a25c8887-0fc5-5166-9ef3-dc37f7d9dfe6/character.json",
+      "iconPath": null,
+      "worldId": "jujutsu_kaisen",
+      "familyId": "okkotsu",
+      "variant": "Special Grade",
+      "tags": [
+        "jujutsu_high",
+        "special_grade"
+      ],
+      "y": 0.7
+    }
+  ]
+}
+
+// ============ FILE: index/manifest.json ============
+{
+  "version": "0.1.0",
+  "generatedAt": "2026-09-30T13:55:25.033600+00:00",
+  "indices": {
+    "characters": {
+      "path": "index/characters.index.json",
+      "count": 20
+    },
+    "abilities": {
+      "path": "index/abilities.index.json",
+      "count": 20
+    },
+    "roles": {
+      "path": "index/roles.index.json",
+      "count": 6
+    },
+    "scenarios": {
+      "path": "index/scenarios.index.json",
+      "count": 5
+    },
+    "tags": {
+      "path": "index/tags.index.json",
+      "count": 0
+    },
+    "worlds": {
+      "path": "index/worlds.index.json",
+      "count": 1
+    },
+    "axes": {
+      "path": "index/axes.index.json",
+      "count": 14
+    }
+  }
+}
+
+// ============ FILE: index/roles.index.json ============
+{
+  "version": "0.1.0",
+  "type": "roles",
+  "generatedAt": "2026-09-30T13:55:25.045737+00:00",
+  "count": 6,
+  "items": [
+    {
+      "folder": "боец__93899761-e882-5f35-a807-898be6c617d4",
+      "id": "93899761-e882-5f35-a807-898be6c617d4",
+      "name": "Боец",
+      "path": "data/roles/боец__93899761-e882-5f35-a807-898be6c617d4/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "контролёр__9f9d8060-f70f-54d2-8654-186868d5f055",
+      "id": "9f9d8060-f70f-54d2-8654-186868d5f055",
+      "name": "Контролёр",
+      "path": "data/roles/контролёр__9f9d8060-f70f-54d2-8654-186868d5f055/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "координатор__ecfb0765-f7ce-50d2-8946-b111b35c9239",
+      "id": "ecfb0765-f7ce-50d2-8946-b111b35c9239",
+      "name": "Координатор",
+      "path": "data/roles/координатор__ecfb0765-f7ce-50d2-8946-b111b35c9239/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "медик__8684ef96-9228-540e-b055-bd807ad8749d",
+      "id": "8684ef96-9228-540e-b055-bd807ad8749d",
+      "name": "Медик",
+      "path": "data/roles/медик__8684ef96-9228-540e-b055-bd807ad8749d/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "разведчик__feb59eb1-17d7-502f-a5ed-cb8b015fca37",
+      "id": "feb59eb1-17d7-502f-a5ed-cb8b015fca37",
+      "name": "Разведчик",
+      "path": "data/roles/разведчик__feb59eb1-17d7-502f-a5ed-cb8b015fca37/role.json",
+      "iconPath": null
+    },
+    {
+      "folder": "универсал__48376b00-4ab7-5890-a74e-2514783cc69f",
+      "id": "48376b00-4ab7-5890-a74e-2514783cc69f",
+      "name": "Универсал",
+      "path": "data/roles/универсал__48376b00-4ab7-5890-a74e-2514783cc69f/role.json",
+      "iconPath": null
+    }
+  ]
+}
+
+// ============ FILE: index/scenarios.index.json ============
+{
+  "version": "0.1.0",
+  "type": "scenarios",
+  "generatedAt": "2026-09-30T13:55:25.047234+00:00",
+  "count": 5,
+  "items": [
+    {
+      "folder": "война__0d92effb-fb98-5aa2-a962-f6c60f818a81",
+      "id": "0d92effb-fb98-5aa2-a962-f6c60f818a81",
+      "name": "Война",
+      "path": "data/scenarios/война__0d92effb-fb98-5aa2-a962-f6c60f818a81/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "дуэль__2a582280-0d54-5350-aa49-91a32b3a986f",
+      "id": "2a582280-0d54-5350-aa49-91a32b3a986f",
+      "name": "Дуэль",
+      "path": "data/scenarios/дуэль__2a582280-0d54-5350-aa49-91a32b3a986f/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "осада__d5b6920e-9cf0-5165-bb91-ef37b64c3c5a",
+      "id": "d5b6920e-9cf0-5165-bb91-ef37b64c3c5a",
+      "name": "Осада",
+      "path": "data/scenarios/осада__d5b6920e-9cf0-5165-bb91-ef37b64c3c5a/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "открытый_бой__9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6",
+      "id": "9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6",
+      "name": "Открытый бой",
+      "path": "data/scenarios/открытый_бой__9e9fe62c-cf4f-580f-b9d3-1637cc4c69c6/scenario.json",
+      "iconPath": null
+    },
+    {
+      "folder": "разведка__e34c83a3-c42d-528d-a9dd-8b0beced0286",
+      "id": "e34c83a3-c42d-528d-a9dd-8b0beced0286",
+      "name": "Разведка",
+      "path": "data/scenarios/разведка__e34c83a3-c42d-528d-a9dd-8b0beced0286/scenario.json",
+      "iconPath": null
+    }
+  ]
+}
+
+// ============ FILE: index/tags.index.json ============
+{
+  "version": "0.1.0",
+  "type": "tags",
+  "generatedAt": "2026-09-30T13:55:25.047930+00:00",
+  "count": 0,
+  "items": []
+}
+
+// ============ FILE: index/worlds.index.json ============
+{
+  "version": "0.1.0",
+  "type": "worlds",
+  "generatedAt": "2026-09-30T13:55:25.048962+00:00",
+  "count": 1,
+  "items": [
+    {
+      "folder": "jujutsu_kaisen__81f9d495-c3da-58b0-befa-45610c7e3bb2",
+      "id": "jujutsu_kaisen",
+      "name": "Jujutsu Kaisen",
+      "path": "data/worlds/jujutsu_kaisen__81f9d495-c3da-58b0-befa-45610c7e3bb2/world.json",
+      "iconPath": null,
+      "physicality": "hybrid"
+    }
+  ]
+}
+
+// ============ FILE: README.md ============
+# PowerMatch Data Hub
+
+Публичный репозиторий данных для приложения **PowerMatch**.
+
+## Что здесь
+
+- **`data/characters/`** — карточки персонажей
+- **`data/abilities/`** — каталог способностей
+- **`data/tags/`** — схема тегов (что такое «урон», «дальность» и т. д.)
+- **`data/roles/`** — роли (Боец, Медик, …)
+- **`data/scenarios/`** — сценарии боя
+- **`data/worlds/`** — миры (Naruto, Bleach, Marvel, …)
+- **`data/axes/`** — оси характеристики (опционально)
+- **`index/`** — авто-сгенерированные индексы для приложения
+
+## Как использовать в приложении
+
+1. Откройте **Настройки → Данные → HUB**.
+2. Вставьте URL:
+   ```
+   https://raw.githubusercontent.com/USER/powermatch-data/main/index/manifest.json
+   ```
+3. Нажмите «Обновить каталог».
+4. Выбирайте данные и импортируйте.
+5. Создавайте FORK для получения собственного репозитория, по версии приложения. Где вы можете обмениваться данными без участия этого репозитория
+
+## Как добавить свои данные
+
+### Через fork (ручной способ)
+
+1. Форкните репозиторий.
+2. Создайте папку в `data/characters/`:
+   ```
+   my_character__<UUID>/
+   ├── character.json
+   └── icon.png
+   ```
+   Имя папки — `<латиница>__<UUID>`. UUID можно сгенерировать на [uuidgenerator.net](https://www.uuidgenerator.net/).
+3. Заполните `character.json` по схеме из `schema/character.schema.json`.
+4. Закоммитьте, запушьте.
+5. GitHub Action автоматически пересоберёт `index/*.index.json`.
+
+### Через pull request (если хотите в общий)
+
+1. Форк → правки → PR в upstream.
+2. Мейнтейнер проверит (валидация JSON запустится автоматически).
+3. После merge индексы обновятся автоматически.
+
+## Структура одного файла
+
+Пример `data/characters/naruto__a1b2c3d4-.../character.json`:
+
+```json
+{
+  "id": "a1b2c3d4-0001-0001-0001-000000000001",
+  "name": "Наруто Узумаки",
+  "y": 0.8,
+  "worldId": "naruto",
+  "familyId": "naruto",
+  "variant": "War Mode",
+  "tags": ["konoha", "jinchuriki"],
+  "abilities": ["rasengan__b1c2d3e4-..."],
+  "axes": { "str": {...}, "spd": {...}, ... },
+  "createdAt": "2025-01-01T00:00:00.000Z",
+  "updatedAt": "2025-01-01T00:00:00.000Z"
+}
+```
+
+## Как работает build_index.py
+
+GitHub Action запускает скрипт при каждом push в `main`, если изменилось что-то в `data/`.
+
+Скрипт:
+1. Проходит по всем папкам `data/<type>/`.
+2. Читает `<type>.json` в каждой.
+3. Строит `<type>.index.json` — плоский список всех сущностей с минимумом полей (id, name, path, icon).
+4. Обновляет `manifest.json` — общий индекс с ссылками.
+
+Индексы **не нужно править руками** — при следующем push всё перезапишется.
+
+## Версионирование схемы
+
+Файл `VERSION` содержит текущую версию схемы, например `1.0.0`.
+
+При изменении схемы:
+1. Увеличьте `VERSION`.
+2. Обновите `schema/*.schema.json`.
+3. Запустите `scripts/migrate.py` — он применит изменения ко всем файлам в `data/`.
+
+## Лицензия
+
+Данные — CC BY-SA 4.0. Скрипты — MIT.
+
+// ============ FILE: scripts/build_index.py ============
+#!/usr/bin/env python3
+"""
+build_index.py — генерирует index/*.index.json из data/.
+
+Запускается:
+  • автоматически через GitHub Action (workflow update-index.yml)
+  • вручную: python scripts/build_index.py
+
+Что делает:
+  1. Проходит по каждой папке в data/<type>/.
+  2. Читает <type>.json внутри.
+  3. Строит <type>.index.json — плоский список сущностей.
+  4. Собирает manifest.json — общий указатель на все индексы.
+"""
+
+import json
+import sys
+from pathlib import Path
+from datetime import datetime, timezone
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data"
+INDEX_DIR = ROOT / "index"
+VERSION_FILE = ROOT / "VERSION"
+
+
+# Описание типов данных.
+# file     — имя JSON-файла внутри папки сущности
+# idKey    — поле с ID
+# nameKey  — поле с отображаемым именем
+# extras   — какие дополнительные поля тащить в индекс
+DATA_TYPES = {
+    "characters": {
+        "file": "character.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": ["worldId", "familyId", "variant", "tags", "y"],
+    },
+    "abilities": {
+        "file": "ability.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": ["tags", "type"],
+    },
+    "roles": {
+        "file": "role.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": [],
+    },
+    "scenarios": {
+        "file": "scenario.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": [],
+    },
+    "tags": {
+        "file": "tag.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": ["category", "color"],
+    },
+    "worlds": {
+        "file": "world.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": ["physicality", "compatibleWith"],
+    },
+    "axes": {
+        "file": "axis.json",
+        "idKey": "id",
+        "nameKey": "name",
+        "extras": ["isCustom"],
+    },
+}
+
+
+def read_version() -> str:
+    if not VERSION_FILE.exists():
+        return "0.0.0"
+    return VERSION_FILE.read_text(encoding="utf-8").strip()
+
+
+def iter_items(type_dir: Path, filename: str):
+    """Пройти по папкам внутри type_dir и вернуть (folder_name, json_data)."""
+    if not type_dir.exists():
+        return
+    for folder in sorted(type_dir.iterdir()):
+        if not folder.is_dir():
+            continue
+        json_file = folder / filename
+        if not json_file.exists():
+            print(f"  ⚠ skip: {folder.name} — нет {filename}", file=sys.stderr)
+            continue
+        try:
+            with json_file.open(encoding="utf-8") as f:
+                data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"  ✗ invalid JSON: {json_file} — {e}", file=sys.stderr)
+            continue
+        yield folder.name, data
+
+
+def build_index_for(type_name: str, cfg: dict) -> dict:
+    """Построить index для одного типа данных."""
+    type_dir = DATA_DIR / type_name
+    entries = []
+
+    for folder_name, data in iter_items(type_dir, cfg["file"]):
+        entry = {
+            "folder": folder_name,
+            "id": data.get(cfg["idKey"]),
+            "name": data.get(cfg["nameKey"]),
+            "path": f"data/{type_name}/{folder_name}/{cfg['file']}",
+        }
+
+        # Иконка, если есть.
+        icon = type_dir / folder_name / "icon.png"
+        entry["iconPath"] = (
+            f"data/{type_name}/{folder_name}/icon.png"
+            if icon.exists()
+            else None
+        )
+
+        # Дополнительные поля по типу.
+        for key in cfg.get("extras", []):
+            if key in data:
+                entry[key] = data[key]
+
+        entries.append(entry)
+
+    return {
+        "version": read_version(),
+        "type": type_name,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "count": len(entries),
+        "items": entries,
+    }
+
+
+def main() -> int:
+    INDEX_DIR.mkdir(parents=True, exist_ok=True)
+    version = read_version()
+
+    manifest = {
+        "version": version,
+        "generatedAt": datetime.now(timezone.utc).isoformat(),
+        "indices": {},
+    }
+
+    print(f"[build_index] VERSION={version}")
+    total = 0
+
+    for type_name, cfg in DATA_TYPES.items():
+        index = build_index_for(type_name, cfg)
+        out_path = INDEX_DIR / f"{type_name}.index.json"
+
+        with out_path.open("w", encoding="utf-8") as f:
+            json.dump(index, f, ensure_ascii=False, indent=2)
+
+        manifest["indices"][type_name] = {
+            "path": f"index/{type_name}.index.json",
+            "count": index["count"],
+        }
+        total += index["count"]
+        print(f"  ✓ {type_name}: {index['count']} items")
+
+    with (INDEX_DIR / "manifest.json").open("w", encoding="utf-8") as f:
+        json.dump(manifest, f, ensure_ascii=False, indent=2)
+
+    print(f"[build_index] Готово. Всего {total} записей.")
+    print(f"[build_index] manifest → index/manifest.json")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+// ============ FILE: scripts/migrate.py ============
+#!/usr/bin/env python3
+"""
+migrate.py — применяет миграции схемы к данным в data/.
+
+Запускается:
+  • вручную: python scripts/migrate.py
+  • с флагом --dry-run — показать, что будет изменено, не трогая файлы
+
+Как работает:
+  1. Читает VERSION (текущая версия схемы).
+  2. Для каждой миграции из MIGRATIONS, где from_version == текущая,
+     применяет функцию ко всем файлам нужного типа.
+  3. Обновляет VERSION.
+  4. Пишет изменения в файлы.
+
+Как добавить миграцию:
+  • Пишете функцию transform(type_name, data) -> dict | None.
+    • Возвращает изменённый dict — если что-то поменяли.
+    • Возвращает None — если нужно пропустить.
+  • Регистрируете её в MIGRATIONS.
+"""
+
+import argparse
+import json
+import sys
+from pathlib import Path
+from typing import Callable, Optional
+
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data"
+VERSION_FILE = ROOT / "VERSION"
+
+
+# ==== Тип: имя папки → имя JSON-файла внутри ====
+TYPE_FILES = {
+    "characters": "character.json",
+    "abilities":  "ability.json",
+    "roles":      "role.json",
+    "scenarios":  "scenario.json",
+    "tags":       "tag.json",
+    "worlds":     "world.json",
+    "axes":       "axis.json",
+}
+
+
+# ==== Функции миграции ====
+#
+# Каждая принимает (type_name, data) и возвращает:
+#   - dict — обновлённые данные
+#   - None — пропустить (не трогать файл)
+
+def migrate_1_0_0_to_1_1_0(type_name: str, data: dict) -> Optional[dict]:
+    """
+    Пример: добавляет поле worldId к персонажам.
+    Значение по умолчанию — "unknown".
+    """
+    if type_name != "characters":
+        return None
+    if "worldId" in data:
+        return None
+    data = dict(data)
+    data["worldId"] = "unknown"
+    return data
+
+
+def migrate_1_0_0_to_1_1_0_add_family(type_name: str,
+                                        data: dict) -> Optional[dict]:
+    """
+    Пример: добавляет familyId = slug от name для персонажей.
+    """
+    if type_name != "characters":
+        return None
+    if "familyId" in data:
+        return None
+    name = (data.get("name") or "").strip().lower()
+    slug = "".join(c if c.isalnum() else "_" for c in name) or "unknown"
+    data = dict(data)
+    data["familyId"] = slug
+    return data
+
+
+# ==== Реестр миграций ====
+# Формат: target_version -> {"from": from_version, "fns": [f1, f2, ...]}
+#
+# Каждая миграция применяется ко ВСЕМ файлам указанных типов.
+# Если f возвращает None — файл не трогается.
+MIGRATIONS = {
+    "1.1.0": {
+        "from": "1.0.0",
+        "fns": [migrate_1_0_0_to_1_1_0, migrate_1_0_0_to_1_1_0_add_family],
+    },
+    # "1.2.0": {
+    #     "from": "1.1.0",
+    #     "fns": [migrate_1_1_0_to_1_2_0],
+    # },
+}
+
+
+def read_version() -> str:
+    if not VERSION_FILE.exists():
+        return "0.0.0"
+    return VERSION_FILE.read_text(encoding="utf-8").strip()
+
+
+def write_version(v: str) -> None:
+    VERSION_FILE.write_text(v + "\n", encoding="utf-8")
+
+
+def iter_data_files():
+    """Пройти по всем (type_name, folder, json_path)."""
+    for type_name, json_name in TYPE_FILES.items():
+        type_dir = DATA_DIR / type_name
+        if not type_dir.exists():
+            continue
+        for folder in sorted(type_dir.iterdir()):
+            if not folder.is_dir():
+                continue
+            json_file = folder / json_name
+            if json_file.exists():
+                yield type_name, folder, json_file
+
+
+def apply_migration(
+    version: str,
+    fns: list[Callable],
+    dry_run: bool,
+) -> int:
+    """
+    Применить набор функций миграции ко всем файлам.
+    Возвращает количество изменённых файлов.
+    """
+    changed = 0
+
+    for type_name, folder, json_file in iter_data_files():
+        try:
+            with json_file.open(encoding="utf-8") as f:
+                data = json.load(f)
+        except json.JSONDecodeError as e:
+            print(f"  ✗ {json_file}: сломанный JSON — {e}", file=sys.stderr)
+            continue
+
+        modified = False
+        for fn in fns:
+            result = fn(type_name, data)
+            if result is not None and result != data:
+                data = result
+                modified = True
+
+        if not modified:
+            continue
+
+        changed += 1
+        rel = json_file.relative_to(ROOT)
+        print(f"  {'would update' if dry_run else 'update'}: {rel}")
+
+        if not dry_run:
+            with json_file.open("w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
+
+    return changed
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description="Migrate data schema")
+    parser.add_argument("--dry-run", action="store_true",
+                        help="Показать, что будет изменено, не трогая файлы")
+    parser.add_argument("--to", type=str, default=None,
+                        help="Целевая версия (по умолчанию — последняя "
+                             "из MIGRATIONS)")
+    args = parser.parse_args()
+
+    current = read_version()
+    print(f"[migrate] Текущая версия: {current}")
+
+    if not MIGRATIONS:
+        print("[migrate] Нет зарегистрированных миграций.")
+        return 0
+
+    # Сортируем ключи (версии) лексикографически по семантике.
+    def vkey(v: str):
+        return tuple(int(x) for x in v.split("."))
+
+    targets = sorted(MIGRATIONS.keys(), key=vkey)
+    if args.to:
+        targets = [t for t in targets if vkey(t) <= vkey(args.to)]
+
+    applied_any = False
+
+    for target in targets:
+        info = MIGRATIONS[target]
+        if info["from"] != current:
+            continue
+        print(f"[migrate] {current} → {target}")
+        n = apply_migration(target, info["fns"], args.dry_run)
+        print(f"[migrate] изменено файлов: {n}")
+        if not args.dry_run:
+            write_version(target)
+        current = target
+        applied_any = True
+
+    if not applied_any:
+        print("[migrate] Нечего применять — версия актуальна.")
+        return 0
+
+    if args.dry_run:
+        print("[migrate] (dry-run, файлы не изменены)")
+
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+// ============ FILE: scripts/requirements.txt ============
+jsonschema>=4.20.0
+pyyaml>=6.0
+
+// ============ FILE: scripts/seed_data.py ============
+#!/usr/bin/env python3
+"""
+seed_data.py — базовый набор данных: Jujutsu Kaisen.
+
+Создаёт:
+  • 20 персонажей
+  • 1 мир (Jujutsu Kaisen)
+  • ~20 способностей
+  • стандартные роли / сценарии / оси
+
+Идемпотентен: существующие папки не перезаписываются.
+
+Запуск:
+    python scripts/seed_data.py
+    python scripts/build_index.py
+"""
+
+import json
+import sys
+import uuid
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+
+NS = uuid.UUID("12345678-1234-5678-1234-567812345678")
+
+
+def make_uuid(type_name: str, name: str) -> str:
+    return str(uuid.uuid5(NS, f"{type_name}:{name}"))
+
+
+def slug(name: str) -> str:
+    s = name.lower().replace(" ", "_")
+    return "".join(c if c.isalnum() or c == "_" else "_" for c in s)
+
+
+def axes_to_dict(values):
+    keys = ["a", "aMin", "aMax", "bMax", "bMin"]
+    return dict(zip(keys, values))
+
+
+# ============================================================================
+# ПЕРСОНАЖИ JJK
+# ============================================================================
+
+CHARACTERS = [
+    # 1. Сатору Годжо — Special Grade, сильнейший
+    {
+        "name": "Сатору Годжо", "y": 0.9,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "gojo", "variant": "Awakened",
+        "tags": ["jujutsu_high", "special_grade", "gojo_clan"],
+        "axes": {
+            "str":   [30, 20, 45, 90, 10],
+            "spd":   [75, 65, 85, 95, 5],
+            "acc":   [70, 55, 85, 92, 8],
+            "stam":  [85, 70, 100, 95, 5],
+            "dur":   [90, 80, 100, 95, 5],
+            "ctrl":  [80, 65, 95, 88, 12],
+            "ment":  [40, 25, 60, 75, 25],
+            "sens":  [75, 60, 90, 88, 12],
+            "heal":  [70, 50, 90, 85, 15],
+            "supp":  [70, 55, 85, 82, 18],
+            "intel": [80, 65, 95, 90, 10],
+            "util":  [85, 75, 95, 92, 8],
+            "range": [85, 75, 95, 90, 10],
+            "aoe":   [80, 65, 95, 88, 12],
+        },
+    },
+    # 2. Рёмен Сукуна
+    {
+        "name": "Рёмен Сукуна", "y": 0.7,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "sukuna", "variant": "Heian Era",
+        "tags": ["cursed_spirit", "king_of_curses"],
+        "axes": {
+            "str":   [35, 25, 50, 90, 10],
+            "spd":   [70, 60, 80, 92, 8],
+            "acc":   [65, 50, 80, 88, 12],
+            "stam":  [90, 80, 100, 95, 5],
+            "dur":   [75, 60, 90, 90, 10],
+            "ctrl":  [85, 70, 100, 92, 8],
+            "ment":  [60, 40, 80, 85, 15],
+            "sens":  [65, 50, 80, 85, 15],
+            "heal":  [75, 60, 90, 88, 12],
+            "supp":  [40, 25, 60, 75, 25],
+            "intel": [90, 80, 100, 95, 5],
+            "util":  [90, 80, 100, 95, 5],
+            "range": [80, 65, 90, 88, 12],
+            "aoe":   [85, 70, 100, 90, 10],
+        },
+    },
+    # 3. Юдзи Итадори
+    {
+        "name": "Юдзи Итадори", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "itadori", "variant": "Shibuya",
+        "tags": ["jujutsu_high", "vessel"],
+        "axes": {
+            "str":   [35, 25, 50, 85, 15],
+            "spd":   [45, 35, 55, 85, 15],
+            "acc":   [40, 30, 50, 80, 20],
+            "stam":  [70, 55, 85, 88, 12],
+            "dur":   [45, 35, 55, 82, 18],
+            "ctrl":  [25, 15, 35, 60, 30],
+            "ment":  [30, 20, 40, 65, 33],
+            "sens":  [35, 25, 45, 70, 30],
+            "heal":  [55, 40, 70, 82, 18],
+            "supp":  [35, 20, 50, 70, 30],
+            "intel": [40, 25, 55, 70, 30],
+            "util":  [55, 40, 70, 85, 15],
+            "range": [25, 18, 35, 70, 30],
+            "aoe":   [35, 25, 50, 75, 25],
+        },
+    },
+    # 4. Мегуми Фушигуро
+    {
+        "name": "Мегуми Фушигуро", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "fushiguro", "variant": "Shibuya",
+        "tags": ["jujutsu_high", "zenin"],
+        "axes": {
+            "str":   [28, 18, 40, 80, 20],
+            "spd":   [50, 40, 60, 85, 15],
+            "acc":   [45, 35, 55, 82, 18],
+            "stam":  [60, 45, 75, 82, 18],
+            "dur":   [30, 20, 40, 75, 25],
+            "ctrl":  [50, 35, 65, 80, 20],
+            "ment":  [35, 25, 45, 70, 30],
+            "sens":  [50, 35, 65, 80, 20],
+            "heal":  [40, 25, 55, 78, 22],
+            "supp":  [55, 40, 70, 82, 18],
+            "intel": [70, 55, 85, 88, 12],
+            "util":  [75, 60, 90, 88, 12],
+            "range": [60, 45, 75, 82, 18],
+            "aoe":   [55, 40, 70, 80, 20],
+        },
+    },
+    # 5. Нобара Кугисаки
+    {
+        "name": "Нобара Кугисаки", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "kugisaki", "variant": "Shibuya",
+        "tags": ["jujutsu_high"],
+        "axes": {
+            "str":   [25, 15, 35, 78, 22],
+            "spd":   [40, 30, 50, 80, 20],
+            "acc":   [35, 25, 45, 75, 25],
+            "stam":  [55, 40, 70, 80, 20],
+            "dur":   [28, 18, 38, 75, 25],
+            "ctrl":  [35, 25, 45, 70, 30],
+            "ment":  [30, 20, 40, 65, 33],
+            "sens":  [30, 20, 40, 68, 32],
+            "heal":  [35, 20, 50, 72, 28],
+            "supp":  [40, 25, 55, 75, 25],
+            "intel": [45, 30, 60, 75, 25],
+            "util":  [60, 45, 75, 85, 15],
+            "range": [45, 30, 60, 78, 22],
+            "aoe":   [40, 25, 55, 75, 25],
+        },
+    },
+    # 6. Маки Зенин
+    {
+        "name": "Маки Зенин", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "zenin", "variant": "Awakened",
+        "tags": ["jujutsu_high", "zenin"],
+        "axes": {
+            "str":   [35, 25, 45, 82, 18],
+            "spd":   [45, 35, 55, 82, 18],
+            "acc":   [45, 35, 55, 80, 20],
+            "stam":  [65, 50, 80, 85, 15],
+            "dur":   [35, 25, 45, 78, 22],
+            "ctrl":  [30, 20, 40, 68, 32],
+            "ment":  [25, 15, 35, 60, 30],
+            "sens":  [35, 25, 45, 70, 30],
+            "heal":  [20, 10, 30, 60, 30],
+            "supp":  [40, 25, 55, 72, 28],
+            "intel": [55, 40, 70, 80, 20],
+            "util":  [55, 40, 70, 82, 18],
+            "range": [40, 30, 50, 72, 28],
+            "aoe":   [35, 25, 45, 70, 30],
+        },
+    },
+    # 7. Тоге Инумаки
+    {
+        "name": "Тоге Инумаки", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "inumaki", "variant": "Shibuya",
+        "tags": ["jujutsu_high", "inumaki_clan"],
+        "axes": {
+            "str":   [18, 10, 25, 70, 30],
+            "spd":   [35, 25, 45, 78, 22],
+            "acc":   [40, 30, 50, 78, 22],
+            "stam":  [45, 30, 60, 75, 25],
+            "dur":   [20, 12, 28, 68, 32],
+            "ctrl":  [50, 35, 65, 82, 18],
+            "ment":  [35, 25, 45, 72, 28],
+            "sens":  [30, 20, 40, 68, 32],
+            "heal":  [15,  8, 22, 55, 28],
+            "supp":  [55, 40, 70, 80, 20],
+            "intel": [55, 40, 70, 82, 18],
+            "util":  [70, 55, 85, 88, 12],
+            "range": [55, 40, 70, 78, 22],
+            "aoe":   [50, 35, 65, 78, 22],
+        },
+    },
+    # 8. Панда
+    {
+        "name": "Панда", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "panda", "variant": "Shibuya",
+        "tags": ["jujutsu_high", "cursed_corpse"],
+        "axes": {
+            "str":   [40, 30, 50, 82, 18],
+            "spd":   [35, 25, 45, 75, 25],
+            "acc":   [35, 25, 45, 75, 25],
+            "stam":  [70, 55, 85, 85, 15],
+            "dur":   [55, 40, 70, 82, 18],
+            "ctrl":  [30, 20, 40, 68, 32],
+            "ment":  [25, 15, 35, 60, 30],
+            "sens":  [30, 20, 40, 65, 33],
+            "heal":  [30, 20, 40, 70, 30],
+            "supp":  [35, 20, 50, 70, 30],
+            "intel": [35, 25, 45, 68, 32],
+            "util":  [45, 30, 60, 75, 25],
+            "range": [30, 20, 40, 65, 33],
+            "aoe":   [30, 20, 40, 68, 32],
+        },
+    },
+    # 9. Кенто Нанами
+    {
+        "name": "Кенто Нанами", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "nanami", "variant": "Grade 1",
+        "tags": ["jujutsu_high", "grade_1"],
+        "axes": {
+            "str":   [25, 15, 35, 78, 22],
+            "spd":   [40, 30, 50, 80, 20],
+            "acc":   [45, 35, 55, 80, 20],
+            "stam":  [60, 45, 75, 82, 18],
+            "dur":   [30, 20, 40, 75, 25],
+            "ctrl":  [45, 30, 60, 78, 22],
+            "ment":  [45, 30, 60, 78, 22],
+            "sens":  [35, 25, 45, 70, 30],
+            "heal":  [25, 15, 35, 65, 33],
+            "supp":  [45, 30, 60, 75, 25],
+            "intel": [65, 50, 80, 85, 15],
+            "util":  [60, 45, 75, 82, 18],
+            "range": [50, 35, 65, 78, 22],
+            "aoe":   [45, 30, 60, 78, 22],
+        },
+    },
+    # 10. Сугуру Гето
+    {
+        "name": "Сугуру Гето", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "geto", "variant": "Curse User",
+        "tags": ["curse_user", "special_grade"],
+        "axes": {
+            "str":   [28, 18, 40, 80, 20],
+            "spd":   [55, 45, 65, 85, 15],
+            "acc":   [55, 45, 65, 85, 15],
+            "stam":  [70, 55, 85, 88, 12],
+            "dur":   [35, 25, 45, 78, 22],
+            "ctrl":  [70, 55, 85, 88, 12],
+            "ment":  [55, 40, 70, 85, 15],
+            "sens":  [55, 40, 70, 82, 18],
+            "heal":  [55, 40, 70, 82, 18],
+            "supp":  [65, 50, 80, 85, 15],
+            "intel": [85, 75, 95, 92,  8],
+            "util":  [85, 70, 100, 92, 8],
+            "range": [70, 55, 85, 85, 15],
+            "aoe":   [65, 50, 80, 82, 18],
+        },
+    },
+    # 11. Махито
+    {
+        "name": "Махито", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "mahito", "variant": "Full Power",
+        "tags": ["cursed_spirit", "special_grade"],
+        "axes": {
+            "str":   [30, 20, 40, 78, 22],
+            "spd":   [60, 50, 70, 88, 12],
+            "acc":   [50, 40, 60, 82, 18],
+            "stam":  [80, 65, 95, 90, 10],
+            "dur":   [75, 60, 90, 88, 12],
+            "ctrl":  [65, 50, 80, 82, 18],
+            "ment":  [70, 55, 85, 85, 15],
+            "sens":  [55, 40, 70, 80, 20],
+            "heal":  [80, 65, 95, 90, 10],
+            "supp":  [30, 20, 40, 65, 33],
+            "intel": [55, 40, 70, 80, 20],
+            "util":  [85, 70, 100, 92, 8],
+            "range": [55, 40, 70, 80, 20],
+            "aoe":   [65, 50, 80, 82, 18],
+        },
+    },
+    # 12. Джого
+    {
+        "name": "Джого", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "jogo", "variant": "Shibuya",
+        "tags": ["cursed_spirit", "special_grade", "disaster"],
+        "axes": {
+            "str":   [30, 20, 40, 78, 22],
+            "spd":   [55, 45, 65, 85, 15],
+            "acc":   [45, 35, 55, 80, 20],
+            "stam":  [75, 60, 90, 88, 12],
+            "dur":   [50, 40, 60, 82, 18],
+            "ctrl":  [55, 40, 70, 80, 20],
+            "ment":  [40, 25, 55, 75, 25],
+            "sens":  [45, 30, 60, 75, 25],
+            "heal":  [30, 20, 40, 65, 33],
+            "supp":  [35, 20, 50, 70, 30],
+            "intel": [45, 30, 60, 75, 25],
+            "util":  [80, 65, 95, 90, 10],
+            "range": [70, 55, 85, 85, 15],
+            "aoe":   [75, 60, 90, 88, 12],
+        },
+    },
+    # 13. Хана
+    {
+        "name": "Хана", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "hanami", "variant": "Shibuya",
+        "tags": ["cursed_spirit", "special_grade", "disaster"],
+        "axes": {
+            "str":   [28, 18, 38, 75, 25],
+            "spd":   [45, 35, 55, 80, 20],
+            "acc":   [40, 30, 50, 78, 22],
+            "stam":  [75, 60, 90, 88, 12],
+            "dur":   [55, 40, 70, 82, 18],
+            "ctrl":  [55, 40, 70, 80, 20],
+            "ment":  [35, 25, 45, 70, 30],
+            "sens":  [45, 30, 60, 75, 25],
+            "heal":  [75, 60, 90, 88, 12],
+            "supp":  [40, 25, 55, 72, 28],
+            "intel": [35, 25, 45, 68, 32],
+            "util":  [75, 60, 90, 88, 12],
+            "range": [65, 50, 80, 82, 18],
+            "aoe":   [70, 55, 85, 85, 15],
+        },
+    },
+    # 14. Дагон
+    {
+        "name": "Дагон", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "dagon", "variant": "Shibuya",
+        "tags": ["cursed_spirit", "special_grade", "disaster"],
+        "axes": {
+            "str":   [28, 18, 38, 75, 25],
+            "spd":   [55, 45, 65, 85, 15],
+            "acc":   [45, 35, 55, 80, 20],
+            "stam":  [75, 60, 90, 88, 12],
+            "dur":   [50, 40, 60, 82, 18],
+            "ctrl":  [65, 50, 80, 85, 15],
+            "ment":  [45, 30, 60, 75, 25],
+            "sens":  [45, 30, 60, 75, 25],
+            "heal":  [30, 20, 40, 65, 33],
+            "supp":  [35, 20, 50, 70, 30],
+            "intel": [40, 30, 50, 70, 30],
+            "util":  [80, 65, 95, 88, 12],
+            "range": [70, 55, 85, 85, 15],
+            "aoe":   [75, 60, 90, 88, 12],
+        },
+    },
+    # 15. Чосо
+    {
+        "name": "Чосо", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "kamo", "variant": "Death Painting",
+        "tags": ["cursed_womb", "death_painting"],
+        "axes": {
+            "str":   [25, 15, 35, 75, 25],
+            "spd":   [45, 35, 55, 78, 22],
+            "acc":   [35, 25, 45, 72, 28],
+            "stam":  [55, 40, 70, 78, 22],
+            "dur":   [35, 25, 45, 75, 25],
+            "ctrl":  [40, 25, 55, 70, 30],
+            "ment":  [35, 25, 45, 70, 30],
+            "sens":  [35, 25, 45, 70, 30],
+            "heal":  [30, 20, 40, 65, 33],
+            "supp":  [35, 20, 50, 70, 30],
+            "intel": [60, 45, 75, 82, 18],
+            "util":  [60, 45, 75, 82, 18],
+            "range": [55, 40, 70, 78, 22],
+            "aoe":   [55, 40, 70, 78, 22],
+        },
+    },
+    # 16. Юта Оккоцу
+    {
+        "name": "Юта Оккоцу", "y": 0.7,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "okkotsu", "variant": "Special Grade",
+        "tags": ["jujutsu_high", "special_grade"],
+        "axes": {
+            "str":   [28, 18, 38, 78, 22],
+            "spd":   [60, 50, 70, 85, 15],
+            "acc":   [55, 40, 70, 82, 18],
+            "stam":  [85, 70, 100, 92, 8],
+            "dur":   [50, 40, 60, 82, 18],
+            "ctrl":  [65, 50, 80, 82, 18],
+            "ment":  [55, 40, 70, 80, 20],
+            "sens":  [55, 40, 70, 80, 20],
+            "heal":  [80, 65, 95, 90, 10],
+            "supp":  [60, 45, 75, 82, 18],
+            "intel": [70, 55, 85, 85, 15],
+            "util":  [85, 70, 100, 92, 8],
+            "range": [70, 55, 85, 85, 15],
+            "aoe":   [70, 55, 85, 85, 15],
+        },
+    },
+    # 17. Хакари Кинджи
+    {
+        "name": "Хакари Кинджи", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "hakari", "variant": "Jackpot",
+        "tags": ["jujutsu_high", "suspended"],
+        "axes": {
+            "str":   [35, 25, 45, 80, 20],
+            "spd":   [50, 40, 60, 82, 18],
+            "acc":   [40, 30, 50, 78, 22],
+            "stam":  [80, 65, 95, 90, 10],
+            "dur":   [45, 35, 55, 80, 20],
+            "ctrl":  [35, 25, 45, 70, 30],
+            "ment":  [35, 25, 45, 70, 30],
+            "sens":  [35, 25, 45, 70, 30],
+            "heal":  [70, 55, 85, 85, 15],
+            "supp":  [30, 20, 40, 65, 33],
+            "intel": [45, 30, 60, 75, 25],
+            "util":  [70, 55, 85, 88, 12],
+            "range": [45, 30, 60, 72, 28],
+            "aoe":   [50, 35, 65, 75, 25],
+        },
+    },
+    # 18. Аой Тодо
+    {
+        "name": "Аой Тодо", "y": 0.5,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "todo", "variant": "Kyoto",
+        "tags": ["jujutsu_high", "grade_1"],
+        "axes": {
+            "str":   [40, 30, 50, 82, 18],
+            "spd":   [45, 35, 55, 80, 20],
+            "acc":   [40, 30, 50, 78, 22],
+            "stam":  [65, 50, 80, 82, 18],
+            "dur":   [40, 30, 50, 78, 22],
+            "ctrl":  [45, 30, 60, 75, 25],
+            "ment":  [35, 25, 45, 70, 30],
+            "sens":  [40, 30, 50, 72, 28],
+            "heal":  [20, 10, 30, 60, 30],
+            "supp":  [65, 50, 80, 85, 15],
+            "intel": [70, 55, 85, 85, 15],
+            "util":  [60, 45, 75, 80, 20],
+            "range": [40, 30, 50, 72, 28],
+            "aoe":   [40, 30, 50, 72, 28],
+        },
+    },
+    # 19. Момо Нишимия
+    {
+        "name": "Момо Нишимия", "y": 0.4,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "nishimiya", "variant": "Kyoto",
+        "tags": ["jujutsu_high"],
+        "axes": {
+            "str":   [15,  8, 22, 65, 33],
+            "spd":   [35, 25, 45, 72, 28],
+            "acc":   [35, 25, 45, 72, 28],
+            "stam":  [40, 30, 50, 70, 30],
+            "dur":   [18, 10, 25, 60, 30],
+            "ctrl":  [40, 30, 50, 72, 28],
+            "ment":  [30, 20, 40, 65, 33],
+            "sens":  [35, 25, 45, 68, 32],
+            "heal":  [20, 10, 30, 58, 30],
+            "supp":  [45, 30, 60, 75, 25],
+            "intel": [55, 40, 70, 78, 22],
+            "util":  [50, 35, 65, 75, 25],
+            "range": [45, 30, 60, 72, 28],
+            "aoe":   [40, 30, 50, 70, 30],
+        },
+    },
+    # 20. Мэй Мэй
+    {
+        "name": "Мэй Мэй", "y": 0.6,
+        "worldId": "jujutsu_kaisen",
+        "familyId": "mei_mei", "variant": "Grade 1",
+        "tags": ["jujutsu_high", "grade_1", "mercenary"],
+        "axes": {
+            "str":   [20, 12, 28, 68, 32],
+            "spd":   [40, 30, 50, 75, 25],
+            "acc":   [60, 45, 75, 85, 15],
+            "stam":  [55, 40, 70, 78, 22],
+            "dur":   [25, 15, 35, 70, 30],
+            "ctrl":  [55, 40, 70, 80, 20],
+            "ment":  [40, 25, 55, 72, 28],
+            "sens":  [45, 30, 60, 75, 25],
+            "heal":  [25, 15, 35, 62, 30],
+            "supp":  [45, 30, 60, 75, 25],
+            "intel": [60, 45, 75, 82, 18],
+            "util":  [70, 55, 85, 85, 15],
+            "range": [80, 65, 95, 90, 10],
+            "aoe":   [60, 45, 75, 80, 20],
+        },
+    },
+]
+
+
+# ============================================================================
+# РОЛИ / СЦЕНАРИИ / ОСИ (универсальные)
+# ============================================================================
+
+ROLES = [
+    {"name": "Боец", "weights": {
+        "str": 2.0, "spd": 1.5, "acc": 1.2, "stam": 1.0, "dur": 1.8,
+        "ctrl": 0.8, "ment": 1.0, "sens": 1.0, "heal": 0.3, "supp": 0.1,
+        "intel": 1.0, "util": 1.0, "range": 1.5, "aoe": 1.5,
+    }},
+    {"name": "Контролёр", "weights": {
+        "str": 0.3, "spd": 1.2, "acc": 0.8, "stam": 0.8, "dur": 0.3,
+        "ctrl": 2.5, "ment": 1.8, "sens": 1.0, "heal": 0.3, "supp": 0.1,
+        "intel": 1.5, "util": 1.0, "range": 1.2, "aoe": 1.2,
+    }},
+    {"name": "Медик", "weights": {
+        "str": 0.2, "spd": 2.0, "acc": 0.2, "stam": 1.5, "dur": 1.0,
+        "ctrl": 0.5, "ment": 0.5, "sens": 1.0, "heal": 2.5, "supp": 2.5,
+        "intel": 0.3, "util": 1.0, "range": 0.0, "aoe": 0.5,
+    }},
+    {"name": "Разведчик", "weights": {
+        "str": 0.0, "spd": 2.0, "acc": 2.0, "stam": 1.0, "dur": 0.6,
+        "ctrl": 1.0, "ment": 1.0, "sens": 2.5, "heal": 0.0, "supp": 0.0,
+        "intel": 1.2, "util": 1.0, "range": 1.5, "aoe": 1.0,
+    }},
+    {"name": "Координатор", "weights": {
+        "str": 0.2, "spd": 1.0, "acc": 0.2, "stam": 0.5, "dur": 0.2,
+        "ctrl": 0.8, "ment": 1.5, "sens": 1.5, "heal": 0.2, "supp": 2.5,
+        "intel": 4.0, "util": 1.0, "range": 2.0, "aoe": 1.5,
+    }},
+    {"name": "Универсал", "weights": {
+        "str": 1.0, "spd": 1.0, "acc": 1.0, "stam": 1.0, "dur": 1.0,
+        "ctrl": 1.0, "ment": 1.0, "sens": 1.0, "heal": 1.0, "supp": 1.0,
+        "intel": 1.0, "util": 1.0, "range": 1.0, "aoe": 1.0,
+    }},
+]
+
+
+SCENARIOS = [
+    {"name": "Открытый бой",
+     "decaySide1": [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1],
+     "decaySide2": [1.0, 0.85, 0.7, 0.55, 0.4, 0.3, 0.2, 0.15, 0.1, 0.05]},
+    {"name": "Разведка",
+     "decaySide1": [1.0, 0.6, 0.4, 0.25, 0.15, 0.1, 0.05, 0.0, 0.0, 0.0],
+     "decaySide2": [1.0, 0.6, 0.4, 0.25, 0.15, 0.1, 0.05, 0.0, 0.0, 0.0]},
+    {"name": "Осада",
+     "decaySide1": [1.0, 0.95, 0.9, 0.85, 0.8, 0.75, 0.7, 0.65, 0.6, 0.55],
+     "decaySide2": [1.0, 0.95, 0.9, 0.85, 0.8, 0.75, 0.7, 0.65, 0.6, 0.55]},
+    {"name": "Дуэль",
+     "decaySide1": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+     "decaySide2": [1.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]},
+    {"name": "Война",
+     "decaySide1": [1.0, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3],
+     "decaySide2": [1.0, 0.95, 0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3]},
+]
+
+
+AXES = [
+    {"name": "Сила",         "id_key": "str",   "order": 1,  "desc": "Физический урон, пробитие"},
+    {"name": "Скорость",     "id_key": "spd",   "order": 2,  "desc": "Реакция, передвижение, атака"},
+    {"name": "Точность",     "id_key": "acc",   "order": 3,  "desc": "Попадание по цели"},
+    {"name": "Выносливость", "id_key": "stam",  "order": 4,  "desc": "Длительность боя"},
+    {"name": "Прочность",    "id_key": "dur",   "order": 5,  "desc": "Сопротивление урону"},
+    {"name": "Контроль",     "id_key": "ctrl",  "order": 6,  "desc": "Барьеры, зоны, доминирование"},
+    {"name": "Ментальное",   "id_key": "ment",  "order": 7,  "desc": "Телепатия, внушение, иллюзии"},
+    {"name": "Сенсорика",    "id_key": "sens",  "order": 8,  "desc": "Обнаружение, радар, восприятие"},
+    {"name": "Лечение",      "id_key": "heal",  "order": 9,  "desc": "Восстановление себя и союзников"},
+    {"name": "Поддержка",    "id_key": "supp",  "order": 10, "desc": "Баффы, командная синергия"},
+    {"name": "Интеллект",    "id_key": "intel", "order": 11, "desc": "Планирование, тактика, адаптация"},
+    {"name": "Полезные",     "id_key": "util",  "order": 12, "desc": "Прочие способности"},
+    {"name": "Дальность",    "id_key": "range", "order": 13, "desc": "Дистанция атаки"},
+    {"name": "AoE",          "id_key": "aoe",   "order": 14, "desc": "Площадь поражения"},
+]
+
+
+# ============================================================================
+# МИР JJK
+# ============================================================================
+
+WORLDS = [
+    {
+        "name": "Jujutsu Kaisen",
+        "creators": ["Gege Akutami"],
+        "physicality": "hybrid",
+        "powerSource": "cursed_energy",
+        "powerScaleMax": 85,
+        "rules": {
+            "canBeAffectedBy": ["physical", "cursed_energy", "spiritual"],
+            "immuneTo": ["pure_physical_by_nonsorcerer"],
+        },
+        "compatibility": {
+            "jujutsu_kaisen": {"compatible": "same",
+                               "note": "Тот же мир"},
+            "naruto": {"compatible": "compatible",
+                       "note": "Оба используют энергию; маги видят духов"},
+            "bleach": {"compatible": "requires_hax",
+                       "note": "Требуется способность видеть духов"},
+            "onepiece": {"compatible": "requires_hax",
+                         "note": "Проклятые духи невидимы для обычных"},
+        },
+    },
+]
+
+
+# ============================================================================
+# СПОСОБНОСТИ JJK
+# ============================================================================
+
+ABILITIES = [
+    {
+        "name": "Безграничность",
+        "description": "Пространственный барьер между пользователем и целью. "
+                       "Ничто не может коснуться его, если он того не хочет.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "dur",
+                "bonus": 50, "durationType": "toggle"}},
+            {"tagId": "utility", "aspectValues": {
+                "effectKind": "teleport",
+                "note": "Управляет бесконечностью пространства"}},
+        ],
+    },
+    {
+        "name": "Шесть Глаз",
+        "description": "Врождённая техника клана Годжо. Позволяет воспринимать "
+                       "проклятую энергию в идеальной точности.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "sens",
+                "bonus": 40, "durationType": "passive"}},
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "acc",
+                "bonus": 30, "durationType": "passive"}},
+        ],
+    },
+    {
+        "name": "Красный (Reversal Red)",
+        "description": "Обратная техника. Отталкивающая сила, усиленная "
+                       "инверсией проклятой энергии.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 80, "damageType": "energy",
+                "ignoresDefense": True}},
+            {"tagId": "ranged", "aspectValues": {
+                "meters": 100, "projectileSpeed": 90}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 50, "shape": "circle"}},
+        ],
+    },
+    {
+        "name": "Пустой Фиолетовый (Hollow Purple)",
+        "description": "Совмещение Синего и Красного. Аннигилирует всё на пути.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 95, "damageType": "conceptual",
+                "ignoresDefense": True}},
+            {"tagId": "ranged", "aspectValues": {
+                "meters": 500, "projectileSpeed": 95}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 200, "shape": "line"}},
+        ],
+    },
+    {
+        "name": "Домен: Бесконечная Пустота",
+        "description": "Домен Годжо. Заставляет цель воспринимать бесконечный "
+                       "поток информации — паралич на всю жизнь.",
+        "type": "domain_expansion",
+        "tags": [
+            {"tagId": "control", "aspectValues": {
+                "controlType": "stun", "targets": 100,
+                "durationSeconds": 9999}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 500, "shape": "circle"}},
+            {"tagId": "cooldown", "aspectValues": {
+                "turns": 1, "description": "Один раз в день, большая цена"}},
+        ],
+    },
+    {
+        "name": "Расщепление (Cleave)",
+        "description": "Техника Сукуны. Разрезает цель в зависимости от её "
+                       "прочности и проклятой энергии.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 85, "damageType": "energy",
+                "ignoresDefense": True}},
+            {"tagId": "melee", "aspectValues": {"reachMeters": 5}},
+        ],
+    },
+    {
+        "name": "Рассечение (Dismantle)",
+        "description": "Метательные разрезы Сукуны. Поражают на расстоянии.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 80, "damageType": "energy",
+                "ignoresDefense": True}},
+            {"tagId": "ranged", "aspectValues": {
+                "meters": 100, "projectileSpeed": 85}},
+        ],
+    },
+    {
+        "name": "Десять Теней",
+        "description": "Врождённая техника клана Зенин. Призыв теневых "
+                       "шикигами через руки.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "summon", "aspectValues": {
+                "summonedType": "шикигами", "count": 10,
+                "durationMinutes": 60}},
+            {"tagId": "chakra_cost", "aspectValues": {
+                "description": "растёт с числом призванных",
+                "percentOfPool": 30}},
+        ],
+    },
+    {
+        "name": "Маhорага",
+        "description": "Сильнейший шикигами Десяти Теней. Адаптируется "
+                       "к любой технике после первого попадания.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "summon", "aspectValues": {
+                "summonedType": "шикигами", "count": 1,
+                "durationMinutes": 30}},
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "dur",
+                "bonus": 60, "durationType": "temporary"}},
+            {"tagId": "cooldown", "aspectValues": {
+                "turns": 30,
+                "description": "требует ритуала полного раскрытия"}},
+        ],
+    },
+    {
+        "name": "Проклятая речь",
+        "description": "Техника клана Инумаки. Слова становятся приказами, "
+                       "которые нельзя ослушаться.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "control", "aspectValues": {
+                "controlType": "mind_control", "targets": 3,
+                "durationSeconds": 30}},
+            {"tagId": "debuff", "aspectValues": {
+                "target": "group", "debuffedAxis": "spd",
+                "penalty": 30, "durationType": "temporary"}},
+            {"tagId": "chakra_cost", "aspectValues": {
+                "description": "сильно нагружает горло",
+                "percentOfPool": 20}},
+        ],
+    },
+    {
+        "name": "Резонанс",
+        "description": "Техника Нобары. Через куклу вуду наносит урон, "
+                       "связанный с частью тела цели.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 60, "damageType": "spiritual",
+                "ignoresDefense": True}},
+            {"tagId": "ranged", "aspectValues": {
+                "meters": 10000, "projectileSpeed": 40}},
+            {"tagId": "chakra_cost", "aspectValues": {
+                "description": "требует часть тела цели",
+                "percentOfPool": 15}},
+        ],
+    },
+    {
+        "name": "Идле Трансфигурэйшн",
+        "description": "Техника Махито. Изменяет форму души любого существа.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 80, "damageType": "conceptual",
+                "ignoresDefense": True}},
+            {"tagId": "heal", "aspectValues": {
+                "amount": 90, "targets": "self",
+                "curesStatuses": True}},
+            {"tagId": "melee", "aspectValues": {"reachMeters": 5}},
+        ],
+    },
+    {
+        "name": "Буги-Вуги (Boogie Woogie)",
+        "description": "Техника Тодо. Мгновенный обмен позициями двух "
+                       "объектов с проклятой энергией.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "utility", "aspectValues": {
+                "effectKind": "teleport",
+                "note": "хлопок в ладоши меняет местами любые две цели"}},
+            {"tagId": "cooldown", "aspectValues": {
+                "turns": 1, "description": "ограничена хлопком"}},
+        ],
+    },
+    {
+        "name": "Пропорция 7:3",
+        "description": "Техника Нанами. Слабые точки противника делятся "
+                       "по пропорции 7:3, попадание в них критично.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 75, "damageType": "physical",
+                "ignoresDefense": True}},
+            {"tagId": "melee", "aspectValues": {"reachMeters": 2}},
+            {"tagId": "chakra_cost", "aspectValues": {
+                "description": "средний расход",
+                "percentOfPool": 20}},
+        ],
+    },
+    {
+        "name": "Манипуляция кровью",
+        "description": "Техника Чосо. Управляет собственной кровью как "
+                       "оружием и снарядом.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 65, "damageType": "energy",
+                "ignoresDefense": True}},
+            {"tagId": "ranged", "aspectValues": {
+                "meters": 50, "projectileSpeed": 60}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 20, "shape": "circle"}},
+        ],
+    },
+    {
+        "name": "Рика",
+        "description": "Особый проклятый дух Юты. Меняет форму и силу "
+                       "по желанию хозяина.",
+        "type": "special",
+        "tags": [
+            {"tagId": "summon", "aspectValues": {
+                "summonedType": "проклятый дух", "count": 1,
+                "durationMinutes": 999}},
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "str",
+                "bonus": 40, "durationType": "toggle"}},
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "heal",
+                "bonus": 30, "durationType": "toggle"}},
+        ],
+    },
+    {
+        "name": "Домен Хакари (Idle Death Gamble)",
+        "description": "Домен Хакари. Даёт бесконечную проклятую энергию "
+                       "на время действия при выпадении джекпота.",
+        "type": "domain_expansion",
+        "tags": [
+            {"tagId": "buff", "aspectValues": {
+                "target": "self", "buffedAxis": "stam",
+                "bonus": 50, "durationType": "temporary"}},
+            {"tagId": "heal", "aspectValues": {
+                "amount": 90, "targets": "self",
+                "curesStatuses": True}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 200, "shape": "circle"}},
+        ],
+    },
+    {
+        "name": "Снайпер-техника",
+        "description": "Техника Мэй Мэй. Выстрел на огромные расстояния "
+                       "с максимальной точностью.",
+        "type": "innate_technique",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 70, "damageType": "energy",
+                "ignoresDefense": False}},
+            {"tagId": "ranged", "aspectValues": {
+                "meters": 5000, "projectileSpeed": 85}},
+            {"tagId": "chakra_cost", "aspectValues": {
+                "description": "оплачивается за использование",
+                "percentOfPool": 15}},
+        ],
+    },
+    {
+        "name": "Домен Джого (Coffin of the Iron Mountain)",
+        "description": "Домен Джого. Заполняет пространство лавой и "
+                       "вулканическим пеплом.",
+        "type": "domain_expansion",
+        "tags": [
+            {"tagId": "damage", "aspectValues": {
+                "power": 85, "damageType": "energy",
+                "ignoresDefense": True, "isDot": True}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 100, "shape": "circle"}},
+            {"tagId": "control", "aspectValues": {
+                "controlType": "bind", "targets": 5,
+                "durationSeconds": 60}},
+        ],
+    },
+    {
+        "name": "Домен Хана",
+        "description": "Домен Хана. Заполняет пространство цветущим лесом, "
+                       "постоянно восстанавливающим его владельца.",
+        "type": "domain_expansion",
+        "tags": [
+            {"tagId": "heal", "aspectValues": {
+                "amount": 80, "targets": "self",
+                "curesStatuses": True}},
+            {"tagId": "aoe", "aspectValues": {
+                "radiusMeters": 100, "shape": "circle"}},
+            {"tagId": "control", "aspectValues": {
+                "controlType": "bind", "targets": 3,
+                "durationSeconds": 45}},
+        ],
+    },
+]
+
+
+# ============================================================================
+# ЗАПИСЬ
+# ============================================================================
+
+def write_entity(type_name: str, name: str, json_data: dict) -> bool:
+    entity_uuid = make_uuid(type_name, name)
+    folder_name = f"{slug(name)}__{entity_uuid}"
+
+    type_dir = DATA / type_name
+    type_dir.mkdir(parents=True, exist_ok=True)
+    folder = type_dir / folder_name
+
+    if folder.exists():
+        print(f"  ⚠ {type_name}/{folder_name} уже существует — пропуск")
+        return False
+
+    folder.mkdir()
+
+    json_name = {
+        "characters": "character.json",
+        "abilities":  "ability.json",
+        "roles":      "role.json",
+        "scenarios":  "scenario.json",
+        "axes":       "axis.json",
+        "worlds":     "world.json",
+        "tags":       "tag.json",
+    }[type_name]
+
+    with (folder / json_name).open("w", encoding="utf-8") as f:
+        json.dump(json_data, f, ensure_ascii=False, indent=2)
+
+    return True
+
+
+def build_character(data: dict) -> dict:
+    name = data["name"]
+    return {
+        "id": make_uuid("characters", name),
+        "name": name,
+        "y": data["y"],
+        "worldId": data.get("worldId"),
+        "familyId": data.get("familyId"),
+        "variant": data.get("variant"),
+        "tags": data.get("tags", []),
+        "abilities": [],
+        "description": data.get("description"),
+        "lore": data.get("lore"),
+        "iconPath": None,
+        "axes": {k: axes_to_dict(v) for k, v in data["axes"].items()},
+        "createdAt": "2025-01-01T00:00:00.000Z",
+        "updatedAt": "2025-01-01T00:00:00.000Z",
+    }
+
+
+def build_role(data: dict) -> dict:
+    return {
+        "id": make_uuid("roles", data["name"]),
+        "name": data["name"],
+        "weights": data["weights"],
+        "enabled": True,
+        "bgColor": None,
+        "textColor": None,
+    }
+
+
+def build_scenario(data: dict) -> dict:
+    return {
+        "id": make_uuid("scenarios", data["name"]),
+        "name": data["name"],
+        "decaySide1": data["decaySide1"],
+        "decaySide2": data["decaySide2"],
+        "enabled": True,
+    }
+
+
+def build_axis(data: dict) -> dict:
+    return {
+        "id": data["id_key"],
+        "name": data["name"],
+        "order": data["order"],
+        "enabled": True,
+        "isCustom": False,
+        "description": data.get("desc"),
+    }
+
+
+def build_world(data: dict) -> dict:
+    return {
+        "id": slug(data["name"]),
+        "name": data["name"],
+        "creators": data.get("creators", []),
+        "physicality": data["physicality"],
+        "powerSource": data.get("powerSource"),
+        "powerScaleMax": data.get("powerScaleMax"),
+        "rules": data.get("rules", {}),
+        "compatibility": data.get("compatibility", {}),
+    }
+
+
+def build_ability(data: dict) -> dict:
+    name = data["name"]
+    return {
+        "id": make_uuid("abilities", name),
+        "name": name,
+        "description": data.get("description"),
+        "type": data.get("type"),
+        "tags": data.get("tags", []),
+        "createdAt": "2025-01-01T00:00:00.000Z",
+        "updatedAt": "2025-01-01T00:00:00.000Z",
+    }
+
+
+def main() -> int:
+    print("[seed] Создание базовых данных (Jujutsu Kaisen)…")
+
+    counts = {
+        "characters": 0, "roles": 0, "scenarios": 0,
+        "axes": 0, "worlds": 0, "abilities": 0,
+    }
+
+    for c in CHARACTERS:
+        if write_entity("characters", c["name"], build_character(c)):
+            counts["characters"] += 1
+    for r in ROLES:
+        if write_entity("roles", r["name"], build_role(r)):
+            counts["roles"] += 1
+    for s in SCENARIOS:
+        if write_entity("scenarios", s["name"], build_scenario(s)):
+            counts["scenarios"] += 1
+    for a in AXES:
+        if write_entity("axes", a["name"], build_axis(a)):
+            counts["axes"] += 1
+    for w in WORLDS:
+        if write_entity("worlds", w["name"], build_world(w)):
+            counts["worlds"] += 1
+    for ab in ABILITIES:
+        if write_entity("abilities", ab["name"], build_ability(ab)):
+            counts["abilities"] += 1
+
+    print("\n[seed] Итого создано:")
+    for k, v in counts.items():
+        print(f"  {k}: {v}")
+
+    print("\n[seed] Готово. Не забудьте запустить:")
+    print("  python scripts/build_index.py")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+// ============ FILE: scripts/validate.py ============
+#!/usr/bin/env python3
+"""
+validate.py — проверяет все JSON в data/ против соответствующих схем.
+
+Запускается:
+  • автоматически в GitHub Action при push/PR
+  • вручную: python scripts/validate.py
+
+Возвращает exit code 0, если всё валидно, и 1, если есть ошибки.
+"""
+
+import json
+import sys
+from pathlib import Path
+
+try:
+    import jsonschema
+    from jsonschema import Draft7Validator
+except ImportError:
+    print("✗ Не установлен jsonschema. Запустите:", file=sys.stderr)
+    print("  pip install -r scripts/requirements.txt", file=sys.stderr)
+    sys.exit(2)
+
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = ROOT / "data"
+SCHEMA_DIR = ROOT / "schema"
+
+
+# Соответствие: имя папки в data/ → файл схемы + имя json-файла внутри
+TYPE_MAP = {
+    "characters": ("character.schema.json", "character.json"),
+    "abilities":  ("ability.schema.json",   "ability.json"),
+    "roles":      ("role.schema.json",      "role.json"),
+    "scenarios":  ("scenario.schema.json",  "scenario.json"),
+    "tags":       ("tag.schema.json",       "tag.json"),
+    "worlds":     ("world.schema.json",     "world.json"),
+    "axes":       ("axis.schema.json",      "axis.json"),
+}
+
+
+def load_schemas() -> dict:
+    """Загрузить все схемы и построить общий $ref-store."""
+    schemas = {}
+    store = {}
+    for schema_file in SCHEMA_DIR.glob("*.json"):
+        try:
+            with schema_file.open(encoding="utf-8") as f:
+                data = json.load(f)
+            schemas[schema_file.name] = data
+            if "$id" in data:
+                store[data["$id"]] = data
+        except json.JSONDecodeError as e:
+            print(f"✗ Схема повреждена: {schema_file.name}: {e}",
+                  file=sys.stderr)
+            sys.exit(2)
+    return schemas, store
+
+
+def validate_folder(
+    folder: Path,
+    json_name: str,
+    schema: dict,
+    store: dict,
+    errors: list,
+) -> bool:
+    """Проверить один файл. Возвращает True, если валидно."""
+    json_file = folder / json_name
+    if not json_file.exists():
+        errors.append(f"  ✗ {folder.name}: нет {json_name}")
+        return False
+
+    try:
+        with json_file.open(encoding="utf-8") as f:
+            data = json.load(f)
+    except json.JSONDecodeError as e:
+        errors.append(f"  ✗ {folder.name}: сломанный JSON — {e}")
+        return False
+
+    validator = Draft7Validator(schema, resolver=None)
+    # Простой резолвер ref'ов через store
+    from jsonschema import RefResolver
+    validator = Draft7Validator(
+        schema,
+        resolver=RefResolver.from_schema(schema, store=store),
+    )
+
+    ok = True
+    for err in sorted(validator.iter_errors(data), key=lambda e: e.path):
+        path = " → ".join(str(p) for p in err.path) or "(root)"
+        errors.append(f"  ✗ {folder.name}: [{path}] {err.message}")
+        ok = False
+
+    return ok
+
+
+def main() -> int:
+    if not DATA_DIR.exists():
+        print("✗ Нет папки data/", file=sys.stderr)
+        return 1
+    if not SCHEMA_DIR.exists():
+        print("✗ Нет папки schema/", file=sys.stderr)
+        return 1
+
+    schemas, store = load_schemas()
+    print(f"[validate] Загружено схем: {len(schemas)}")
+
+    total_ok = 0
+    total_err = 0
+    all_errors = []
+
+    for type_name, (schema_name, json_name) in TYPE_MAP.items():
+        schema = schemas.get(schema_name)
+        if schema is None:
+            print(f"⚠ Нет схемы {schema_name} для типа {type_name}")
+            continue
+
+        type_dir = DATA_DIR / type_name
+        if not type_dir.exists():
+            continue
+
+        type_errors = []
+        for folder in sorted(type_dir.iterdir()):
+            if not folder.is_dir():
+                continue
+            if validate_folder(folder, json_name, schema, store,
+                               type_errors):
+                total_ok += 1
+            else:
+                total_err += 1
+                all_errors.extend(type_errors[-len([
+                    e for e in type_errors
+                ]):] if False else [])
+
+        if type_errors:
+            print(f"\n[{type_name}] ошибок: {len(type_errors)}")
+            for e in type_errors:
+                print(e)
+            all_errors.extend(type_errors)
+        else:
+            count = sum(
+                1 for f in type_dir.iterdir()
+                if f.is_dir()
+            )
+            if count:
+                print(f"  ✓ {type_name}: {count} записей валидны")
+
+    print(f"\n[validate] Итог: {total_ok} ok, {total_err} с ошибками")
+
+    if all_errors:
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
+// ============ FILE: shema/ability.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/ability.schema.json",
+  "title": "Ability",
+  "type": "object",
+  "required": ["id", "name", "tags", "createdAt", "updatedAt"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": ["string", "null"] },
+    "lore":        { "type": ["string", "null"] },
+    "iconPath":    { "type": ["string", "null"] },
+    "type":        { "type": ["string", "null"] },
+
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["tagId", "aspectValues"],
+        "properties": {
+          "tagId": { "type": "string", "minLength": 1 },
+          "aspectValues": {
+            "type": "object",
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: shema/axis.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/axis.schema.json",
+  "title": "Axis",
+  "type": "object",
+  "required": ["id", "name", "order"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "order":   { "type": "integer", "minimum": 0 },
+    "enabled": { "type": "boolean" },
+    "isCustom": { "type": "boolean" },
+    "description": { "type": ["string", "null"] },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: shema/axis_value.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/axis_value.schema.json",
+  "title": "AxisValue",
+  "description": "Значения одной оси для персонажа",
+  "type": "object",
+  "required": ["a", "aMin", "aMax", "bMax", "bMin"],
+  "properties": {
+    "a":    { "type": "number", "minimum": 0, "maximum": 100 },
+    "aMin": { "type": "number", "minimum": 0, "maximum": 100 },
+    "aMax": { "type": "number", "minimum": 0, "maximum": 100 },
+    "bMax": { "type": "number", "minimum": 0, "maximum": 100 },
+    "bMin": { "type": "number", "minimum": 0, "maximum": 100 }
+  },
+  "additionalProperties": false
+}
+
+// ============ FILE: shema/character.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/character.schema.json",
+  "title": "Character",
+  "type": "object",
+  "required": ["id", "name", "y", "axes", "createdAt", "updatedAt"],
+  "properties": {
+    "id":     { "type": "string", "minLength": 1 },
+    "name":   { "type": "string", "minLength": 1 },
+    "iconPath":   { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "lore":        { "type": ["string", "null"] },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "y": { "type": "number", "minimum": 0, "maximum": 1 },
+
+    "worldId":  { "type": "string" },
+    "familyId": { "type": "string" },
+    "variant":  { "type": ["string", "null"] },
+    "abilities": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+
+    "axes": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "https://powermatch/axis_value.schema.json"
+      }
+    },
+
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: shema/role.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/role.schema.json",
+  "title": "Role",
+  "type": "object",
+  "required": ["id", "name", "weights"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "enabled": { "type": "boolean" },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] },
+    "weights": {
+      "type": "object",
+      "additionalProperties": { "type": "number", "minimum": 0 }
+    }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: shema/scenario.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/scenario.schema.json",
+  "title": "Scenario",
+  "type": "object",
+  "required": ["id", "name", "decaySide1", "decaySide2"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "enabled": { "type": "boolean" },
+    "bgColor":   { "type": ["integer", "null"] },
+    "textColor": { "type": ["integer", "null"] },
+    "decaySide1": {
+      "type": "array",
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    },
+    "decaySide2": {
+      "type": "array",
+      "items": { "type": "number", "minimum": 0, "maximum": 1 }
+    }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: shema/tag.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/tag.schema.json",
+  "title": "Tag",
+  "type": "object",
+  "required": ["id", "name", "category", "aspects"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "description": { "type": ["string", "null"] },
+    "category": {
+      "type": "string",
+      "enum": ["effect", "range", "cost", "timing", "type", "scholar", "other"]
+    },
+    "icon":       { "type": ["string", "null"] },
+    "color":      { "type": ["integer", "null"] },
+    "isBuiltin":  { "type": "boolean" },
+
+    "aspects": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["key", "label", "type"],
+        "properties": {
+          "key":   { "type": "string" },
+          "label": { "type": "string" },
+          "type":  {
+            "type": "string",
+            "enum": ["int", "double", "bool", "string",
+                     "enumValue", "scale", "reference"]
+          },
+          "required":     { "type": "boolean" },
+          "defaultValue": true,
+          "minValue":     { "type": ["number", "null"] },
+          "maxValue":     { "type": ["number", "null"] },
+          "options": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "scaleKind": {
+            "type": ["string", "null"],
+            "enum": ["strength", "speed", "accuracy", "stamina",
+                     "durability", "range", "aoe", "custom", null]
+          },
+          "hint": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: shema/world.schema.json ============
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://powermatch/world.schema.json",
+  "title": "World",
+  "type": "object",
+  "required": ["id", "name", "physicality"],
+  "properties": {
+    "id":   { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "creators": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "physicality": {
+      "type": "string",
+      "enum": ["physical", "spiritual", "energy", "conceptual", "hybrid"]
+    },
+    "powerSource":     { "type": ["string", "null"] },
+    "powerScaleMax":   { "type": ["integer", "null"], "minimum": 0, "maximum": 100 },
+    "rules": {
+      "type": "object",
+      "properties": {
+        "canBeAffectedBy": { "type": "array", "items": { "type": "string" } },
+        "immuneTo":        { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": true
+    },
+    "compatibility": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "compatible": { "type": "string",
+                          "enum": ["same", "compatible", "requires_hax",
+                                   "incompatible"] },
+          "note": { "type": ["string", "null"] }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": true
+}
+
+// ============ FILE: tree-hub.ps1 ============
+<#
+.SYNOPSIS
+    Строит дерево репозитория HUB.
+
+.DESCRIPTION
+    Обходит репозиторий HUB, исключая .git, кэши и прочий мусор.
+    Сохраняет дерево в текстовый файл.
+    Большие папки сворачиваются (см. -CollapseAt).
+
+.PARAMETER Root
+    Корень репозитория. По умолчанию — текущая папка.
+
+.PARAMETER Output
+    Имя выходного файла. По умолчанию hub_tree.txt.
+
+.PARAMETER MaxDepth
+    Максимальная глубина обхода. По умолчанию 5.
+
+.PARAMETER CollapseAt
+    Если в папке больше N элементов — показать первые 5 и «... (+N more)».
+    По умолчанию 15.
+
+.PARAMETER Ascii
+    Использовать ASCII-символы вместо Unicode.
+#>
+
+param(
+    [string]$Root = ".",
+    [string]$Output = "hub_tree.txt",
+    [int]$MaxDepth = 5,
+    [int]$CollapseAt = 15,
+    [switch]$Ascii
+)
+
+$ErrorActionPreference = "Stop"
+
+# === Папки, которые не обходим ===
+$ExcludeDirs = @(
+    '.git', '__pycache__', '.venv', 'venv', 'env',
+    'node_modules', 'build', 'dist', '.pytest_cache',
+    '.mypy_cache', '.idea', '.vscode', '.vs', 'bin', 'obj',
+    'htmlcov', '.tox', '.eggs', 'site-packages'
+)
+
+# === Символы дерева ===
+if ($Ascii) {
+    $Branch = '|-- '
+    $Last   = '\-- '
+    $Pipe   = '|   '
+    $Space  = '    '
+} else {
+    $Branch = [char]0x251C + [char]0x2500 + [char]0x2500 + ' '  # ├──
+    $Last   = [char]0x2514 + [char]0x2500 + [char]0x2500 + ' '  # └──
+    $Pipe   = [char]0x2502 + '   '                              # │
+    $Space  = '    '
+}
+
+$rootItem = Get-Item -LiteralPath $Root
+$rootFull = $rootItem.FullName
+
+$sb = New-Object System.Text.StringBuilder
+[void]$sb.AppendLine("# HUB TREE")
+[void]$sb.AppendLine("# Root: $rootFull")
+[void]$sb.AppendLine("# Date: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')")
+[void]$sb.AppendLine("# MaxDepth: $MaxDepth, CollapseAt: $CollapseAt")
+[void]$sb.AppendLine()
+[void]$sb.AppendLine("$($rootItem.Name)/")
+
+function Write-Tree {
+    param(
+        [string]$DirPath,
+        [string]$Prefix,
+        [int]$Depth
+    )
+
+    if ($Depth -ge $MaxDepth) {
+        [void]$sb.AppendLine("$Prefix$Last...")
+        return
+    }
+
+    # Список элементов: сначала папки, потом файлы
+    $dirs = Get-ChildItem -LiteralPath $DirPath -Directory -ErrorAction SilentlyContinue |
+        Where-Object { $ExcludeDirs -notcontains $_.Name } |
+        Sort-Object Name
+    $files = Get-ChildItem -LiteralPath $DirPath -File -ErrorAction SilentlyContinue |
+        Sort-Object Name
+
+    $all = @()
+    foreach ($d in $dirs)  { $all += [pscustomobject]@{ Item = $d; IsDir = $true } }
+    foreach ($f in $files) { $all += [pscustomobject]@{ Item = $f; IsDir = $false } }
+
+    $total = $all.Count
+    $collapse = $total -gt $CollapseAt
+
+    if ($collapse) {
+        # Показать первые 5 папок + первые 5 файлов, остальное свернуть
+        $show = @()
+        $showDirs  = $dirs  | Select-Object -First 5
+        $showFiles = $files | Select-Object -First 5
+        foreach ($d in $showDirs)  { $show += [pscustomobject]@{ Item = $d; IsDir = $true } }
+        foreach ($f in $showFiles) { $show += [pscustomobject]@{ Item = $f; IsDir = $false } }
+        $hidden = $total - $show.Count
+        $all = $show
+    } else {
+        $hidden = 0
+    }
+
+    for ($i = 0; $i -lt $all.Count; $i++) {
+        $entry = $all[$i]
+        $isLast = ($i -eq ($all.Count - 1)) -and ($hidden -eq 0)
+
+        $connector = if ($isLast) { $Last } else { $Branch }
+
+        if ($entry.IsDir) {
+            [void]$sb.AppendLine("$Prefix$connector$($entry.Item.Name)/")
+            $nextPrefix = $Prefix + ($(if ($isLast) { $Space } else { $Pipe }))
+            Write-Tree -DirPath $entry.Item.FullName -Prefix $nextPrefix -Depth ($Depth + 1)
+        } else {
+            [void]$sb.AppendLine("$Prefix$connector$($entry.Item.Name)")
+        }
+    }
+
+    if ($hidden -gt 0) {
+        [void]$sb.AppendLine("$Prefix$Last... (+$hidden more)")
+    }
+}
+
+Write-Tree -DirPath $rootFull -Prefix '' -Depth 0
+
+$outPath = Join-Path $rootFull $Output
+[System.IO.File]::WriteAllText($outPath, $sb.ToString(), [System.Text.UTF8Encoding]::new($false))
+
+Write-Host "Готово: $outPath" -ForegroundColor Green
+
